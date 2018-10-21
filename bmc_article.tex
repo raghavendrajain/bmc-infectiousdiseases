@@ -1,0 +1,1967 @@
+%% .06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+\usepackage{amsthm,amsmath}
+\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage[title]{appendix}
+\usepackage{multirow}
+%\usepackage[caption=false]{subfig}
+
+
+
+
+\usepackage{amssymb}
+\usepackage{pslatex}
+\usepackage[overlap,CJK]{ruby}
+\usepackage{linguex}
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{multirow}
+%\usepackage{color}
+\usepackage{soul}
+
+%\usepackage{subfigure}
+
+\usepackage{subcaption}
+\usepackage{paralist}
+
+\usepackage{url}
+\usepackage{fixltx2e}
+
+\usepackage{tabularx}
+
+\usepackage{dcolumn}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{bbding}
+\usetikzlibrary{positioning,shapes,arrows}
+\usepackage{authblk}
+
+\usepackage{enumitem}
+
+%\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
+\newcolumntype{M}[1]{D{.}{.}{1.#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\def\includegraphic{}
+%\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Prediction of Dengue Outbreaks Based on Disease Surveillance, Meteorological and Socio-Economic Data}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   email={raghavendra.jain@gmail.com}   % email address
+]{\inits{JE}\fnm{Raghvendra} \snm{Jain}}
+\author[
+   addressref={aff2},
+   email={arttioz@gmail.com}
+]{\inits{JRS}\fnm{Sra} \snm{Sontisirikit}}
+\author[
+addressref={aff4},
+email={iamsiri@gmail.com}
+]{\inits{JRS}\fnm{Sopon} \snm{Iamsirithaworn}}
+%\author[
+%addressref={aff4},
+%email={iamsiri@gmail.com}
+%]{\inits{JRS}\fnm{Sopon} \snm{Iamsirithaworn}}
+\author[
+addressref={aff1},
+email={helmut@nii.ac.jp}
+]{\inits{JRS}\fnm{Helmut} \snm{Prendinger}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{National Institute of Informatics}, % university, etc
+  \city{Tokyo},                              % city
+  \cny{Japan}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{Asian Institute of Technology, School of Engineering and Technology},
+  \city{Bangkok},   
+  \cny{Thailand}
+}
+\address[id=aff4]{%
+	\orgname{Department of Disease Control Thirteenth Division},
+	\city{Bangkok},   
+	\cny{Thailand}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+\begin{abstract} % abstract
+\parttitle{Background} The goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health-care systems. 
+
+\parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models we evaluate the predictive ability of the fitted models according to RMSE and SRMSE.
+
+\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. The discriminating ability of the optimal model was evaluated against Bangkok specific and WHO threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).
+
+
+\parttitle{Conclusions} Along with the high accuracy of prediction of our model, the novel contribution of this research is also that we determine that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. This suggests the influence of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic.
+
+\end{abstract}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Keywords: Epidemic forecasting, Error Measure, Performance evaluation, Epidemic-Features, Ranking
+
+\begin{keyword}
+\kwd{Dengue forecasting}
+\kwd{Data-driven Epidemiology}
+\kwd{Disease Surveillance}
+\kwd{Generalized Additive Models (GAMs) }
+
+\end{keyword}
+
+
+
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% my paper begins here                 %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Background}
+\label{intro}
+
+Dengue, a mosquito-borne viral disease is widespread in the tropical and sub-tropical regions of Asia, Africa, Americas, and Oceania. It is estimated that it puts about 3.9 billion people annually at risk of infection \footnote{http://www.who.int/mediacentre/factsheets/fs117/en/}. Dengue fever has been a significant cause of death and hospitalization among children in developing countries particularly in Asia and Latin America. A recent survey \cite{bhatt2013global} performed using the cartographic approaches, estimates an astounding number of 390 million annual infections in the year 2010, out of which about 24.6\% i.e. about 96 million would have apparently manifested, causing various symptoms \cite{guzman2002dengue}.
+
+
+\hl{Dengue} is caused by four distinct, but closely related, serotypes of the virus \cite{gubler1995dengue,whodenvtype2015}. Recovery from infection by one of these four (DEN-1, DEN-2, DEN-3, and DEN-4) provides the infected person lifelong immunity against that particular serotype and cross-immunity to the other serotypes. The time duration for this cross-immunity =is 6-12 months \cite{gubler1995dengue}. In the person is infected by other serotypes subsequently then the risk of severe dengue increases. The uninfected mosquitoes get the virus from infected humans and thus the later becomes the primary carrier, multiplier, and transmitter of the DENV (dengue virus).
+
+
+Thailand began to experience Dengue fever in 1949 and it became pandemic in the country for the first time in 1958 in Bangkok \cite{hammon1964virological}. The information about the clinically diagnosed cases of dengue fever(DF), dengue hemorrhagic fever (DHF) and dengue shock syndrome (DSS) are sent to the Epidemiology Department in Bangkok \cite{chareonsook1999changing} via the Provincial Health Offices. The transmission of DENV which occurs through the bite of infected Aedes mosquitoes, principally Aedes aegypti, has dramatically increased in the last two decades \cite{hesse2007dengue} and situation of dengue fever is likely to rise \cite{wilder2012denguetools}.
+
+A combination of several factors determine the risk of DENV transmission. These factors include density of infected mosquitoes, (level of) immunity of people to dengue serotypes, meteorology, human related factors e.g. housing type, population density and demographics, cleanliness etc. Several potential predictive indicators that contribute to the above mentioned factors have been described\cite{leitmeyer1999dengue,runge2008does,thammapalo2008environmental,sarfraz2014near}. For example, the density of infected mosquitoes depends on total mosquito density \cite{scott2003aedes,alto2008larval} which depends on inside house breeding \cite{syarifah2008ovitrap} and outside house breeding \cite{sarfraz2014near}. The inside house breeding depends on cleaning activity \cite{chareonviriyaphap2003larval,raju2008application} and housing type \cite{favier2005influence} among other factors whereas outside house breeding is primarily influenced by neglected garbage \cite{arunachalam2010eco}, population density \cite{chang2009combining,knudsen1992vector,troyo2009urban} and rain \cite{nakhapakorn2005information}. The seasonal influence on rain \cite{WPR2015,stoddard2014long} and temperature \cite{lambrechts2011impact,carrington2013reduction,stoddard2014long} contributes to the mosquito density \cite{lambrechts2011impact,sulaiman1996relationship,thammapalo2008environmental,sarfraz2014near,nakhapakorn2005information}. The density of infected mosquitoes in the region is influenced by dengue rate in the region  \cite{halstead2008dengue,esteva2000influence} and so is the number of people with immunity \cite{adams2006cross,alto2008larval} along with the population demographics \cite{cummings2009impact,wilder2012denguetools,whodenvsym2015}. 
+
+
+Despite the numerous urban outbreaks of dengue with significant health and economic impact \cite{gubler2002epidemic,gubler2004cities,anuradha19981996,vaughn2000invited}, the detailed surveillance for diagnosing dengue has been limited which makes it difficult to generate detailed information on its epidemiology \cite{ooi2009dengue,guzman2004dengue}. Moreover, there are currently no licensed vaccines or specific therapeutics for the treatment of the infected people. A variety of dengue vector control strategies have been adopted in different regions \cite{erlanger2008effect,horstick2010dengue,vanlerberghe2009community,luz2011dengue} but this has not stopped its rapid emergence and global spread \cite{tatem2006global}. Therefore, the goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health care systems. It yields practical results (e.g., results of value to a national public health, control, screening or prevention program, or local resource planning program along with serving to re-demonstrate a previously well-documented phenomenon. 
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%According to the development period from a mosquito egg to the human disease, there is a time lag of about one month that leads to DF/DHF cases occurring in 7 - 45 days. Thus, DF/DHF cases at time t (in month e.g. May) depend on others factors at time t-1 (i.e. one month before month) as validated in the empirical analysis \cite{nakhapakorn2005information}. The diurnal temperature range (DTR) is the difference between the daily maximum and minimum temperature. The experimental evaluation shows that DTR affects two important parameters underlying dengue virus (DENV) transmission by Aedes mosquito \cite{lambrechts2011impact}. 
+%
+
+
+
+
+
+% 
+%This kind of mosquito prefers to breed in areas of stagnant water, such as flower vases, uncovered barrels, buckets, and discarded tires, but the most dangerous areas are wet shower floors and toilet tanks, as they allow the mosquitoes to breed inside the residence. 
+
+
+%
+%Although the lifespan of an adult Aedes mosquito is two to four weeks depending on conditions \cite{zettel2012yellow}, the eggs can be viable for over a year in a dry state, which allows the mosquito to re-emerge after a cold winter or dry spell \cite{mortimer1998aedes}.
+
+
+
+
+\section{Methods}
+
+
+
+\subsection{Study Area}
+
+
+The dengue outbreak in Bangkok can affect to dengue situation for the whole country because Bangkok is a very crowded city located at the center part of Thailand. In the 2010 census, the population of Bangkok was about 8.28 million, although just 5.7 million were the registered residents. The population within the city during the day swells to about to 15 million \cite{WPR2015} due to the commuters from the surrounding areas. During a winter season, the temperature in Bangkok is still high around 28-35 degree Celsius and there is rain in every season \cite{wwo2012}. Figures \ref{figure-avg_temp_bangkok} and \ref{figure-avg_rain_bangkok} show the mean monthly diurnal temperature range (DTR) and cumulative monthly rainfall of Bangkok throughout the years ($2008-2015$).  The diurnal temperature range (DTR) is the difference between the daily maximum and minimum temperature. The experimental evaluation has shown that DTR influences two important parameters underlying dengue virus (DENV) transmission by Aedes mosquito \cite{lambrechts2011impact}. 
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{1-AvgMonthlyRainfall}
+		\caption{Rainfall within Bangkok throughout the years.}
+		\label{figure-avg_rain_bangkok}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{2-AvgMonthlyDTR}
+		\caption{DTR within Bangkok throughout the years.}
+		\label{figure-avg_temp_bangkok}
+	\end{center}
+\end{figure}
+
+
+Moreover, many people who live in Bangkok travel to other provinces frequently, so these people may be the main carriers and multipliers of the virus that cause dengue outbreak in other parts of Thailand. The Bangkok city covers an area of 1,568.737 square kilometers and it is subdivided into 50 districts, which are further sub-divided into 169 sub-districts. The total population registered in Bangkok is 5,693,884 and more than three million unregistered people live in Bangkok. The average registered population of Bangkok districts in 2014 is 113845. The most populated district is \textit{Saimai} (194,511 residents) and the least is \textit{Samphanthawongse} (26359 residents). But the highest and lowest population density district are \textit{Phranakhon} (157791 men/km 2) and \textit{Thawiwatthana} (2948 men/km 2). 
+
+
+%\hl{ahahhahaha}
+
+%Figure \ref{figure-dengue_incident_rate} shows the relationship between incidences of dengue per one hundred thousand people in Thailand versus Bangkok. The dengue incident rate in Bangkok is nearly the same as the whole country. So, if we could reduce dengue incident rates in Bangkok, the rate in Thailand will be reduce too because there will be fewer dengue carriers who travel from Bangkok to other parts of Thailand.
+
+\subsection{Data}
+
+Climate is one of the main factor related to dengue outbreak both locally and globally \cite{johansson2009multiyear, morin2013climate}. Most of Thailand has a tropical wet and dry climate type, making the city amenable for Aedes mosquito to breed and spread in any season. The role of the variation in climatic factors on transmission dynamics and the geographic distribution of dengue has been well-studied \cite{thai2011role}. The rainy season allows Aedes mosquitoes egg to grow into adult mosquitoes easier than in dry season. The increase of Aedes mosquitoes is directly affecting dengue cases in Thailand as shown in Figure \ref{figure-MonthlyDengueCases}.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 0.97\textwidth]{3-AnuualDengueCases}
+		\caption{The DHF incidence peaked in 2013 and 2015. It shows that dengue \\
+      outbreak increases every alternative year. Data from \cite{denguethai2015}}.
+		\label{figure-AnuualDengueCases}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{4-MonthlyDengueCases}
+		\caption{The DHF incidence peaked in October and November. Graph shows the\\ amount of dengue patients for each month for the years 2008\textendash2015. Rainy season\\ continues from mid-May to mid-October. Data from \cite{denguethai2015}}.
+		\label{figure-MonthlyDengueCases}
+	\end{center}
+\end{figure}
+
+
+Figure \ref{figure-AnuualDengueCases} shows the increase of DHF cases in Bangkok up to 2015. The average number of  DHF cases in Bangkok from 2008 until 2015 is around 4,750 cases per year. The highest number of DHF cases in Bangkok is 16942 which happened in 2013 followed by 14154 cases in 2015. As shown in Figure \ref{figure-MonthlyDengueCases}, the highest number of monthly DHF cases in Bangkok is 11752 in the month of November followed by 9511 cases in October.
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 0.95\textwidth]{5-MonthlyDengueAcrossYears}
+		\caption{The DHF incidence peaks in the months of October and November. However \\ in the year 2013, DHF outbreak happened for several months continuously.}
+		\label{figure-MonthlyDengueAcrossYears}
+	\end{center}
+\end{figure}
+
+
+Figure \ref{figure-MonthlyDengueAcrossYears} %and  \ref{figure-dengue_bangkok_2015}
+shows the variation of dengue cases with months. In the rainy season (mid-May\textendash October), dengue cases rise dramatically, and then they decrease suddenly in summer season (February\textemdash mid-May). The reason that November has the highest number of cases is that dengue virus in patients need 4\textendash10 days for the incubation period. So most dengue patients in November are infected in the rainy season (October-November).  
+
+In this study, we have used aggregated monthly dengue cases (dengue hemorrhagic fever) at district level from the Department of Disease Control, Bangkok for the period $2008-2015$.  Rainfall data from $2008-2015$ is provided by the Department of Drainage and Sewerage, Bangkok and the temperature data for the same period is provided by the Meteorological Department, Thailand. Records of cumulative monthly rainfall (mm) and mean monthly DTR readings ($^{\circ}$C) were obtained. The meteorological data were merged to the aggregated total number of confirmed dengue cases per month in each district of Bangkok. Using the geographical information of different districts of Bangkok, this data of each target district was merged to the  aggregated total number of confirmed dengue cases per month in each of its surrounding district. Thus, our data has (a) Dengue virus prediction variables (Monthly DHF incidents in a district + aggregated monthly DHF incident in the nearby districts) and (b) Aedes mosquito prediction variables (cumulative monthly rainfall in the Bangkok + mean monthly average diurnal temperature range (DTR) in Bangkok). 
+
+
+A model was developed and validated by dividing the data file into two data sets: one for training the model and another for testing and validation of the fitted model. Here we varied the period in both the data sets. For example, in one case of prediction the data from January 2008 to December 2012 was used to train a model, and data from January 2013 to December 2015 was used for testing and validation of the fitted model. All the analyses were performed in R \cite{Rsoftware} using the mgcv package \cite{mgcv}.  The details of the different such cases of predictions are listed in Table ~\ref{resultsPrediction}.  
+
+
+%The data set(s) and software supporting the conclusions of this article is(are) available GitHub\footnote{https://github.com/raghavendrajain/bookdownDengue} repository. The data is included as CSV files and software as the R scripts to analyze the data, and the figures and tables presented in this paper as PNG and files. This open access to the data allows replicating our analyses, checking the results for correctness, and conducting additional analyses. All of the analyses were performed in R \cite{Rsoftware} using the mgcv package \cite{mgcv}. 
+
+
+
+
+
+%There were only one missing
+%observation for temperature, rainfall and relative humidity in the training data set, meanwhile
+%there were eight missing observation for temperature, two missing observation for
+%rainfall and seven missing observation for relative humidity in the testing data set. Since the
+%amount of missing data is very small relatively to the size of the training data set we did not
+%impute missing data. In a sensitivity analysis, in the supplementary material, we show that
+%imputation does not contribute to better model fit (S2 File).
+
+
+
+
+
+
+\subsection{Statistical Analysis} \label{stat}
+
+These analyses focus on studying the following relationships:
+
+\begin{itemize}
+	\item relationship of meteorological (DTR and rainfall) and socioeconomic data (monthly garbage collection in each district) to the time series of dengue incidences in that particular district. 
+	\item relationship of dengue transmission in a particular month in a particular district with the data of its past occurrences. 
+	\item relationship of dengue transmission in a particular month in a particular district with the data of past occurrences of dengue in its surrounding districts. 
+\end{itemize}
+
+
+We created a set of prediction models encoding the above-mentioned relationships. Our geospatial/statistical method used in our work and the approach using Generalized Additive Models (GAM) to derive the insights are similar to research study \cite{ramadona2016prediction} conducted in Indonesia. However, along with evaluating different predictions models, we evaluate a different/unique hypothesis using a novel data-set; the feature-set used in the study is richer and the study area/country is different from the above-mentioned work. 
+
+The target of prediction was the  cumulative dengue count in Bangkok (i.e. sum total of dengue incidences in all the 50 districts of the city) in a particular month of the year. According to the previous studies to determine the optimal lead time for dengue forecasts \cite{hii2012optimal}, there is evidence of increasing dengue cases in lag time of up to 4\textendash20 weeks. Thus, similar to \cite{ramadona2016prediction} we decided a priori, for meteorological variables, to use lag times with up to 4 months delay (i.e. 0\textendash3 months) in the analysis.  Since the dengue counts vary within and between the years, the count data is likely to be over-dispersed. Thus, rather than using the ``standard'' Poisson regression in which it is assumed that variance of count data is constant regardless of the expected value, we adopt a Quasi-Poisson regression in which the variance of count data (dengue counts) is assumed to be a linear function of the mean. To allow for over-dispersion a log-link function of dengue count data is used. To allow for non-linear response and exposure association between the predictors and the dengue incidences, cubic splines of 3 degrees of freedom was applied on the meteorological variables. The generalized additive model (GAM) can be expressed as:
+
+
+\begin{equation}
+\begin{aligned}
+\label{eq:meteorological}
+log (C_{0,t}) \sim \alpha +  \sum_{l=0}^{3} ns(\rlap{T}c _ {lt}, d =3) + \sum_{l=0}^{3} ns(R_ {lt}, d =3)
+\end{aligned}
+\end{equation}
+
+
+where log() denotes the natural logarithm, \textit{C} represents the total dengue count data, \textit{t} denotes to time in months, \rlap{T}c represents DTR ($^{\circ}$C), \textit{R} denotes the mean monthly rainfall (mm) and  l, denotes the lag variables, ns() denotes a natural cubic spline. \\
+
+\textbf{Disease surveillance data of each districts as predictor}
+
+Since the current number of dengue incidences are influenced by the number of cases in the past, to determine this period of influence we have considered two approaches. The first approach focuses on determining the optimal lag term for short-term lagged dengue incidence data. The auto-regressive patterns in dengue time series data were studied by fitting a GAM in which data up to a delay of 4 months was used (similar to what we did with the meteorological data). This model was to fit to assess the influence of past dengue incidence on current count independent of meteorological factors. The regression model can be expressed as:
+
+\begin{equation}
+\begin{aligned}
+\label{eq:short}
+log (C_{0,t}) \sim \alpha + \sum_{l=1}^{4} ns(C_ {lt}, d =3) 
+\end{aligned}
+\end{equation}
+
+Second approach focused on assessing the risk of retrospective transmission (1\textendash48 months) on dengue incidences. Prior studies conducted in the region have shown that cross-immunity for dengue virus serotypes may significantly alter the dengue transmission over a period \cite{adams2006cross,reich2013interactions}. We hypothesize that this might partly explain bi-annual cyclic epidemic pattern of dengue occurrence in Bangkok as shown in Figure \ref{figure-AnuualDengueCases}. Thus, we assess and estimate the risk of retrospective dengue transmission up to 1\textendash30 months on current dengue transmission. To incorporate the effects delayed in time, the statistical model of DLNM\footnote{The GitHub repository of R implementation of DLNM used for our analyses is available at https://github.com/gasparrini/dlnm} was used to describe the additional time dimension of this exposure-relationship\cite{gasparrini2010distributed}. 
+
+The regression model can be expressed as:
+
+\begin{equation}
+\begin{aligned}
+\label{eq:long}
+log (C_{0,t}) \sim \alpha + \sum_{l=1}^{30} DLNM(C_ {lt}, d = 4) 
+\end{aligned}
+\end{equation}
+
+
+The output from both these approaches was then combined to determine the `optimal lag' of disease surveillance. 
+
+\textbf{Disease surveillance data from surrounding districts as predictor} There is much research which concludes that many dengue cases that occur in urban areas are due to the factors such as high population density, inadequate housing, and inappropriate human behavioral practices \cite{chang2009combining,knudsen1992vector,troyo2009urban}.  Surveillance of Aedes mosquito density is important for construction models of dengue transmission, in order to prioritize areas and seasons for vector control. The 80\% of larvae or pupa in house are from Aedes mosquito. A recent study \cite{sarfraz2014near} has explored the dengue occurrence in a region in relation to its surrounding regions. The study is conducted in near real-time using object-based and spatial metric approaches. The geospatial analysis conducted on the data acquired using Google search and advanced land observation satellite images suggests that the occurrence and spread of dengue cases are positively correlated with densely populated areas which are \textit{surrounded by dense vegetation}. This further suggests that the spatial heterogeneity of human activities influence the dengue epidemic. Thus, to determine the influence of spatial heterogeneity of human activities ongoing in nearby areas, we consider the data (both `short-term' and `long-term') from the dengue incidences of surrounding districts. The regression model can be expressed as:
+
+\begin{equation}
+\begin{aligned}
+\label{eq:surrounding}
+log (C_{0,t}) \sim \alpha  +  \sum_{l=1}^{4} ns(S_ {lt}, d =3) + \sum_{l=0}^{30} DLNM(S_ {lt}, d = 4) 
+\end{aligned}
+\end{equation}
+
+
+where log() denotes the natural logarithm, \textit{C} represents the total dengue count data, \textit{S} represents the count data of dengue incidence occurred in the surrounding districts, \textit{t} denotes to time in months, \textit{l} denotes the lag variables and ns() denotes a natural cubic spline. \\
+
+\textbf{Waste disposal data from each district as predictor} Previous studies have shown the spatial correlation of socioeconomic data and urbanization with dengue incidences \cite{mondini2008spatial,wu2009higher}. Since the waste disposal and landfill dumps are the spatial infrastructures of any modern city, we used the data about monthly garbage collection from each district as an indicator for social capital. 
+
+Thus using the above-mentioned predictors, we evaluated the following models: 
+\begin{enumerate}[label=(\Alph*)]
+	\item Optimal Meteorology Model (includes lag of 0-4 months for DTR and mean monthly rainfall)
+	\item Short-term Surveillance Model (may include lag of $1-4$ months)
+	\item Optimal Lag Model (may include lag of $1-30$ months)
+	\item Combination of (A) and (C)
+	\item Combination of (D) with lagged dengue incidences of surrounding districts 
+	\item  Combination of (E) with garbage collection data of each district as the social capital 
+\end{enumerate}
+
+
+
+\section{Results} \label{results}
+
+
+Using the lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall data in the model, we analyzed the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. 
+
+As shown in Table~\ref{tab:metValues} the statistical effects appear at DTR and rainfall for all the lags. As shown in Figure ~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the temperature is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association slightly increases and then decreases. For lag 4, it is observed that the association of temperature with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strop drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model A).  The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.283, RMSE is 8.462 and SRMSE is 0.52. The `Deviance Explained' is 31.9\%. The visual analyses of the prediction of the `Optimal Met' model are shown in Figure~\ref{fig:test1}. 
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{6-DM1}
+		\caption{\textbf{Association between the meteorological variables and dengue over lags of \\ 0\textendash3 months}. Solid lines represent relative risks (RR) of dengue cases whereas the dotted \\ lines depict the upper and lower limits of 95\%  confidence intervals. P-values and the \\ initial analyses are listed in Table ~\ref{tab:metValues}}
+		\label{figure:D-M-1}.
+	\end{center}
+\end{figure}
+
+
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width= 1.1\textwidth]{6-DM1}
+%		\caption{The DHF incidence peak every year in the months of October and November. However in the year 2013 it seems that DHF occured for many months continuously at an alarming rate.}
+%		\label{figure-MonthlyDengueAcrossYears}
+%	\end{center}
+%\end{figure}
+
+
+
+
+
+
+We calculated the cross-correlation of dengue cases with (a) dengue cases of lag of 0\textendash3 months (b) DTR of lag of 0\textendash3 months (c) rainfall of lag of 0\textendash3 months and (d) the dengue cases of lag of 0\textendash3 months from the surrounding districts.  
+As shown in Figure ~\ref{figure-Cross-Cor-1} the cross-correlation indicate that the highest positive association between dengue incidence and lagged dengue incidences were found at lag 0 (r, 0.667), with rainfall at lag 2 (r, 0.428) and with dengue incidences from surrounding districts at lag 1 (r, 0.514). There was a negative correlation of DTR with dengue incidence at all the lags. For lag 0 (r, -0.261), lag 1 (r, -0.373), lag 2 (r,  -0.309) and lag 3 (r,  -0.154) was observed. 
+
+
+As shown in Figure~\ref{figure-DDShort-1} the analyses performed using the data of lagged dengue incidences, when lag terms of 1-4 months were included, show that dengue transmission increases almost linearly with the lagged dengue incidences at lag 1 and lag 2 till the dengue counts is less than 30. Afterwards as well as non-linear increasing trend is observed. While, dengue cases linearly decrease with lag 3 and lag 4 and these terms were not statistical significant (p \textgreater 0.05). Thus, for a model in which lag-terms of up to 2 months were included is termed as `Short-term Lag Surveillance' model (model B). The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.4, RMSE is 7.9 and SRMSE is 0.49. The `Deviance Explained' is 41.0\%. The visual analyses of the prediction of the `Short-term Lag Surveillance' model is shown in Figure~\ref{fig:test2}. 
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{7-Fit-ShortLag}
+		\caption{\textbf{Short-term Lag Model}: Association between past dengue count over lags of \\ 1-4 months and the dengue outbreak. Solid lines depict relative risks (RR) of dengue  \\ cases while the upper and lower limits of 95\% confidence intervals are shown  by the \\ dotted lines.}
+		\label{figure-DDShort-1}
+	\end{center}
+\end{figure}
+
+
+Meanwhile, when the long-term lagged dengue incidence data was taken into account, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. The influence of long-term lagged data of dengue incidences is shown using the contour plot in Figure ~\ref{fig:targetContour}. It is observed that lagged long-term data has lower relative risks of transmission up to almost 2 years following a large outbreak in around lag 24. This suggests a negative feedback cyclic pattern. Figure ~\ref{fig:lagPeak} suggests that when an outbreak happens in a particular month then dengue risk in each of the following months will increase with a peak in next 23 months (Figure ~\ref{fig:lagPeak}).  Both Figure ~\ref{fig:lagPeak} and Figure~\ref{fig:multipleRRlongLag} are the lag-response curve for the differing number of dengue cases after an outbreak happens in a specified month. 
+
+
+Thus based on these  analyses, the optimal variables for the prediction models included dengue count at lag 1,2 for short-term lags (as used in `Short-term Lag Surveillance' model) and at lag 23. The model that consists of these lags is termed as `Optimal Lag Surveillance' model (model C). The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.53, RMSE is 7.07 and SRMSE is 0.43. The `Deviance Explained' is 53.0\%. The visual analyses of the prediction of the `Optimal Lag Surveillance' model is shown in Figure~\ref{fig:test3}. 
+
+
+We then combine the meteorological variables used in `Optimal Met' model (model A) and dengue lag terms used in  `Optimal Lag Surveillance' model (model C) to determine their association with dengue incidences. This model is termed as `Optimal Met and Lag Surveillance Model' (model D). The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.69, RMSE is 5.72 and SRMSE is 0.35. The `Deviance Explained' is 70.0\%. The visual analyses of the prediction of the `Optimal Met and Lag Surveillance Model' model is shown in Figure~\ref{fig:test4}. 
+
+Since one of our hypotheses is that the significance of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic in statistically significant. In other words, the dengue cases in a particular district are influenced by the dengue cases in there surrounding districts. To test the hypothesis, we determine how the occurrence of dengue in a target district is influenced by the occurrence of dengue in its surrounding districts. Both short-term and long-term lagged dengue cases data of the dengue incidences in surrounding districts was taken into account. For short-term lags, we considered the lagged data of past 1-4 months in which the data of lag 1 and 2 months was found to be statistically significant (p \textless 0.05). For long-term lags, the data up to the past 30 months was used. The non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed} to determine the relative risks of transmission following an outbreak in a specified month. 
+
+
+Figure ~\ref{fig:surroundingDistrictContour} suggests that when a large outbreak happens in a particular district in some specified month, then dengue risk in its surrounding districts will increase with a peak in the next 12 months. Similar to Figure~\ref{fig:targetContour} this suggests a negative feedback cyclic pattern. For the sake of brevity, the lag-response curve for the differing number of dengue cases is not shown here. Thus, based on the aforementioned analyses, we use the optimal lag terms of dengue incidences in surrounding districts (lag 1, lag 2 and lag 12) along with the optimal meteorological variables \footnote{The association with rainfall data for the current month (i.e. lag 0) was found to be statistically insignificant (p \(>\!\!>\) 0.05) for this model.} and optimal lagged dengue variables (used in model D). This new model has the representation of all the optimal variables and hence termed as `Optimal Representation Model' (model E).
+
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{0.8\textwidth}
+		\centering
+		\includegraphics[width= 1.1\textwidth]{8-LongLagContour}
+		\subcaption{}
+		\label{fig:targetContour}
+	\end{minipage}%
+	\\[1.5ex]
+	\begin{minipage}{0.8\textwidth}
+		\centering
+		\includegraphics[width= 1.1\textwidth]{9-LagResposeLongLag}
+		\subcaption{}
+		\label{fig:lagPeak}
+	\end{minipage}
+	\caption{Retrospective transmission period is calculated to account for the influence \\ of dengue incidences in each of the target districts (Fig \ref{fig:targetContour}) and lag-response curve for \\ an increase in 1100 units of dengue incidences (Fig \ref{fig:lagPeak}).}
+\end{figure}
+
+
+The association of these terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. It is observed that for short-term lagged data of dengue cases of surrounding districts the association with dengue transmission in the target district is almost linear. For lag 1, transmission increases while for lag 2 it decreases. However, for long-term lagged data (lag 12) the association slightly decreases for a small number of dengue cases (up to about 75 cases) and then modestly increases before being constant. The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.71, RMSE is 5.55 and SRMSE is 0.34. The `Deviance Explained' is 72.0\%. The visual analyses of the prediction of the `Optimal Representation' model is shown in Figure~\ref{fig:test5}. 
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{10-Contour-SurroundingLongLag}
+		\caption{Contour plot of the relative risks of transmission of dengue in a target district \\ up to 30 months following a larger outbreak of dengue in its surrounding districts in a \\ specified month.}
+		\label{fig:surroundingDistrictContour}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width= 0.97 \textwidth]{11-Fit-OptimalModel}
+		\caption{\textbf{The optimal model:} Association between the meteorological variables, \\ past dengue count over optimal lags within 1-30 months, surrounding district count \\  over 0\textendash30 months and the dengue outbreak. Solid lines represent relative risks (RR) \\ of dengue cases whereas the dotted lines depict the upper and lower limits of 95\% \\ confidence intervals.}
+		\label{figure-mostOptimalFit}
+	\end{center}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+	\begin{minipage}[c]{1.0\textwidth}
+		\vspace*{\fill}
+		\centering
+		\includegraphics[width=10cm,height=3.8cm]{12-Pred-MetOptimal}
+		\subcaption{Only Rainfall and DTR data with statistical significance (past 4 months)was used.}
+		\label{fig:test1}\par\vfill
+		\includegraphics[width=10cm,height=3.8cm]{13-Pred-ShortTerm}
+		\subcaption{The data of dengue counts of districts from optimal short-lag (i.e. past 2 months) was used. }
+		\label{fig:test2} \par\vfill
+		\includegraphics[width=10cm,height=3.8cm]{14-Pred-OptimalLag}
+		\subcaption{Along with the dengue data of optimal short-lag, the long-lag (24th month) was also used.}
+		\label{fig:test3} \par\vfill
+		\includegraphics[width=10cm,height=3.8cm]{15-Pred-Met-OptimalLag}
+		\subcaption{The optimal data (rainfall, DTR, lagged dengue data) of each target district is used.}
+		\label{fig:test4} \par\vfill
+		\includegraphics[width=10cm,height=3.8cm]{16-Pred-OptimalRepresentation}
+		\subcaption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district \\ and its \textit{surrounding district} is used.}
+		\label{fig:test5}
+	\end{minipage}
+	\caption{\textbf{Monthly Observed and Predicted Dengue Cases from 2008-2012.} Black \\ line represent the observed DHF cases and red line represents the predicted cases.}
+	\label{fig:lolo}
+\end{figure}
+
+The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. Figure~\ref{fig:socio} shows the influence of socioeconomic data on prediction of dengue counts. The performance of1the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.77, RMSE is 5.54 and SRMSE is 0.34. The `Deviance Explained' is 77.0\%. The visual analyses of the prediction of the `Socioeconomic data Included' model are shown in Figure~\ref{fig:socio2}. The analyses show that the relative risks of dengue transmission almost linearly decreases as the garbage collection increases. It might be because the increase in garbage collection by municipal authorities is spatially correlated with higher economic activity in a region, which may signify better sanitation and healthier lifestyle\cite{satterthwaite1997environmental}. 
+
+
+\begin{figure}[h!]
+	\begin{minipage}[c]{1.0\textwidth}
+		\vspace*{\fill}
+		\centering
+		\includegraphics[width=8cm,height=5.0cm]{17-Fit-garbage}
+		\subcaption{The the smooth term for representing the variable for monthly garbage collection.}
+		\label{fig:socio1}\par\vfill
+		\includegraphics[width=10cm,height=5.0cm]{18-Pred-SocialIncluded}
+		\caption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used. }
+		\label{fig:socio2} \par\vfill	
+	\end{minipage}
+	\caption{Influence of socioeconomic data on prediction of dengue counts.}
+	\label{fig:socio}
+\end{figure}
+
+
+
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{|lcccc|}
+		\hline
+		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} \\ 
+		\hline
+		A: Meteorology Optimal & 8.46 & 0.52 & 0.28 & 0.32 \\ 
+		B: Short-term Lag Surveillance Model  & 7.90 & 0.49 & 0.40 & 0.41 \\ 
+		C: Optimal Lag Surveillance Model  & 7.07 & 0.43 & 0.53 & 0.53 \\ 
+		D: Optimal Met and Lag Surveillance Model  & 5.72 & 0.35 & 0.69 & 0.70 \\ 
+		E: Optimal Representation Model & 5.55 & 0.34 & 0.71 & 0.72 \\ 
+		F: Social-economic data Included & 5.54 & 0.34 & 0.71 & 0.77 \\ 
+		\hline
+	\end{tabular}
+	\caption{Predictive performance statistics of different models evaluated on the training data. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).) }
+	\label{resultsPrediction}
+\end{table}
+
+\section{Discussion} \label{discussion}
+
+As discussed in our analyses above, the `Optimal Representation Model' (model E) shows the best\footnote{Although it is shown in Table ~\ref{resultsPrediction} that model F has similar predictive performance as that of model E, since the later has comparatively smaller complexity it is considered to be the candidate model for evaluation on external data set. However, in terms of over-all performance, model F is deemed to be most suitable.} performance of all the aforementioned models (model A-F). The predictive performance statistics of different models evaluated on the training data from the years $2008-2012$ is also listed in Table~\ref{resultsPrediction}. 
+
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{19-resid-diagnosis}
+		\caption{\textbf{Residual Diagnosis.} Top-left is the histogram of residuals; top-right is the \\ partial ACF plot. On bottom-left is the Q-Q plot for the deviance residuals whereas \\ the relationship between the reported and predicted cases is shown on bottom-right}.
+		\label{figure:resid-diagnosis}
+	\end{center}
+\end{figure}
+
+
+The simplest model (A) using only meteorological variables showed the poorest performance when compared with the other models. The quality of fit and predictive ability increases with the subsequent models 
+as shown (Table~\ref{resultsPrediction}).  For instance, the model B that includes short-term dengue incidences data, showed, poor predictions as compared to the model C which has optimal autoregressive model terms including dengue at lag 1, 2 and lags 23. The combination of optimal meteorological variables with optimal autoregressive model terms had a 
+rather good predictive performance. Finally, the combination of optimal autoregressive model terms of the data from surrounding districts has the best predictive ability. The predictive ability
+as evaluated by RMSE and SMRSE, as well as the values of R-sq.(adjusted) and `Deviance Explained' for the models A-E show that model (E) combining model (A) and (D) is the best-predictive model (Table~\ref{resultsPrediction}).
+
+The final ``Optimal Representation'' model (E) included combinations of the meteorological variables and the autoregressive lag terms of dengue counts in the past (both for target districts and its surrounding districts) according to:
+
+\begin{equation}
+\begin{aligned}
+\label{eq:optimal}
+log (C_{0,t}) \sim \alpha +  \sum_{l=0}^{3} ns(\rlap{T}c _ {lt}, d =3) + \sum_{l=0}^{3} ns(R_ {lt}, d =3) +\sum_{l=1}^{2} ns(C_ {lt}, d =3)  + \\
+\sum_{l=23}^{23} ns(C_ {lt}, d =3) + \sum_{l=1}^{2} ns(SC_ {lt}, d =3) + \sum_{l=12}^{12} ns(SC_ {lt}, d =3)
+\end{aligned}
+\end{equation}
+
+where \textit{C} represents the dengue counts in the target district, \rlap{T}c represents DTR ($^{\circ}$C), \textit{R} denotes the mean monthly rainfall (mm) and \textit{SC} denotes the dengue counts in the surrounding districts. 
+
+
+After the `Optimal Representation' model of Equation~\ref{eq:optimal} is fit, the residuals are inferred; and their normality and residual autocorrelation are checked. Figure ~\ref{figure:resid-diagnosis} shows that residual histograms (top-left) are symmetric and follow a unimodal distribution. The Q-Q plot of deviance residuals which are conditional on the fitted model coefficients and scale parameter (bottom-left) is close to a straight line. This suggests that the distributional assumptions of the model are satisfied. The plot of reported and predicted cases indicate linear relation (bottom-right). The partial autocorrelation function plot (top-right) does show significant autocorrelation for long-term lags (lag $10-13$, lag 22, lag 25 etc.), but it was found that keeping those lagged terms increases the complexity of the model without any significant increase in prediction performance. Thus, they were chosen to be ignored in the model \footnote{Including those additional terms does not as well provide some additional insight in favor of our hypothesis too}. 
+
+
+
+\begin{figure}[htbp]
+	\begin{minipage}[c]{0.98\textwidth}
+		\vspace*{\fill}
+		\centering
+		\includegraphics[width=10cm,height=6.0cm]{20-Validate-2008-2012}
+		\subcaption{The model \textbf{E} (Equation ~\ref{eq:optimal}) was trained on the data from $2008-2012$ for validation on the external data set.}
+		\label{fig:validate1}\par\vfill
+		\includegraphics[width=10cm,height=6.0cm]{21-Validate-2008-2013}
+		\caption{The model \textbf{E} (Equation ~\ref{eq:optimal}) was trained on the data from $2008-2013$ for validation on external data set. }
+		\label{fig:validate2} \par\vfill
+		\includegraphics[width=10cm,height=6.0cm]{22-Validate-2008-2014}
+		\subcaption{The model E (Equation ~\ref{eq:optimal}) was trained on the data from $2008-2014$ for validation on external data set.}
+		\label{fig:validate3}
+		
+	\end{minipage}
+	\caption{\textbf{Predicted Dengue Cases Versus Reported Dengue Cases in 2008-2015.}  \\ Black line represent the observed DHF cases and red line represents the predicted \\ cases. The blue line represents the predicted cases on the external data set for which  the \\ model is not fit. The grey horizontal line represents the epidemic threshold which is the \\ mean monthly DHF count across 2008-2015. The vertical axes represents the number \\ of DHF cases and the horizontal axes represents the time in months from 2008-2015.}
+	\label{fig:validate}
+\end{figure}
+
+To evaluated the predictive performance of our final model (E), several external validation data sets were created.   The visual analyses is provided in Figure~\ref{fig:validate} and the results are mentioned in Table~\ref{tab:resultsOfValidation}. The `red' line shows the prediction on training data set and the `blue' line shows the prediction on validation sets while the `black' line represents the observed dengue cases. The horizontal gray line represents the mean monthly dengue cases across $2008-2015$ which we consider to be the threshold of the epidemic. The visual analysis of Figure~\ref{fig:validate1} shows the poorest performance with a significant difference between predicted and observed cases for the external data set (i.e. for the months in the year 2013 and so on). The model trained on the larger set of training data shows the better predictive performance as the influence of both, the direct and  retrospective transmission could be learned in the model (Table~\ref{tab:resultsOfValidation}).   
+
+
+The discriminating ability of model E was evaluated against our specified threshold of the epidemic (790 monthly dengue cases) and WHO threshold of the epidemic. To separate transmission months above and below 790 cases, the specificity was 85.1\% and sensitivity was 84.7\%. The positive predictive value was observed to be 91.6\% and the negative predictive value was 74.5\%. The WHO moving outbreak threshold \cite{world2009dengue} is the sum total of monthly average cases of preceding 5 years and twice their standard deviation. This value comes out to be around 1287 dengue cases per month. To separate transmission months above and below 1287 cases, the specificity was 72.72\% and sensitivity was 96.0\%. The positive predictive value and negative predictive value were both estimated to be around 89.0\%.
+
+
+
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|cp{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}|}
+		\hline
+		\textbf{Training Dataset} & \textbf{In-sample} & \textbf{Out-Sample} (2013-2015) & \textbf{Out-Sample} (2014-2015) & \textbf{Out-Sample} (2013) &\textbf{Out-Sample} (2014) & \textbf{Out-Sample} (2015) \\ 
+		\hline
+		\textbf{2008-2012} & 0.37 & 303.28 & 410.74 & 21.66 & 1.43 & 437.50 \\ 
+		\textbf{2008-2013} & 0.38 &  & 0.56 &  & 0.32 & 0.54 \\ 
+		\textbf{2008-2014} & 0.39 &  &  &  &  & 0.49 \\ 
+		\hline
+	\end{tabular}
+	\caption{Predictive performance statistics of most optimal model evaluated on validation data sets is measured in SRMSE.}
+	\label{tab:resultsOfValidation}
+\end{table}
+
+
+
+
+%
+%
+
+
+\section{Conclusion} \label{conclusion}
+
+
+In this study, the dengue incidences were predicted using a variety of data. The best model for dengue prediction includes meteorological data (rainfall, DTR), lagged dengue data from specified districts and their surroundings and the socioeconomic data. We proved that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. Thus for forecasting dengue outbreaks and taking preventing measures, the epidemiologists and health authorities should consider the influence of movement patterns of people and spatial heterogeneity of human activities. In our future work, we intend to develop customized models for each individual district, include more demographic data and data from government surveys e.g. House index (HI), Breteau index (BI) and Container index (CI). Also, we would like to integrate the information from social media platforms to track the dengue incidences in real time. 
+
+\section*{List of abbreviations}
+DENV: Dengue Virus; DF: Dengue Fever; DHF: Dengue Haemorrhagic Fever; DSS: Dengue Shock Syndrome; DTR: Diurnal Temperature Range; GAM: Generalized Additive Model; DLNM: Distributed Lag Non-Linear Models; RMSE: Root Mean Squared Error; SRMSE: Standard Root Mean Squared Error. 
+
+
+
+
+%\begin{acknowledgements}
+%	I would like to thanks Prof. Nicholas Reich from the Department of Biostatistics and Epidemiology at the University of Massachusetts Amherst for his feedback and reviewing this paper. 
+%\end{acknowledgements}
+
+\clearpage % force a pagebreak and flush all deferred `table` and `figure` environments
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{backmatter}
+
+%\section*{List of abbreviations}
+%DENV: Dengue Virus; DF: Dengue Fever; DHF: Dengue Haemorrhagic Fever; DSS: Dengue Shock Syndrome; DTR: Diurnal Temperature Range; GAM: Generalized Additive Model; DLNM: Distributed Lag Non-Linear Models; RMSE: Root Mean Squared Error; SRMSE: Standard Root Mean Squared Error. 
+
+
+\section*{Declarations} 
+\hfill
+
+
+\section*{Ethics approval and consent to participate}
+
+Not applicable
+
+
+\section*{Consent for publication}
+
+Not applicable
+
+\section*{Availability of data and materials}
+
+The data sets used and/or analyzed during the current study are available from the corresponding author on reasonable request.
+
+\section*{Competing interests}
+The authors declare that they have no competing interests.
+
+
+\section*{Funding}
+
+No funds were obtained to carry out this project.
+
+
+\section*{Author's contributions}
+
+RJ analyzed and interpreted the data. He also wrote the manuscript. SS collected and cleaned the data. SI helped make data acquisition task easier by coordinating between different sources. HP supervised the project. All authors read and approved the final manuscript. 
+    
+      
+\section*{Acknowledgements}
+Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of Disease Control ) enabled surveying in the local communities of Kannayao, Lat Krabang , Thung khru, Saphansung and Jatujak districts of Bangkok.
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+%\bibliography{mybibfileNew}     % Bibliography file (usually '*.bib' )
+
+
+
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{60}
+	% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+	\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+	\ifx \binits  \undefined \def \binits#1{#1}\fi
+	\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+	\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+	\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+	\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+	\ifx \byear  \undefined \def \byear#1{#1}\fi
+	\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+	\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+	\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+	\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+	\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+	\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+	\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+	\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+	\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+	\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+	\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+	\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+	\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+	\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+	\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+	\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+	\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+	\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+	\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+	\ifx \barticle \undefined \def \barticle#1{#1}\fi
+	\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+	\ifx \botherref \undefined \def \botherref #1{#1}\fi
+	\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+	\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+	\ifx \bbook \undefined \def \bbook#1{#1}\fi
+	\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+	\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+	\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+	\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+	\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+	\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+	\csname PreBibitemsHook\endcsname
+	
+	%%% 1
+	\bibitem{bhatt2013global}
+	\begin{barticle}
+		\bauthor{\bsnm{Bhatt}, \binits{S.}},
+		\bauthor{\bsnm{Gething}, \binits{P.W.}},
+		\bauthor{\bsnm{Brady}, \binits{O.J.}},
+		\bauthor{\bsnm{Messina}, \binits{J.P.}},
+		\bauthor{\bsnm{Farlow}, \binits{A.W.}},
+		\bauthor{\bsnm{Moyes}, \binits{C.L.}},
+		\bauthor{\bsnm{Drake}, \binits{J.M.}},
+		\bauthor{\bsnm{Brownstein}, \binits{J.S.}},
+		\bauthor{\bsnm{Hoen}, \binits{A.G.}},
+		\bauthor{\bsnm{Sankoh}, \binits{O.}}, \betal:
+		\batitle{The global distribution and burden of dengue}.
+		\bjtitle{Nature}
+		\bvolume{496}(\bissue{7446}),
+		\bfpage{504}--\blpage{507}
+		(\byear{2013})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 2
+	\bibitem{guzman2002dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
+		\bauthor{\bsnm{Kouri}, \binits{G.}}:
+		\batitle{Dengue: an update}.
+		\bjtitle{The Lancet infectious diseases}
+		\bvolume{2}(\bissue{1}),
+		\bfpage{33}--\blpage{42}
+		(\byear{2002})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 3
+	\bibitem{gubler1995dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Gubler}, \binits{D.J.}},
+		\bauthor{\bsnm{Clark}, \binits{G.G.}}:
+		\batitle{Dengue/dengue hemorrhagic fever: the emergence of a global health
+			problem.}
+		\bjtitle{Emerging infectious diseases}
+		\bvolume{1}(\bissue{2}),
+		\bfpage{55}
+		(\byear{1995})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 4
+	\bibitem{whodenvtype2015}
+	\begin{botherref}
+		\oauthor{\bsnm{WHO}}:
+		Dengue Type.
+		\url{http://www.who.int/mediacentre/factsheets/fs117/en/}.
+		Accessed 2015-11-20
+		(2015)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 5
+	\bibitem{hammon1964virological}
+	\begin{barticle}
+		\bauthor{\bsnm{Hammon}, \binits{W.M.}},
+		\bauthor{\bsnm{Sather}, \binits{G.}}:
+		\batitle{Virological findings in the 1960 hemorrhagic fever epidemic (dengue)
+			in thailand}.
+		\bjtitle{The American journal of tropical medicine and hygiene}
+		\bvolume{13}(\bissue{4}),
+		\bfpage{629}--\blpage{641}
+		(\byear{1964})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 6
+	\bibitem{chareonsook1999changing}
+	\begin{barticle}
+		\bauthor{\bsnm{Chareonsook}, \binits{O.}},
+		\bauthor{\bsnm{Foy}, \binits{H.}},
+		\bauthor{\bsnm{Teeraratkul}, \binits{A.}},
+		\bauthor{\bsnm{Silarug}, \binits{N.}}:
+		\batitle{Changing epidemiology of dengue hemorrhagic fever in thailand}.
+		\bjtitle{Epidemiology and infection}
+		\bvolume{122}(\bissue{01}),
+		\bfpage{161}--\blpage{166}
+		(\byear{1999})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 7
+	\bibitem{hesse2007dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Hesse}, \binits{R.R.}}:
+		\batitle{Dengue virus evolution and virulence models}.
+		\bjtitle{Clinical Infectious Diseases}
+		\bvolume{44}(\bissue{11}),
+		\bfpage{1462}--\blpage{1466}
+		(\byear{2007})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 8
+	\bibitem{wilder2012denguetools}
+	\begin{botherref}
+		\oauthor{\bsnm{Wilder-Smith}, \binits{A.}},
+		\oauthor{\bsnm{Renhorn}, \binits{K.-E.}},
+		\oauthor{\bsnm{Tissera}, \binits{H.}},
+		\oauthor{\bsnm{Bakar}, \binits{S.A.}},
+		\oauthor{\bsnm{Alphey}, \binits{L.}},
+		\oauthor{\bsnm{Kittayapong}, \binits{P.}},
+		\oauthor{\bsnm{Lindsay}, \binits{S.}},
+		\oauthor{\bsnm{Logan}, \binits{J.}},
+		\oauthor{\bsnm{Hatz}, \binits{C.}},
+		\oauthor{\bsnm{Reiter}, \binits{P.}}, et al.:
+		Denguetools: innovative tools and strategies for the surveillance and control
+		of dengue.
+		Global health action
+		\textbf{5}
+		(2012)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 9
+	\bibitem{leitmeyer1999dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Leitmeyer}, \binits{K.C.}},
+		\bauthor{\bsnm{Vaughn}, \binits{D.W.}},
+		\bauthor{\bsnm{Watts}, \binits{D.M.}},
+		\bauthor{\bsnm{Salas}, \binits{R.}},
+		\bauthor{\bsnm{Villalobos}, \binits{I.}},
+		\bauthor{\bsnm{Ramos}, \binits{C.}},
+		\bauthor{\bsnm{Rico-Hesse}, \binits{R.}}, \betal:
+		\batitle{Dengue virus structural differences that correlate with pathogenesis}.
+		\bjtitle{Journal of virology}
+		\bvolume{73}(\bissue{6}),
+		\bfpage{4738}--\blpage{4747}
+		(\byear{1999})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 10
+	\bibitem{runge2008does}
+	\begin{barticle}
+		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
+		\bauthor{\bsnm{Horstick}, \binits{O.}},
+		\bauthor{\bsnm{Marx}, \binits{M.}},
+		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
+		\batitle{What does dengue disease surveillance contribute to predicting and
+			detecting outbreaks and describing trends?}
+		\bjtitle{Tropical Medicine \& International Health}
+		\bvolume{13}(\bissue{8}),
+		\bfpage{1022}--\blpage{1041}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 11
+	\bibitem{thammapalo2008environmental}
+	\begin{barticle}
+		\bauthor{\bsnm{Thammapalo}, \binits{S.}},
+		\bauthor{\bsnm{Chongsuvivatwong}, \binits{V.}},
+		\bauthor{\bsnm{Geater}, \binits{A.}},
+		\bauthor{\bsnm{Dueravee}, \binits{M.}}:
+		\batitle{Environmental factors and incidence of dengue fever and dengue
+			haemorrhagic fever in an urban area, southern thailand}.
+		\bjtitle{Epidemiology and Infection}
+		\bvolume{136}(\bissue{01}),
+		\bfpage{135}--\blpage{143}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 12
+	\bibitem{sarfraz2014near}
+	\begin{barticle}
+		\bauthor{\bsnm{Sarfraz}, \binits{M.S.}},
+		\bauthor{\bsnm{Tripathi}, \binits{N.K.}},
+		\bauthor{\bsnm{Kitamoto}, \binits{A.}}:
+		\batitle{Near real-time characterisation of urban environments: a holistic
+			approach for monitoring dengue fever risk areas}.
+		\bjtitle{International Journal of Digital Earth}
+		\bvolume{7}(\bissue{11}),
+		\bfpage{916}--\blpage{934}
+		(\byear{2014})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 13
+	\bibitem{scott2003aedes}
+	\begin{barticle}
+		\bauthor{\bsnm{Scott}, \binits{T.W.}},
+		\bauthor{\bsnm{Morrison}, \binits{A.C.}}:
+		\batitle{Aedes aegypti density and the risk of dengue-virus}.
+		\bjtitle{Ecol. Aspects Appl. Genet. Modi. Mosq}
+		\bvolume{2},
+		\bfpage{187}
+		(\byear{2003})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 14
+	\bibitem{alto2008larval}
+	\begin{barticle}
+		\bauthor{\bsnm{Alto}, \binits{B.W.}},
+		\bauthor{\bsnm{Lounibos}, \binits{L.P.}},
+		\bauthor{\bsnm{Mores}, \binits{C.N.}},
+		\bauthor{\bsnm{Reiskind}, \binits{M.H.}}:
+		\batitle{Larval competition alters susceptibility of adult aedes mosquitoes to
+			dengue infection}.
+		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
+		\bvolume{275}(\bissue{1633}),
+		\bfpage{463}--\blpage{471}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 15
+	\bibitem{syarifah2008ovitrap}
+	\begin{barticle}
+		\bauthor{\bsnm{Syarifah}, \binits{N.}},
+		\bauthor{\bsnm{Rusmatini}, \binits{T.}},
+		\bauthor{\bsnm{Djatie}, \binits{T.}},
+		\bauthor{\bsnm{Huda}, \binits{F.}}:
+		\batitle{Ovitrap ratio of aedes aegypti larvae collected inside and outside
+			houses in a community survey to prevent dengue outbreak, bandung, indonesia,
+			2007}.
+		\bjtitle{Proc Assoc Southeast Asian Nations Congr Trop Med Parasitolol}
+		\bvolume{3},
+		\bfpage{116}--\blpage{120}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 16
+	\bibitem{chareonviriyaphap2003larval}
+	\begin{botherref}
+		\oauthor{\bsnm{Chareonviriyaphap}, \binits{T.}},
+		\oauthor{\bsnm{Akratanakul}, \binits{P.}},
+		\oauthor{\bsnm{Nettanomsak}, \binits{S.}},
+		\oauthor{\bsnm{Huntamai}, \binits{S.}}:
+		Larval habitats and distribution patterns of aedes aegypti (linnaeus) and aedes
+		albopictus (skuse), in thailand.
+		(2003)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 17
+	\bibitem{raju2008application}
+	\begin{barticle}
+		\bauthor{\bsnm{Raju}, \binits{K.}},
+		\bauthor{\bsnm{Sokhi}, \binits{B.}}:
+		\batitle{Application of gis modeling for dengue fever prone area based on
+			socio-cultural and environmental factors--a case study of delhi city zone}.
+		\bjtitle{Int Arch Photogramm Remote Sens Spat Inf Sci}
+		\bvolume{37},
+		\bfpage{165}--\blpage{170}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 18
+	\bibitem{favier2005influence}
+	\begin{barticle}
+		\bauthor{\bsnm{Favier}, \binits{C.}},
+		\bauthor{\bsnm{Schmit}, \binits{D.}},
+		\bauthor{\bsnm{M{\"u}ller-Graf}, \binits{C.D.}},
+		\bauthor{\bsnm{Cazelles}, \binits{B.}},
+		\bauthor{\bsnm{Degallier}, \binits{N.}},
+		\bauthor{\bsnm{Mondet}, \binits{B.}},
+		\bauthor{\bsnm{Dubois}, \binits{M.A.}}:
+		\batitle{Influence of spatial heterogeneity on an emerging infectious disease:
+			the case of dengue epidemics}.
+		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
+		\bvolume{272}(\bissue{1568}),
+		\bfpage{1171}--\blpage{1177}
+		(\byear{2005})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 19
+	\bibitem{arunachalam2010eco}
+	\begin{barticle}
+		\bauthor{\bsnm{Arunachalam}, \binits{N.}},
+		\bauthor{\bsnm{Tana}, \binits{S.}},
+		\bauthor{\bsnm{Espino}, \binits{F.}},
+		\bauthor{\bsnm{Kittayapong}, \binits{P.}},
+		\bauthor{\bsnm{Abeyewickrem}, \binits{W.}},
+		\bauthor{\bsnm{Wai}, \binits{K.T.}},
+		\bauthor{\bsnm{Tyagi}, \binits{B.K.}},
+		\bauthor{\bsnm{Kroeger}, \binits{A.}},
+		\bauthor{\bsnm{Sommerfeld}, \binits{J.}},
+		\bauthor{\bsnm{Petzold}, \binits{M.}}:
+		\batitle{Eco-bio-social determinants of dengue vector breeding: a multicountry
+			study in urban and periurban asia}.
+		\bjtitle{Bulletin of the World Health Organization}
+		\bvolume{88}(\bissue{3}),
+		\bfpage{173}--\blpage{184}
+		(\byear{2010})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 20
+	\bibitem{chang2009combining}
+	\begin{barticle}
+		\bauthor{\bsnm{Chang}, \binits{A.Y.}},
+		\bauthor{\bsnm{Parrales}, \binits{M.E.}},
+		\bauthor{\bsnm{Jimenez}, \binits{J.}},
+		\bauthor{\bsnm{Sobieszczyk}, \binits{M.E.}},
+		\bauthor{\bsnm{Hammer}, \binits{S.M.}},
+		\bauthor{\bsnm{Copenhaver}, \binits{D.J.}},
+		\bauthor{\bsnm{Kulkarni}, \binits{R.P.}}:
+		\batitle{Combining google earth and gis mapping technologies in a dengue
+			surveillance system for developing countries}.
+		\bjtitle{International journal of health geographics}
+		\bvolume{8}(\bissue{1}),
+		\bfpage{49}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 21
+	\bibitem{knudsen1992vector}
+	\begin{barticle}
+		\bauthor{\bsnm{Knudsen}, \binits{A.B.}},
+		\bauthor{\bsnm{Slooff}, \binits{R.}}:
+		\batitle{Vector-borne disease problems in rapid urbanization: new approaches to
+			vector control.}
+		\bjtitle{Bulletin of the World Health Organization}
+		\bvolume{70}(\bissue{1}),
+		\bfpage{1}
+		(\byear{1992})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 22
+	\bibitem{troyo2009urban}
+	\begin{barticle}
+		\bauthor{\bsnm{Troyo}, \binits{A.}},
+		\bauthor{\bsnm{Fuller}, \binits{D.O.}},
+		\bauthor{\bsnm{Calder{\'o}n-Arguedas}, \binits{O.}},
+		\bauthor{\bsnm{Solano}, \binits{M.E.}},
+		\bauthor{\bsnm{Beier}, \binits{J.C.}}:
+		\batitle{Urban structure and dengue incidence in puntarenas, costa rica}.
+		\bjtitle{Singapore journal of tropical geography}
+		\bvolume{30}(\bissue{2}),
+		\bfpage{265}--\blpage{282}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 23
+	\bibitem{nakhapakorn2005information}
+	\begin{barticle}
+		\bauthor{\bsnm{Nakhapakorn}, \binits{K.}},
+		\bauthor{\bsnm{Tripathi}, \binits{N.K.}}:
+		\batitle{An information value based analysis of physical and climatic factors
+			affecting dengue fever and dengue haemorrhagic fever incidence}.
+		\bjtitle{International Journal of Health Geographics}
+		\bvolume{4}(\bissue{1}),
+		\bfpage{13}
+		(\byear{2005})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 24
+	\bibitem{WPR2015}
+	\begin{botherref}
+		\oauthor{\bsnm{{World Population Review}}}:
+		Bangkok Population 2015.
+		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
+		Accessed 2016-01-18
+		(2015)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 25
+	\bibitem{stoddard2014long}
+	\begin{barticle}
+		\bauthor{\bsnm{Stoddard}, \binits{S.T.}},
+		\bauthor{\bsnm{Wearing}, \binits{H.J.}},
+		\bauthor{\bsnm{Reiner~Jr}, \binits{R.C.}},
+		\bauthor{\bsnm{Morrison}, \binits{A.C.}},
+		\bauthor{\bsnm{Astete}, \binits{H.}},
+		\bauthor{\bsnm{Vilcarromero}, \binits{S.}},
+		\bauthor{\bsnm{Alvarez}, \binits{C.}},
+		\bauthor{\bsnm{Ramal-Asayag}, \binits{C.}},
+		\bauthor{\bsnm{Sihuincha}, \binits{M.}},
+		\bauthor{\bsnm{Rocha}, \binits{C.}}, \betal:
+		\batitle{Long-term and seasonal dynamics of dengue in iquitos, peru}.
+		\bjtitle{PLoS Negl Trop Dis}
+		\bvolume{8}(\bissue{7}),
+		\bfpage{3003}
+		(\byear{2014})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 26
+	\bibitem{lambrechts2011impact}
+	\begin{barticle}
+		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
+		\bauthor{\bsnm{Paaijmans}, \binits{K.P.}},
+		\bauthor{\bsnm{Fansiri}, \binits{T.}},
+		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
+		\bauthor{\bsnm{Kramer}, \binits{L.D.}},
+		\bauthor{\bsnm{Thomas}, \binits{M.B.}},
+		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
+		\batitle{Impact of daily temperature fluctuations on dengue virus transmission
+			by aedes aegypti}.
+		\bjtitle{Proceedings of the National Academy of Sciences}
+		\bvolume{108}(\bissue{18}),
+		\bfpage{7460}--\blpage{7465}
+		(\byear{2011})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 27
+	\bibitem{carrington2013reduction}
+	\begin{barticle}
+		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
+		\bauthor{\bsnm{Seifert}, \binits{S.N.}},
+		\bauthor{\bsnm{Armijos}, \binits{M.V.}},
+		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
+		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
+		\batitle{Reduction of aedes aegypti vector competence for dengue virus under
+			large temperature fluctuations}.
+		\bjtitle{The American journal of tropical medicine and hygiene}
+		\bvolume{88}(\bissue{4}),
+		\bfpage{689}--\blpage{697}
+		(\byear{2013})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 28
+	\bibitem{sulaiman1996relationship}
+	\begin{barticle}
+		\bauthor{\bsnm{Sulaiman}, \binits{S.}},
+		\bauthor{\bsnm{Pawanchee}, \binits{Z.A.}},
+		\bauthor{\bsnm{Arifin}, \binits{Z.}},
+		\bauthor{\bsnm{Wahab}, \binits{A.}}:
+		\batitle{Relationship between breteau and house indices and cases of
+			dengue/dengue hemorrhagic fever in kuala lumpur, malaysia}.
+		\bjtitle{American Mosquito Control Association}
+		\bvolume{12},
+		\bfpage{494}--\blpage{496}
+		(\byear{1996})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 29
+	\bibitem{halstead2008dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Halstead}, \binits{S.B.}}:
+		\batitle{Dengue virus-mosquito interactions}.
+		\bjtitle{Annu. Rev. Entomol.}
+		\bvolume{53},
+		\bfpage{273}--\blpage{291}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 30
+	\bibitem{esteva2000influence}
+	\begin{barticle}
+		\bauthor{\bsnm{Esteva}, \binits{L.}},
+		\bauthor{\bsnm{Vargas}, \binits{C.}}:
+		\batitle{Influence of vertical and mechanical transmission on the dynamics of
+			dengue disease}.
+		\bjtitle{Mathematical biosciences}
+		\bvolume{167}(\bissue{1}),
+		\bfpage{51}--\blpage{64}
+		(\byear{2000})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 31
+	\bibitem{adams2006cross}
+	\begin{barticle}
+		\bauthor{\bsnm{Adams}, \binits{B.}},
+		\bauthor{\bsnm{Holmes}, \binits{E.}},
+		\bauthor{\bsnm{Zhang}, \binits{C.}},
+		\bauthor{\bsnm{Mammen}, \binits{M.}},
+		\bauthor{\bsnm{Nimmannitya}, \binits{S.}},
+		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
+		\bauthor{\bsnm{Boots}, \binits{M.}}:
+		\batitle{Cross-protective immunity can account for the alternating epidemic
+			pattern of dengue virus serotypes circulating in bangkok}.
+		\bjtitle{Proceedings of the National Academy of Sciences}
+		\bvolume{103}(\bissue{38}),
+		\bfpage{14234}--\blpage{14239}
+		(\byear{2006})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 32
+	\bibitem{cummings2009impact}
+	\begin{barticle}
+		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
+		\bauthor{\bsnm{Iamsirithaworn}, \binits{S.}},
+		\bauthor{\bsnm{Lessler}, \binits{J.T.}},
+		\bauthor{\bsnm{McDermott}, \binits{A.}},
+		\bauthor{\bsnm{Prasanthong}, \binits{R.}},
+		\bauthor{\bsnm{Nisalak}, \binits{A.}},
+		\bauthor{\bsnm{Jarman}, \binits{R.G.}},
+		\bauthor{\bsnm{Burke}, \binits{D.S.}},
+		\bauthor{\bsnm{Gibbons}, \binits{R.V.}}, \betal:
+		\batitle{The impact of the demographic transition on dengue in thailand:
+			insights from a statistical analysis and mathematical modeling}.
+		\bjtitle{PLoS medicine}
+		\bvolume{6}(\bissue{9}),
+		\bfpage{999}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 33
+	\bibitem{whodenvsym2015}
+	\begin{botherref}
+		\oauthor{\bsnm{WHO}}:
+		Human Dengue Symptoms.
+		\url{http://www.who.int/denguecontrol/human/en/}.
+		Accessed 2015-11-19
+		(2015)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 34
+	\bibitem{gubler2002epidemic}
+	\begin{barticle}
+		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+		\batitle{Epidemic dengue/dengue hemorrhagic fever as a public health, social
+			and economic problem in the 21st century}.
+		\bjtitle{Trends in microbiology}
+		\bvolume{10}(\bissue{2}),
+		\bfpage{100}--\blpage{103}
+		(\byear{2002})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 35
+	\bibitem{gubler2004cities}
+	\begin{barticle}
+		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+		\batitle{Cities spawn epidemic dengue viruses}.
+		\bjtitle{Nature medicine}
+		\bvolume{10}(\bissue{2}),
+		\bfpage{129}--\blpage{130}
+		(\byear{2004})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 36
+	\bibitem{anuradha19981996}
+	\begin{botherref}
+		\oauthor{\bsnm{Anuradha}, \binits{S.}},
+		\oauthor{\bsnm{Singh}, \binits{N.}},
+		\oauthor{\bsnm{Rizvi}, \binits{S.}},
+		\oauthor{\bsnm{Agarwal}, \binits{S.}},
+		\oauthor{\bsnm{Gur}, \binits{R.}},
+		\oauthor{\bsnm{Mathur}, \binits{M.}}:
+		The 1996 outbreak of dengue hemorrhagic fever in delhi, india.
+		(1998)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 37
+	\bibitem{vaughn2000invited}
+	\begin{barticle}
+		\bauthor{\bsnm{Vaughn}, \binits{D.W.}}:
+		\batitle{Invited commentary: Dengue lessons from cuba}.
+		\bjtitle{American Journal of Epidemiology}
+		\bvolume{152}(\bissue{9}),
+		\bfpage{800}--\blpage{803}
+		(\byear{2000})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 38
+	\bibitem{ooi2009dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Ooi}, \binits{E.-E.}},
+		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+		\batitle{Dengue in southeast asia: epidemiological characteristics and
+			strategic challenges in disease prevention}.
+		\bjtitle{Cadernos de saude publica}
+		\bvolume{25},
+		\bfpage{115}--\blpage{124}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 39
+	\bibitem{guzman2004dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
+		\bauthor{\bsnm{Kour{\i}'} \binits{G.}}:
+		\batitle{Dengue diagnosis, advances and challenges}.
+		\bjtitle{International journal of infectious diseases}
+		\bvolume{8}(\bissue{2}),
+		\bfpage{69}--\blpage{80}
+		(\byear{2004})
+	\end{barticle}
+	\endbibitem  
+	
+	%%% 40
+	\bibitem{erlanger2008effect}
+	\begin{barticle}
+		\bauthor{\bsnm{Erlanger}, \binits{T.}},
+		\bauthor{\bsnm{Keiser}, \binits{J.}},
+		\bauthor{\bsnm{Utzinger}, \binits{J.}}:
+		\batitle{Effect of dengue vector control interventions on entomological
+			parameters in developing countries: a systematic review and meta-analysis}.
+		\bjtitle{Medical and veterinary entomology}
+		\bvolume{22}(\bissue{3}),
+		\bfpage{203}--\blpage{221}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 41
+	\bibitem{horstick2010dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Horstick}, \binits{O.}},
+		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
+		\bauthor{\bsnm{Nathan}, \binits{M.B.}},
+		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
+		\batitle{Dengue vector-control services: how do they work? a systematic
+			literature review and country case studies}.
+		\bjtitle{Transactions of the Royal Society of Tropical Medicine and Hygiene}
+		\bvolume{104}(\bissue{6}),
+		\bfpage{379}--\blpage{386}
+		(\byear{2010})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 42
+	\bibitem{vanlerberghe2009community}
+	\begin{barticle}
+		\bauthor{\bsnm{Vanlerberghe}, \binits{V.}},
+		\bauthor{\bsnm{Toledo}, \binits{M.}},
+		\bauthor{\bsnm{Rodriguez}, \binits{M.}},
+		\bauthor{\bsnm{Gomez}, \binits{D.}},
+		\bauthor{\bsnm{Baly}, \binits{A.}},
+		\bauthor{\bsnm{Benitez}, \binits{J.}},
+		\bauthor{\bsnm{Van Der~Stuyft}, \binits{P.}}:
+		\batitle{Community involvement in dengue vector control: cluster randomised
+			trial}.
+		\bjtitle{Bmj}
+		\bvolume{338},
+		\bfpage{1959}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 43
+	\bibitem{luz2011dengue}
+	\begin{barticle}
+		\bauthor{\bsnm{Luz}, \binits{P.M.}},
+		\bauthor{\bsnm{Vanni}, \binits{T.}},
+		\bauthor{\bsnm{Medlock}, \binits{J.}},
+		\bauthor{\bsnm{Paltiel}, \binits{A.D.}},
+		\bauthor{\bsnm{Galvani}, \binits{A.P.}}:
+		\batitle{Dengue vector control strategies in an urban setting: an economic
+			modelling assessment}.
+		\bjtitle{The Lancet}
+		\bvolume{377}(\bissue{9778}),
+		\bfpage{1673}--\blpage{1680}
+		(\byear{2011})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 44
+	\bibitem{tatem2006global}
+	\begin{barticle}
+		\bauthor{\bsnm{Tatem}, \binits{A.J.}},
+		\bauthor{\bsnm{Hay}, \binits{S.I.}},
+		\bauthor{\bsnm{Rogers}, \binits{D.J.}}:
+		\batitle{Global traffic and disease vector dispersal}.
+		\bjtitle{Proceedings of the National Academy of Sciences}
+		\bvolume{103}(\bissue{16}),
+		\bfpage{6242}--\blpage{6247}
+		(\byear{2006})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 45
+	\bibitem{wwo2012}
+	\begin{botherref}
+		\oauthor{\bsnm{{World Weather Online}}}:
+		Bangkok average temperature and rain from year 2000 to 2012.
+		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
+		Accessed 2016-01-18
+		(2012)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 46
+	\bibitem{johansson2009multiyear}
+	\begin{barticle}
+		\bauthor{\bsnm{Johansson}, \binits{M.A.}},
+		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
+		\bauthor{\bsnm{Glass}, \binits{G.E.}}:
+		\batitle{Multiyear climate variability and dengue—el nino southern
+			oscillation, weather, and dengue incidence in puerto rico, mexico, and
+			thailand: a longitudinal data analysis}.
+		\bjtitle{PLoS Med}
+		\bvolume{6}(\bissue{11}),
+		\bfpage{1000168}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 47
+	\bibitem{morin2013climate}
+	\begin{barticle}
+		\bauthor{\bsnm{Morin}, \binits{C.W.}},
+		\bauthor{\bsnm{Comrie}, \binits{A.C.}},
+		\bauthor{\bsnm{Ernst}, \binits{K.}}:
+		\batitle{Climate and dengue transmission: evidence and implications}.
+		\bjtitle{Environmental Health Perspectives (Online)}
+		\bvolume{121}(\bissue{11-12}),
+		\bfpage{1264}
+		(\byear{2013})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 48
+	\bibitem{thai2011role}
+	\begin{barticle}
+		\bauthor{\bsnm{Thai}, \binits{K.T.}},
+		\bauthor{\bsnm{Anders}, \binits{K.L.}}:
+		\batitle{The role of climate variability and change in the transmission
+			dynamics and geographic distribution of dengue}.
+		\bjtitle{Experimental Biology and Medicine}
+		\bvolume{236}(\bissue{8}),
+		\bfpage{944}--\blpage{954}
+		(\byear{2011})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 49
+	\bibitem{denguethai2015}
+	\begin{botherref}
+		\oauthor{\bparticle{of} \bsnm{Vector-Borne Diseases~Thailand}, \binits{B.}}:
+		Dengue fever situation in Thailand.
+		\url{http://www.thaivbd.org}.
+		Accessed 2015-12-1
+		(2015)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 50
+	\bibitem{Rsoftware}
+	\begin{bbook}
+		\bauthor{\bsnm{{R Core Team}}}:
+		\bbtitle{R: A Language and Environment for Statistical Computing}.
+		\bpublisher{R Foundation for Statistical Computing},
+		\blocation{Vienna, Austria}
+		(\byear{2016}).
+		\bcomment{R Foundation for Statistical Computing}.
+		\burl{https://www.R-project.org/}
+	\end{bbook}
+	\endbibitem
+	
+	%%% 51
+	\bibitem{mgcv}
+	\begin{bbook}
+		\bauthor{\bsnm{Wood}, \binits{S.N.}}:
+		\bbtitle{Generalized Additive Models: An Introduction with R}.
+		\bpublisher{Chapman and Hall/CRC}, \blocation{???}
+		(\byear{2006})
+	\end{bbook}
+	\endbibitem
+	
+	%%% 52
+	\bibitem{ramadona2016prediction}
+	\begin{barticle}
+		\bauthor{\bsnm{Ramadona}, \binits{A.L.}},
+		\bauthor{\bsnm{Lazuardi}, \binits{L.}},
+		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
+		\bauthor{\bsnm{Holmner}, \binits{{\AA}.}},
+		\bauthor{\bsnm{Kusnanto}, \binits{H.}},
+		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}}:
+		\batitle{Prediction of dengue outbreaks based on disease surveillance and
+			meteorological data}.
+		\bjtitle{PloS one}
+		\bvolume{11}(\bissue{3}),
+		\bfpage{0152688}
+		(\byear{2016})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 53
+	\bibitem{hii2012optimal}
+	\begin{barticle}
+		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
+		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}},
+		\bauthor{\bsnm{Wall}, \binits{S.}},
+		\bauthor{\bsnm{Ng}, \binits{L.C.}},
+		\bauthor{\bsnm{Tang}, \binits{C.S.}},
+		\bauthor{\bsnm{Ng}, \binits{N.}}:
+		\batitle{Optimal lead time for dengue forecast}.
+		\bjtitle{PLoS Negl Trop Dis}
+		\bvolume{6}(\bissue{10}),
+		\bfpage{1848}
+		(\byear{2012})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 54
+	\bibitem{reich2013interactions}
+	\begin{barticle}
+		\bauthor{\bsnm{Reich}, \binits{N.G.}},
+		\bauthor{\bsnm{Shrestha}, \binits{S.}},
+		\bauthor{\bsnm{King}, \binits{A.A.}},
+		\bauthor{\bsnm{Rohani}, \binits{P.}},
+		\bauthor{\bsnm{Lessler}, \binits{J.}},
+		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
+		\bauthor{\bsnm{Yoon}, \binits{I.-K.}},
+		\bauthor{\bsnm{Gibbons}, \binits{R.V.}},
+		\bauthor{\bsnm{Burke}, \binits{D.S.}},
+		\bauthor{\bsnm{Cummings}, \binits{D.A.}}:
+		\batitle{Interactions between serotypes of dengue highlight epidemiological
+			impact of cross-immunity}.
+		\bjtitle{Journal of The Royal Society Interface}
+		\bvolume{10}(\bissue{86}),
+		\bfpage{20130414}
+		(\byear{2013})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 55
+	\bibitem{gasparrini2010distributed}
+	\begin{barticle}
+		\bauthor{\bsnm{Gasparrini}, \binits{A.}},
+		\bauthor{\bsnm{Armstrong}, \binits{B.}},
+		\bauthor{\bsnm{Kenward}, \binits{M.G.}}:
+		\batitle{Distributed lag non-linear models}.
+		\bjtitle{Statistics in medicine}
+		\bvolume{29}(\bissue{21}),
+		\bfpage{2224}--\blpage{2234}
+		(\byear{2010})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 56
+	\bibitem{mondini2008spatial}
+	\begin{barticle}
+		\bauthor{\bsnm{Mondini}, \binits{A.}},
+		\bauthor{\bsnm{Chiaravalloti-Neto}, \binits{F.}}:
+		\batitle{Spatial correlation of incidence of dengue with socioeconomic,
+			demographic and environmental variables in a brazilian city}.
+		\bjtitle{Science of the Total Environment}
+		\bvolume{393}(\bissue{2}),
+		\bfpage{241}--\blpage{248}
+		(\byear{2008})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 57
+	\bibitem{wu2009higher}
+	\begin{barticle}
+		\bauthor{\bsnm{Wu}, \binits{P.-C.}},
+		\bauthor{\bsnm{Lay}, \binits{J.-G.}},
+		\bauthor{\bsnm{Guo}, \binits{H.-R.}},
+		\bauthor{\bsnm{Lin}, \binits{C.-Y.}},
+		\bauthor{\bsnm{Lung}, \binits{S.-C.}},
+		\bauthor{\bsnm{Su}, \binits{H.-J.}}:
+		\batitle{Higher temperature and urbanization affect the spatial patterns of
+			dengue fever transmission in subtropical taiwan}.
+		\bjtitle{Science of the total Environment}
+		\bvolume{407}(\bissue{7}),
+		\bfpage{2224}--\blpage{2233}
+		(\byear{2009})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 58
+	\bibitem{gasparrini2011distributed}
+	\begin{barticle}
+		\bauthor{\bsnm{Gasparrini}, \binits{A.}}:
+		\batitle{Distributed lag linear and non-linear models in r: the package dlnm}.
+		\bjtitle{Journal of statistical software}
+		\bvolume{43}(\bissue{8}),
+		\bfpage{1}
+		(\byear{2011})
+	\end{barticle}
+	\endbibitem
+	
+	%%% 59
+	\bibitem{satterthwaite1997environmental}
+	\begin{botherref}
+		\oauthor{\bsnm{Satterthwaite}, \binits{D.}}:
+		Environmental transformations in cities as they get larger, wealthier and
+		better managed.
+		Geographical Journal,
+		216--224
+		(1997)
+	\end{botherref}
+	\endbibitem
+	
+	%%% 60
+	\bibitem{world2009dengue}
+	\begin{bbook}
+		\bauthor{\bsnm{Organization}, \binits{W.H.}},
+		\bauthor{\bparticle{for} \bsnm{Research}, \binits{S.P.}},
+		\bauthor{\bparticle{in} \bsnm{Tropical~Diseases}, \binits{T.}},
+		\bauthor{\bparticle{of~Control~of} \bsnm{Neglected Tropical~Diseases},
+			\binits{W.H.O.D.}},
+		\bauthor{\bsnm{Epidemic}, \binits{W.H.O.}},
+		\bauthor{\bsnm{Alert}, \binits{P.}}:
+		\bbtitle{Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control}.
+		\bpublisher{World Health Organization}, \blocation{???}
+		(\byear{2009})
+	\end{bbook}
+	\endbibitem
+	
+\end{thebibliography}
+
+
+
+ % force a pagebreak and flush all deferred `table` and `figure` environments
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+
+    
+    
+\pagebreak    
+
+\textbf{Appendix}
+
+%\textbf{Initial Analyses Summary}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
+	\label{tab:metValues}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\multicolumn{5}{ |c| }{\textbf{Results}} \\
+		\hline
+		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{ Lag 2} & \textbf{Lag 3} \\ \hline
+		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
+		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
+		\hline
+		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
+		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
+		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
+		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
+	\end{tabular}
+\end{table}
+
+
+%\textbf{Cross-correlation between the Outcome and the Predictors} 
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=120mm]{23-Cross-Cor-1}
+		\caption{Cross-correlation between the Outcome and the Predictors.}
+		\label{figure-Cross-Cor-1}
+	\end{center}
+\end{figure}
+
+
+%
+%\textbf{Lag-Response }
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{24-LagResposeLongLagMany}
+		\caption{Association of different units of increase in the number of dengue cases \\ with the specified number of months.}
+		\label{fig:multipleRRlongLag}
+	\end{center}
+\end{figure}
+
+
+
+%\section{Initial Analyses Summary} \label{app:a}
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
+	\label{tab:metValues}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\multicolumn{5}{ |c| }{\textbf{Results}} \\
+		\hline
+		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{ Lag 2} & \textbf{Lag 3} \\ \hline
+		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
+		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
+		\hline
+		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
+		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
+		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
+		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
+	\end{tabular}
+\end{table}
+
+
+
+
+
+%
+%\section{Lag-Response } 
+
+
+
+
+
+\end{backmatter}
+\end{document}
