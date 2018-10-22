@@ -97,7 +97,7 @@
 
 \usepackage{enumitem}
 
-%\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
+\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
 \newcolumntype{M}[1]{D{.}{.}{1.#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -371,7 +371,7 @@ Despite the numerous urban outbreaks of dengue with significant health and econo
 \subsection{Study Area}
 
 
-The dengue outbreak in Bangkok can affect to dengue situation for the whole country because Bangkok is a very crowded city located at the center part of Thailand. In the 2010 census, the population of Bangkok was about 8.28 million, although just 5.7 million were the registered residents. The population within the city during the day swells to about to 15 million \cite{WPR2015} due to the commuters from the surrounding areas. During a winter season, the temperature in Bangkok is still high around 28-35 degree Celsius and there is rain in every season \cite{wwo2012}. Figures \ref{figure-avg_temp_bangkok} and \ref{figure-avg_rain_bangkok} show the mean monthly diurnal temperature range (DTR) and cumulative monthly rainfall of Bangkok throughout the years ($2008-2015$).  The diurnal temperature range (DTR) is the difference between the daily maximum and minimum temperature. The experimental evaluation has shown that DTR influences two important parameters underlying dengue virus (DENV) transmission by Aedes mosquito \cite{lambrechts2011impact}. 
+The dengue outbreak in Bangkok can influence the dengue situation for the whole country because Bangkok is a very crowded city located at the center of Thailand. In the 2010 census, the population of Bangkok was about 8.28 million, although only about 5.7 million were the registered residents. The population within the city during the day swells to about to 15 million \cite{WPR2015} due to the commuters from the surrounding areas. During a winter season, the temperature in Bangkok is still high around 28-35 degree Celsius and there is rain in every season \cite{wwo2012}. Figures \ref{figure-avg_rain_bangkok} and \ref{figure-avg_temp_bangkok} show the cumulative monthly rainfall and mean monthly diurnal temperature range (DTR) of Bangkok throughout the years ($2008-2015$).  The diurnal temperature range (DTR) is the difference between the daily maximum and minimum temperature. The experimental evaluation has shown that DTR influences two important parameters underlying dengue virus (DENV) transmission by Aedes mosquito \cite{lambrechts2011impact}. 
 
 
 \begin{figure}[htbp]
@@ -521,13 +521,13 @@ log (C_{0,t}) \sim \alpha  +  \sum_{l=1}^{4} ns(S_ {lt}, d =3) + \sum_{l=0}^{30}
 \end{equation}
 
 
-where log() denotes the natural logarithm, \textit{C} represents the total dengue count data, \textit{S} represents the count data of dengue incidence occurred in the surrounding districts, \textit{t} denotes to time in months, \textit{l} denotes the lag variables and ns() denotes a natural cubic spline. \\
+where log() denotes the natural logarithm, \textit{C} represents the total dengue count data, \hl{\textit{S} represents the count data of dengue incidence occurred in the surrounding districts}, \textit{t} denotes to time in months, \textit{l} denotes the lag variables and ns() denotes a natural cubic spline. \\
 
 \textbf{Waste disposal data from each district as predictor} Previous studies have shown the spatial correlation of socioeconomic data and urbanization with dengue incidences \cite{mondini2008spatial,wu2009higher}. Since the waste disposal and landfill dumps are the spatial infrastructures of any modern city, we used the data about monthly garbage collection from each district as an indicator for social capital. 
 
 Thus using the above-mentioned predictors, we evaluated the following models: 
 \begin{enumerate}[label=(\Alph*)]
-	\item Optimal Meteorology Model (includes lag of 0-4 months for DTR and mean monthly rainfall)
+	\item Optimal Meteorology Model (includes lag of 0\textendash4 months for DTR and mean monthly rainfall)
 	\item Short-term Surveillance Model (may include lag of $1-4$ months)
 	\item Optimal Lag Model (may include lag of $1-30$ months)
 	\item Combination of (A) and (C)
@@ -1696,7 +1696,7 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 	\begin{bbook}
 		\bauthor{\bsnm{Wood}, \binits{S.N.}}:
 		\bbtitle{Generalized Additive Models: An Introduction with R}.
-		\bpublisher{Chapman and Hall/CRC}, \blocation{???}
+		\bpublisher{Chapman and Hall/CRC}
 		(\byear{2006})
 	\end{bbook}
 	\endbibitem
@@ -1839,7 +1839,7 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 		\bauthor{\bsnm{Epidemic}, \binits{W.H.O.}},
 		\bauthor{\bsnm{Alert}, \binits{P.}}:
 		\bbtitle{Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control}.
-		\bpublisher{World Health Organization}, \blocation{???}
+		\bpublisher{World Health Organization}
 		(\byear{2009})
 	\end{bbook}
 	\endbibitem
