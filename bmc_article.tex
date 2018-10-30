@@ -575,13 +575,13 @@ As shown in Figure~\ref{figure-Cross-Cor-1} the cross-correlation indicate that 
 As shown in Figure~\ref{figure-DDShort-1} the analyses performed using the data of lagged dengue incidences, when lag terms of 1-4 months were included, show that dengue transmission increases almost linearly with the lagged dengue incidences at lag 1 and lag 2 till the dengue count is less than 30. Afterwards as well as non-linear increasing trend is observed. While, dengue cases linearly decrease with lag 3 and lag 4 and these terms were not statistical significant (p \textgreater 0.05). Thus, for a model in which lag-terms of up to 2 months were included is termed as `Short-term Lag Surveillance' model (model B). The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.4, RMSE is 7.9 and SRMSE is 0.49. The `Deviance Explained' is 41.0\%. The visual analyses of the prediction of the `Short-term Lag Surveillance' model is shown in Figure~\ref{fig:test2}. 
 
 
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width= 1.0\textwidth]{7-Fit-ShortLag}
-		\caption{\textbf{Short-term Lag Model}: Association between past dengue count over lags of \\ 1-4 months and the dengue outbreak. Solid lines depict relative risks (RR) of dengue  \\ cases while the upper and lower limits of 95\% confidence intervals are shown  by the \\ dotted lines.}
-		\label{figure-DDShort-1}
-	\end{center}
-\end{figure}
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width= 1.0\textwidth]{7-Fit-ShortLag}
+%		\caption{\textbf{Short-term Lag Model}: Association between past dengue count over lags of \\ 1-4 months and the dengue outbreak. Solid lines depict relative risks (RR) of dengue  \\ cases while the upper and lower limits of 95\% confidence intervals are shown  by the \\ dotted lines.}
+%		\label{figure-DDShort-1}
+%	\end{center}
+%\end{figure}
 
 
 Meanwhile, when the long-term lagged dengue incidence data was taken into account, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. The influence of long-term lagged data of dengue incidences is shown using the contour plot in Figure~\ref{fig:targetContour}. It is observed that lagged long-term data has lower relative risks of transmission up to almost 2 years following a large outbreak in around lag 24. This suggests a negative feedback cyclic pattern. Figure~\ref{fig:lagPeak} suggests that when an outbreak happens in a particular month then dengue risk in each of the following months will increase with a peak in next 23 months (Figure~\ref{fig:lagPeak}). Both Figure~\ref{fig:lagPeak} and Figure~\ref{fig:multipleRRlongLag} are the lag-response curve for the differing number of dengue cases after an outbreak happens in a specified month. 
@@ -619,13 +619,13 @@ Figure~\ref{fig:surroundingDistrictContour} suggests that when a large outbreak 
 The association of these terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. It is observed that for short-term lagged data of dengue cases of surrounding districts the association with dengue transmission in the target district is almost linear. For lag 1, transmission increases while for lag 2 it decreases. However, for long-term lagged data (lag 12) the association slightly decreases for a small number of dengue cases (up to about 75 cases) and then modestly increases before being constant. The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.71, RMSE is 5.55 and SRMSE is 0.34. The `Deviance Explained' is 72.0\%. The visual analyses of the prediction of the `Optimal Representation' model is shown in Figure~\ref{fig:test5}. 
 
 
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width= 1.0\textwidth]{10-Contour-SurroundingLongLag}
-		\caption{Contour plot of the relative risks of transmission of dengue in a target district \\ up to 30 months following a larger outbreak of dengue in its surrounding districts in a \\ specified month.}
-		\label{fig:surroundingDistrictContour}
-	\end{center}
-\end{figure}
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width= 1.0\textwidth]{10-Contour-SurroundingLongLag}
+%		\caption{Contour plot of the relative risks of transmission of dengue in a target district \\ up to 30 months following a larger outbreak of dengue in its surrounding districts in a \\ specified month.}
+%		\label{fig:surroundingDistrictContour}
+%	\end{center}
+%\end{figure}
 
 
 \begin{figure}[h!]
@@ -686,19 +686,18 @@ The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases an
 
 \begin{table}
 	\centering
-	\begin{tabular}{|lcccc|}
+	\begin{tabular}{|lccccc|}
 		\hline
-		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} \\ 
+		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \textbf{$\Delta$ AIC} \\ 
 		\hline
-		A: Meteorology Optimal & 8.46 & 0.52 & 0.28 & 0.32 \\ 
-		B: Short-term Lag Surveillance Model  & 7.90 & 0.49 & 0.40 & 0.41 \\ 
-		C: Optimal Lag Surveillance Model  & 7.07 & 0.43 & 0.53 & 0.53 \\ 
-		D: Optimal Met and Lag Surveillance Model  & 5.72 & 0.35 & 0.69 & 0.70 \\ 
-		E: Optimal Representation Model & 5.55 & 0.34 & 0.71 & 0.72 \\ 
-		F: Social-economic data Included & 5.54 & 0.34 & 0.71 & 0.77 \\ 
+		A: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & 0\\ 
+		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2201.8 \\ 
+		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2555.5\\ 
+		E: Optimal Representation Model & 6.15 & 0.37 & 0.64 & 0.66 & -2549.8\\ 
+		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2546.1 \\ 
 		\hline
 	\end{tabular}
-	\caption{Predictive performance statistics of different models evaluated on the training data. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).) }
+	\caption{Predictive performance statistics of different models evaluated on the training data for the same time period. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).) }
 	\label{resultsPrediction}
 \end{table}
 
@@ -769,13 +768,13 @@ The discriminating ability of model E was evaluated against our specified thresh
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|cp{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}|}
+	\begin{tabular}{|cp{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}|}
 		\hline
-		\textbf{Training Dataset} & \textbf{In-sample} & \textbf{Out-Sample} (2013-2015) & \textbf{Out-Sample} (2014-2015) & \textbf{Out-Sample} (2013) &\textbf{Out-Sample} (2014) & \textbf{Out-Sample} (2015) \\ 
+		\textbf{Training Dataset} & \textbf{In-sample} &  \textbf{Out-Sample} (2014-2015) & \textbf{Out-Sample} (2014) & \textbf{Out-Sample} (2015) \\ 
 		\hline
-		\textbf{2008-2012} & 0.37 & 303.28 & 410.74 & 21.66 & 1.43 & 437.50 \\ 
-		\textbf{2008-2013} & 0.38 &  & 0.56 &  & 0.32 & 0.54 \\ 
-		\textbf{2008-2014} & 0.39 &  &  &  &  & 0.49 \\ 
+%		\textbf{2008-2012} & 0.37 & 303.28 & 410.74 & 21.66 & 1.43 & 437.50 \\ 
+		\textbf{2008-2013} & 0.41 &  0.62 &  0.35 & 0.60 \\ 
+		\textbf{2008-2014} & 0.41 &       &       & 0.54 \\ 
 		\hline
 	\end{tabular}
 	\caption{Predictive performance statistics of most optimal model evaluated on validation data sets is measured in SRMSE.}
