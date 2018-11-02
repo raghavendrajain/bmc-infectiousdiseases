@@ -630,7 +630,7 @@ The association of these terms with dengue transmission is shown in Figure~\ref{
 
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[width= 0.97 \textwidth]{11-Fit-OptimalModel}
+		\includegraphics[width= 0.97 \textwidth]{Fit-OptimalRepresentation+Garbage}
 		\caption{\textbf{The optimal model:} Association between the meteorological variables, \\ past dengue count over optimal lags within 1-30 months, surrounding district count \\  over 0\textendash30 months and the dengue outbreak. Solid lines represent relative risks (RR) \\ of dengue cases whereas the dotted lines depict the upper and lower limits of 95\% \\ confidence intervals.}
 		\label{figure-mostOptimalFit}
 	\end{center}
@@ -642,43 +642,46 @@ The association of these terms with dengue transmission is shown in Figure~\ref{
 	\begin{minipage}[c]{1.0\textwidth}
 		\vspace*{\fill}
 		\centering
-		\includegraphics[width=10cm,height=3.8cm]{12-Pred-MetOptimal}
-		\subcaption{Only Rainfall and DTR data with statistical significance (past 4 months)was used.}
+		\includegraphics[width=9cm,height=3.9cm]{Pred-SeasonalNaive}
+%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
+		\label{fig:testnaive}\par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-MetOptimal}
+%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
 		\label{fig:test1}\par\vfill
-		\includegraphics[width=10cm,height=3.8cm]{13-Pred-ShortTerm}
-		\subcaption{The data of dengue counts of districts from optimal short-lag (i.e. past 2 months) was used. }
+		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalLag}
+%		\subcaption{Optimal short-lagged (lag 1, lag 2) \& long-lagged (lag 23) DHF count for invidual districts.}
 		\label{fig:test2} \par\vfill
-		\includegraphics[width=10cm,height=3.8cm]{14-Pred-OptimalLag}
-		\subcaption{Along with the dengue data of optimal short-lag, the long-lag (24th month) was also used.}
+		\includegraphics[width=9cm,height=3.9cm]{Pred-Met-OptimalLag}
+%		\subcaption{Combination of data used in models B and C. }
 		\label{fig:test3} \par\vfill
-		\includegraphics[width=10cm,height=3.8cm]{15-Pred-Met-OptimalLag}
-		\subcaption{The optimal data (rainfall, DTR, lagged dengue data) of each target district is used.}
+		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalRepresentation}
+%		\subcaption{Combination of meteorology data (lag 1-3)  \& DHF count for invidual districts (lag 1,2,23) \&  \\ its \textit{surrounding district} (lag 1,2, 12).}
 		\label{fig:test4} \par\vfill
-		\includegraphics[width=10cm,height=3.8cm]{16-Pred-OptimalRepresentation}
-		\subcaption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district \\ and its \textit{surrounding district} is used.}
+		\includegraphics[width=9cm,height=3.9cm]{Pred-SocialIncluded}
+%		\subcaption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used.}
 		\label{fig:test5}
 	\end{minipage}
-	\caption{\textbf{Monthly Observed and Predicted Dengue Cases from 2008-2012.} Black \\ line represent the observed DHF cases and red line represents the predicted cases.}
+	\caption{Monthly Observed and Predicted Dengue Cases from 2008-2012.}
 	\label{fig:lolo}
 \end{figure}
 
 The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. Figure~\ref{fig:socio} shows the influence of socioeconomic data on prediction of dengue counts. The performance of1the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.77, RMSE is 5.54 and SRMSE is 0.34. The `Deviance Explained' is 77.0\%. The visual analyses of the prediction of the `Socioeconomic data Included' model are shown in Figure~\ref{fig:socio2}. The analyses show that the relative risks of dengue transmission almost linearly decreases as the garbage collection increases. It might be because the increase in garbage collection by municipal authorities is spatially correlated with higher economic activity in a region, which may signify better sanitation and healthier lifestyle\cite{satterthwaite1997environmental}. 
 
 
-\begin{figure}[h!]
-	\begin{minipage}[c]{1.0\textwidth}
-		\vspace*{\fill}
-		\centering
-		\includegraphics[width=8cm,height=5.0cm]{17-Fit-garbage}
-		\subcaption{The the smooth term for representing the variable for monthly garbage collection.}
-		\label{fig:socio1}\par\vfill
-		\includegraphics[width=10cm,height=5.0cm]{18-Pred-SocialIncluded}
-		\caption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used. }
-		\label{fig:socio2} \par\vfill	
-	\end{minipage}
-	\caption{Influence of socioeconomic data on prediction of dengue counts.}
-	\label{fig:socio}
-\end{figure}
+%\begin{figure}[h!]
+%	\begin{minipage}[c]{1.0\textwidth}
+%		\vspace*{\fill}
+%		\centering
+%		\includegraphics[width=8cm,height=5.0cm]{17-Fit-garbage}
+%		\subcaption{The the smooth term for representing the variable for monthly garbage collection.}
+%		\label{fig:socio1}\par\vfill
+%		\includegraphics[width=10cm,height=5.0cm]{18-Pred-SocialIncluded}
+%		\caption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used. }
+%		\label{fig:socio2} \par\vfill	
+%	\end{minipage}
+%	\caption{Influence of socioeconomic data on prediction of dengue counts.}
+%	\label{fig:socio}
+%\end{figure}
 
 
 
@@ -690,11 +693,12 @@ The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases an
 		\hline
 		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \textbf{$\Delta$ AIC} \\ 
 		\hline
-		A: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & 0\\ 
-		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2201.8 \\ 
-		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2555.5\\ 
-		E: Optimal Representation Model & 6.15 & 0.37 & 0.64 & 0.66 & -2549.8\\ 
-		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2546.1 \\ 
+		A: Seasonal Na\"{i}ve  & 10.22 & 0.62 & 0.16 & 0.16 & 0\\ 
+		B: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & -492.64\\ 
+		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2420.39 \\ 
+		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2725.62\\ 
+		E: Optimal Representation Model & 6.12 & 0.37 & 0.64 & 0.66 & -2718.90\\ 
+		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2713.86 \\ 
 		\hline
 	\end{tabular}
 	\caption{Predictive performance statistics of different models evaluated on the training data for the same time period. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).) }
