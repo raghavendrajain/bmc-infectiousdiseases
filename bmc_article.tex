@@ -547,9 +547,9 @@ Thus using the above-mentioned predictors, we evaluated the following models:
 \section{Results} \label{results}
 
 
-Using the lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall data in the model, we analyzed the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. 
+In this section, we explain about the models (A-F) listed in last section. The performance of these model is shown in Table~\ref{resultsPrediction} and the visual analyses of the prediction are shown in Figure~\ref{fig:lolo}. The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. For comparing  $\Delta$ AIC, all the fitted models (B-F) are compared to model A. 
 
-Table~\ref{tab:metValues} shown the approximate statistical significance of the smooth terms for DTR and rainfall. As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). The performance of the model is shown in Table~\ref{resultsPrediction}. The visual analyses of the prediction of the `Optimal Met' model are shown in Figure~\ref{fig:lolo}. 
+As a first step, the data for lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall was used to analyze the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. Table~\ref{tab:metValues} shown the approximate statistical significance of the smooth terms for DTR and rainfall. As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). 
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -595,8 +595,7 @@ We then perfomed the analyses solely using the data of lagged dengue incidences.
 
 %The model that consists of these lags is termed as `Optimal Lag Surveillance' model (model C). The performance of the model is shown in Table~\ref{resultsPrediction}. The visual analyses of the prediction of the model are shown in Figure~\ref{fig:lolo}. 
 
-Since one of our hypotheses is that the significance of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic in statistically significant. In other words, the dengue cases in a particular district are influenced by the dengue cases in there surrounding districts. To test the hypothesis, we determine how the occurrence of dengue in a target district is influenced by the occurrence of dengue in its surrounding districts. Both short-term and long-term lagged dengue cases data of the dengue incidences in surrounding districts was taken into account. For short-term lags, we considered the lagged data of past 1-4 months in which the data of lag 1 and 2 months was found to be statistically significant (p \textless 0.05). For long-term lags, the data up to the past 30 months was used. To determine the relative risks of transmission following an outbreak in a specified month, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. For the sake of brevity, the lag-response curve for the differing number of dengue cases is not shown here. Based on the aforementioned analyses, the optimal lag terms of dengue incidences in surrounding districts were found to be for lag 1, lag 2 and lag 12 (p \(>\!\!>\) 0.05).  These smooth terms were combined with that of Model D and termed as `Optimal Representation Model' (model E).
-
+Since one of our hypotheses is that the significance of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic in statistically significant. In other words, the dengue cases in a particular district are influenced by the dengue cases in there surrounding districts. To test the hypothesis, we determine how the occurrence of dengue in a target district is influenced by the occurrence of dengue in its surrounding districts. Both short-term and long-term lagged dengue cases data of the dengue incidences in surrounding districts was taken into account. For short-term lags, we considered the lagged data of past 1-4 months in which the data of lag 1 and 2 months was found to be statistically significant (p \textless 0.05). For long-term lags, the data up to the past 30 months was used. To determine the relative risks of transmission following an outbreak in a specified month, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. For the sake of brevity, the lag-response curve for the differing number of dengue cases is not shown here. Based on the aforementioned analyses, the optimal lag terms of dengue incidences in surrounding districts were found to be for lag 1, lag 2 and lag 12 (p \(>\!\!>\) 0.05).  These smooth terms were combined with that of Model D and termed as `Optimal Representation Model' (model E). Our last model (F) included waste disposal data (as a socioeconomic indicator) from each district as a predictor. The association of the smooth terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. 
 
 %Figure~\ref{fig:surroundingDistrictContour} suggests that when a large outbreak happens in a particular district in some specified month, then dengue risk in its surrounding districts will increase with a peak in the next 12 months. Similar to Figure~\ref{fig:targetContour} this suggests a negative feedback cyclic pattern. 
 
@@ -620,7 +619,10 @@ Since one of our hypotheses is that the significance of movement patterns of peo
 \end{figure}
 
 
-The association of these terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. It is observed that for short-term lagged data of dengue cases of surrounding districts the association with dengue transmission in the target district is almost linear. For lag 1, transmission increases while for lag 2 it decreases. However, for long-term lagged data (lag 12) the association slightly decreases for a small number of dengue cases (up to about 75 cases) and then modestly increases before being constant. The performance of the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.71, RMSE is 5.55 and SRMSE is 0.34. The `Deviance Explained' is 72.0\%. The visual analyses of the prediction of the `Optimal Representation' model is shown in Figure~\ref{fig:test5}. 
+
+
+
+
 
 
 %\begin{figure}[htbp]
@@ -635,7 +637,7 @@ The association of these terms with dengue transmission is shown in Figure~\ref{
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width= 0.97 \textwidth]{Fit-OptimalRepresentation+Garbage}
-		\caption{\textbf{The optimal model:} Association between the meteorological variables, \\ past dengue count over optimal lags within 1-30 months, surrounding district count \\  over 0\textendash30 months and the dengue outbreak. Solid lines represent relative risks (RR) \\ of dengue cases whereas the dotted lines depict the upper and lower limits of 95\% \\ confidence intervals.}
+		\caption{Association between past dengue count over optimal lags (lag 1,2 and 23) \\ for each target district and lag 1,12 for surrounding district count data and garbage data \\ with dengue outbreak.  Solid lines represent relative risks (RR) of dengue cases whereas\\ the dotted lines depict the upper and lower limits of 95\% confidence intervals.}
 		\label{figure-mostOptimalFit}
 	\end{center}
 \end{figure}
@@ -669,7 +671,9 @@ The association of these terms with dengue transmission is shown in Figure~\ref{
 	\label{fig:lolo}
 \end{figure}
 
-The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. Figure~\ref{fig:socio} shows the influence of socioeconomic data on prediction of dengue counts. The performance of1the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.77, RMSE is 5.54 and SRMSE is 0.34. The `Deviance Explained' is 77.0\%. The visual analyses of the prediction of the `Socioeconomic data Included' model are shown in Figure~\ref{fig:socio2}. The analyses show that the relative risks of dengue transmission almost linearly decreases as the garbage collection increases. It might be because the increase in garbage collection by municipal authorities is spatially correlated with higher economic activity in a region, which may signify better sanitation and healthier lifestyle\cite{satterthwaite1997environmental}. 
+
+
+% Figure~\ref{fig:socio} shows the influence of socioeconomic data on prediction of dengue counts. The performance of1the model using the training data from $2008-2012$ calculated using R-squared (adjusted) is 0.77, RMSE is 5.54 and SRMSE is 0.34. The `Deviance Explained' is 77.0\%. The visual analyses of the prediction of the `Socioeconomic data Included' model are shown in Figure~\ref{fig:socio2}. The analyses show that the relative risks of dengue transmission almost linearly decreases as the garbage collection increases. It might be because the increase in garbage collection by municipal authorities is spatially correlated with higher economic activity in a region, which may signify better sanitation and healthier lifestyle\cite{satterthwaite1997environmental}. 
 
 
 %\begin{figure}[h!]
