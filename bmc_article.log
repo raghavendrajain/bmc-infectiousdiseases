@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  31 OCT 2018 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  5 NOV 2018 16:35
 entering extended mode
 **./bmc_article.tex
 (bmc_article.tex
@@ -1423,35 +1423,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--490
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
-<6-DM1.png, id=259, 385.44pt x 313.17pt>
+<6-DM1.png, id=260, 385.44pt x 313.17pt>
 File: 6-DM1.png Graphic file (type png)
 <use 6-DM1.png>
-Package pdftex.def Info: 6-DM1.png  used on input line 551.
+Package pdftex.def Info: 6-DM1.png  used on input line 556.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 552.
+(caption)                particular \caption on input line 557.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 551--552
+Overfull \hbox (12.5pt too wide) in paragraph at lines 556--557
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 552--552
+Overfull \hbox (12.5pt too wide) in paragraph at lines 557--557
 [] [] 
  []
 
-
-LaTeX Warning: Reference `figure-DDShort-1' on page 9 undefined on input line 5
-75.
-
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 575.
+[9] [10 <./6-DM1.png>]
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 598.
 
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlptm
@@ -1459,274 +1456,276 @@ LaTeX Font Info:    Try loading font information for OML+ptm on input line 575.
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 575.
- [9] [10 <./6-DM1.png>]
-
-LaTeX Warning: Reference `fig:surroundingDistrictContour' on page 11 undefined 
-on input line 598.
-
-[11]
-<8-LongLagContour.png, id=309, 961.34157pt x 659.46375pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 598.
+<8-LongLagContour.png, id=298, 961.34157pt x 659.46375pt>
 File: 8-LongLagContour.png Graphic file (type png)
 <use 8-LongLagContour.png>
-Package pdftex.def Info: 8-LongLagContour.png  used on input line 604.
+Package pdftex.def Info: 8-LongLagContour.png  used on input line 608.
 (pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
 
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 604--605
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 608--609
  [][] 
  []
 
-<9-LagResposeLongLag.png, id=310, 961.34157pt x 659.46375pt>
+<9-LagResposeLongLag.png, id=299, 961.34157pt x 659.46375pt>
 File: 9-LagResposeLongLag.png Graphic file (type png)
 <use 9-LagResposeLongLag.png>
-Package pdftex.def Info: 9-LagResposeLongLag.png  used on input line 611.
+Package pdftex.def Info: 9-LagResposeLongLag.png  used on input line 615.
 (pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
 
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 611--612
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 615--616
  [][] 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 615.
+(caption)                particular \caption on input line 619.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 615--615
+Overfull \hbox (12.5pt too wide) in paragraph at lines 619--619
 [] [] 
  []
 
-<Fit-OptimalRepresentation+Garbage.png, id=317, 541.27219pt x 371.88937pt>
+<Fit-OptimalRepresentation+Garbage.png, id=306, 541.27219pt x 371.88937pt>
 File: Fit-OptimalRepresentation+Garbage.png Graphic file (type png)
 <use Fit-OptimalRepresentation+Garbage.png>
 Package pdftex.def Info: Fit-OptimalRepresentation+Garbage.png  used on input l
-ine 633.
+ine 637.
 (pdftex.def)             Requested size: 350.17044pt x 240.59598pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 634.
+(caption)                particular \caption on input line 638.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.67044pt too wide) in paragraph at lines 633--634
+Overfull \hbox (1.67044pt too wide) in paragraph at lines 637--638
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 634--634
+Overfull \hbox (12.5pt too wide) in paragraph at lines 638--638
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pred-SeasonalNaive.png, id=318, 385.44pt x 313.17pt>
+<Pred-SeasonalNaive.png, id=307, 385.44pt x 313.17pt>
 File: Pred-SeasonalNaive.png Graphic file (type png)
 <use Pred-SeasonalNaive.png>
-Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 645.
+Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 649.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-MetOptimal.png, id=319, 385.44pt x 313.17pt>
+<Pred-MetOptimal.png, id=308, 385.44pt x 313.17pt>
 File: Pred-MetOptimal.png Graphic file (type png)
 <use Pred-MetOptimal.png>
-Package pdftex.def Info: Pred-MetOptimal.png  used on input line 648.
+Package pdftex.def Info: Pred-MetOptimal.png  used on input line 652.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalLag.png, id=320, 385.44pt x 313.17pt>
+<Pred-OptimalLag.png, id=309, 385.44pt x 313.17pt>
 File: Pred-OptimalLag.png Graphic file (type png)
 <use Pred-OptimalLag.png>
-Package pdftex.def Info: Pred-OptimalLag.png  used on input line 651.
+Package pdftex.def Info: Pred-OptimalLag.png  used on input line 655.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-Met-OptimalLag.png, id=321, 385.44pt x 313.17pt>
+<Pred-Met-OptimalLag.png, id=310, 385.44pt x 313.17pt>
 File: Pred-Met-OptimalLag.png Graphic file (type png)
 <use Pred-Met-OptimalLag.png>
-Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 654.
+Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 658.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalRepresentation.png, id=322, 385.44pt x 313.17pt>
+<Pred-OptimalRepresentation.png, id=311, 385.44pt x 313.17pt>
 File: Pred-OptimalRepresentation.png Graphic file (type png)
 <use Pred-OptimalRepresentation.png>
-Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 657
+Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 661
 .
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-SocialIncluded.png, id=323, 385.44pt x 313.17pt>
+<Pred-SocialIncluded.png, id=312, 385.44pt x 313.17pt>
 File: Pred-SocialIncluded.png Graphic file (type png)
 <use Pred-SocialIncluded.png>
-Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 660.
+Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 664.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 664.
+(caption)                particular \caption on input line 668.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 642--664
+Overfull \hbox (12.5pt too wide) in paragraph at lines 646--668
  []$[]$ 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 664--664
+Overfull \hbox (12.5pt too wide) in paragraph at lines 668--668
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 50.9808pt on input line 666.
+LaTeX Warning: Float too large for page by 50.9808pt on input line 670.
+
+
+LaTeX Warning: Reference `fig:socio' on page 11 undefined on input line 672.
+
+
+LaTeX Warning: Reference `fig:socio2' on page 11 undefined on input line 672.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 692.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 696.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 694.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 698.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 694.
+(Font)              scaled to size 7.19995pt on input line 698.
 
-Overfull \hbox (26.22513pt too wide) in paragraph at lines 692--704
+Overfull \hbox (26.22513pt too wide) in paragraph at lines 696--708
  [][] 
  []
 
-<19-resid-diagnosis.png, id=331, 385.44pt x 313.17pt>
+[11] [12 <./8-LongLagContour.png> <./9-LagResposeLongLag.png>]
+<19-resid-diagnosis.png, id=337, 385.44pt x 313.17pt>
 File: 19-resid-diagnosis.png Graphic file (type png)
 <use 19-resid-diagnosis.png>
-Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 716.
+Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 720.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 717.
+(caption)                particular \caption on input line 721.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 716--717
+Overfull \hbox (12.5pt too wide) in paragraph at lines 720--721
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 717--717
+Overfull \hbox (12.5pt too wide) in paragraph at lines 721--721
 [] [] 
  []
 
-[12] [13 <./8-LongLagContour.png> <./9-LagResposeLongLag.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./Fit-OptimalRepresentation+Garbage.png>] [14 <./Pred-SeasonalNaive.png> <
+./Pred-MetOptimal.png> <./Pred-OptimalLag.png> <./Pred-Met-OptimalLag.png> <./P
+red-OptimalRepresentation.png> <./Pred-SocialIncluded.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./19-resid-diagnosis.png>]
+<Final-Prediction.png, id=371, 385.44pt x 313.17pt>
+File: Final-Prediction.png Graphic file (type png)
+<use Final-Prediction.png>
+Package pdftex.def Info: Final-Prediction.png  used on input line 772.
+(pdftex.def)             Requested size: 361.0pt x 293.30942pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 773.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 772--773
+ [] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 773--773
+[] [] 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./Fit-OptimalRepresentation+Garbage.png>] [15 <./Pred-SeasonalNaive.png> 
-<./Pred-MetOptimal.png> <./Pred-OptimalLag.png> <./Pred-Met-OptimalLag.png> <./
-Pred-OptimalRepresentation.png> <./Pred-SocialIncluded.png>] [16 <./19-resid-di
-agnosis.png>]
-<20-Validate-2008-2012.png, id=387, 385.44pt x 313.17pt>
-File: 20-Validate-2008-2012.png Graphic file (type png)
-<use 20-Validate-2008-2012.png>
-Package pdftex.def Info: 20-Validate-2008-2012.png  used on input line 749.
-(pdftex.def)             Requested size: 284.52713pt x 170.71965pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 750.
-<21-Validate-2008-2013.png, id=390, 385.44pt x 313.17pt>
-File: 21-Validate-2008-2013.png Graphic file (type png)
-<use 21-Validate-2008-2013.png>
-Package pdftex.def Info: 21-Validate-2008-2013.png  used on input line 752.
-(pdftex.def)             Requested size: 284.52713pt x 170.71965pt.
-<22-Validate-2008-2014.png, id=393, 385.44pt x 313.17pt>
-File: 22-Validate-2008-2014.png Graphic file (type png)
-<use 22-Validate-2008-2014.png>
-Package pdftex.def Info: 22-Validate-2008-2014.png  used on input line 755.
-(pdftex.def)             Requested size: 284.52713pt x 170.71965pt.
+LaTeX Warning: Reference `fig:validate1' on page 16 undefined on input line 781
+.
 
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 760.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (5.27846pt too wide) in paragraph at lines 746--760
- []$[]$ 
+Underfull \hbox (badness 2941) in paragraph at lines 789--789
+[]|\OT1/phv/m/n/8 monthly av-er-age cases ($\OT1/ptmcm/m/n/8 2008 \OMS/pzccm/m/
+n/8  
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 760--760
-[] [] 
+Underfull \hbox (badness 954) in paragraph at lines 789--789
+[]|\OT1/phv/m/n/8 (mean of a mov-ing win-dow over
  []
 
-
-LaTeX Warning: Float too large for page by 49.35892pt on input line 762.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 777--777
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 808--808
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--777
+Underfull \hbox (badness 10000) in paragraph at lines 808--808
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--778
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
-[17] [18 <./20-Validate-2008-2012.png> <./21-Validate-2008-2013.png> <./22-Vali
-date-2008-2014.png>] [19]
+[17 <./Final-Prediction.png>] [18]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 830.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 861.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 830.
- [20
+(Font)              scaled to size 6.29996pt on input line 861.
+ [19
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 949.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 980.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 949.
- [21
+(Font)              scaled to size 6.29996pt on input line 980.
+ [20
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
-<23-Cross-Cor-1.png, id=473, 505.89pt x 361.35pt>
+ [21]
+<23-Cross-Cor-1.png, id=445, 505.89pt x 361.35pt>
 File: 23-Cross-Cor-1.png Graphic file (type png)
 <use 23-Cross-Cor-1.png>
-Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 1917.
+Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 1950.
 (pdftex.def)             Requested size: 341.43306pt x 243.88419pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1918.
+(caption)                particular \caption on input line 1951.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1918--1918
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1951--1951
 [] [] 
  []
 
-<24-LagResposeLongLagMany.png, id=474, 961.34157pt x 659.46375pt>
+<24-LagResposeLongLagMany.png, id=446, 961.34157pt x 659.46375pt>
 File: 24-LagResposeLongLagMany.png Graphic file (type png)
 <use 24-LagResposeLongLagMany.png>
-Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 1930.
+Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 1963.
 
 (pdftex.def)             Requested size: 361.0pt x 247.64041pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1931.
+(caption)                particular \caption on input line 1964.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1930--1931
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1963--1964
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1931--1931
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1964--1964
 [] [] 
  []
 
 
 AED: lastpage setting LastPage
-[23 <./23-Cross-Cor-1.png>] [24 <./24-LagResposeLongLagMany.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1972.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1972.
+[22 <./23-Cross-Cor-1.png>] [23 <./24-LagResposeLongLagMany.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2005.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2005.
 
 (bmc_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1972.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1972.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2005.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2005.
 
 Package rerunfilecheck Info: File `bmc_article.out' has not changed.
 (rerunfilecheck)             Checksum: DB6535AC6C97C73687591F1377A5BFFF;453.
@@ -1737,52 +1736,35 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1972.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2005.
  ) 
 Here is how much of TeX's memory you used:
- 23574 strings out of 492970
- 452979 string characters out of 3124373
- 547260 words of memory out of 3000000
- 26749 multiletter control sequences out of 15000+200000
- 81182 words of font info for 159 fonts, out of 3000000 for 9000
+ 23530 strings out of 492970
+ 452204 string characters out of 3124373
+ 553242 words of memory out of 3000000
+ 26722 multiletter control sequences out of 15000+200000
+ 74868 words of font info for 146 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,67p,1796b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subfigure.12.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.10.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.14} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.30} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.12} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc}<C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raghvendra/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/raghvendra/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/U
-sers/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8
-a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/he
-lvetic/uhvb8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghvendr
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/
-raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bmc_article.pdf (24 pages, 681692 bytes).
+ 55i,11n,67p,1796b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
+r.enc}<C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raghvendra/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/raghvendra
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:
+/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucr
+r8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
+helvetic/uhvb8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghven
+dra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/User
+s/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on bmc_article.pdf (23 pages, 636527 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 171 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
