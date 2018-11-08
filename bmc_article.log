@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  5 NOV 2018 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  8 NOV 2018 16:01
 entering extended mode
 **./bmc_article.tex
 (bmc_article.tex
@@ -357,6 +357,320 @@ Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@dima=\skip53
 \bigstrutjot=\dimen125
 )
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rota
+ting.sty"
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.s
+ty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count127
+\rotFPtop=\skip54
+\rotFPbot=\skip55
+\rot@float@box=\box35
+\rot@mess@toks=\toks33
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendl
+ayer\tikz.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclaye
+r\pgf.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
+\pgfrcs.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfutil-common.tex"
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen126
+\pgfutil@tempdimb=\dimen127
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfutil-common-lists.tex"))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfutil-latex.def"
+\pgfutil@abb=\box36
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.s
+ty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclaye
+r\pgfcore.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlay
+er\pgfsys.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen128
+\pgf@y=\dimen129
+\pgf@xa=\dimen130
+\pgf@ya=\dimen131
+\pgf@xb=\dimen132
+\pgf@yb=\dimen133
+\pgf@xc=\dimen134
+\pgf@yc=\dimen135
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count128
+\c@pgf@countb=\count129
+\c@pgf@countc=\count130
+\c@pgf@countd=\count131
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count132
+\pgfsyssoftpath@bigbuffer@items=\count133
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
+ayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmath.code.tex"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathcalc.code.tex"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathutil.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathparser.code.tex"
+\pgfmath@dimen=\dimen136
+\pgfmath@count=\count134
+\pgfmath@box=\box37
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.code.tex"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.basic.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.trigonometric.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.random.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.comparison.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.base.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.round.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.misc.code.tex")
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfunctions.integerarithmetics.code.tex")))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count135
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen137
+\pgf@picmaxx=\dimen138
+\pgf@picminy=\dimen139
+\pgf@picmaxy=\dimen140
+\pgf@pathminx=\dimen141
+\pgf@pathmaxx=\dimen142
+\pgf@pathminy=\dimen143
+\pgf@pathmaxy=\dimen144
+\pgf@xx=\dimen145
+\pgf@xy=\dimen146
+\pgf@yx=\dimen147
+\pgf@yy=\dimen148
+\pgf@zx=\dimen149
+\pgf@zy=\dimen150
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen151
+\pgf@path@lasty=\dimen152
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen153
+\pgf@shorten@start@additional=\dimen154
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box38
+\pgf@hbox=\box39
+\pgf@layerbox@main=\box40
+\pgf@picture@serial@count=\count136
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen155
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen156
+\pgf@pt@y=\dimen157
+\pgf@pt@temp=\dimen158
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen159
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen160
+\pgf@sys@shading@range@num=\count137
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box41
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
+yer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
+\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box42
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
+\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibi
+lity\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen161
+\pgf@nodesepend=\dimen162
+)
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibi
+lity\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
+\pgffor.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
+\pgfkeys.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgfkeys.code.tex"))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfm
+ath.sty"
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmath.code.tex"))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
+es\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
+fmath.code.tex")
+\pgffor@iter=\dimen163
+\pgffor@skip=\dimen164
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\fronten
+dlayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\librari
+es\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count138
+\pgfplotmarksize=\dimen165
+)
+\tikz@lastx=\dimen166
+\tikz@lasty=\dimen167
+\tikz@lastxsaved=\dimen168
+\tikz@lastysaved=\dimen169
+\tikzleveldistance=\dimen170
+\tikzsiblingdistance=\dimen171
+\tikz@figbox=\box43
+\tikz@figbox@bg=\box44
+\tikz@tempbox=\box45
+\tikz@tempbox@bg=\box46
+\tikztreelevel=\count139
+\tikznumberofchildren=\count140
+\tikznumberofcurrentchild=\count141
+\tikz@fig@count=\count142
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
+\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count143
+\pgfmatrixcurrentcolumn=\count144
+\pgf@matrix@numberofcolumns=\count145
+)
+\tikz@expandcount=\count146
+
+("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\fronten
+dlayer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amss
 ymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -482,9 +796,9 @@ Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
 LaTeX Info: Redefining \selectfont on input line 755.
-\CJK@indent=\box35
+\CJK@indent=\box47
 )
-\ruby@width=\dimen126
+\ruby@width=\dimen172
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\linguex\lingu
 ex.sty"
@@ -496,55 +810,55 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\gb4e\cgloss4e
 .sty"
-\lineone=\box36
-\linetwo=\box37
-\linethree=\box38
-\wordone=\box39
-\wordtwo=\box40
-\wordthree=\box41
-\gline=\box42
-\glossglue=\skip54
+\lineone=\box48
+\linetwo=\box49
+\linethree=\box50
+\wordone=\box51
+\wordtwo=\box52
+\wordthree=\box53
+\gline=\box54
+\glossglue=\skip56
 )
-\c@ExNo=\count127
-\c@SubExNo=\count128
-\c@SubSubExNo=\count129
-\c@FnExNo=\count130
-\c@ABC=\count131
-\currentlabel=\skip55
-\lessthanten=\skip56
-\lessthanhundred=\skip57
-\lessthanthousand=\skip58
-\@Exleftmargin=\skip59
-\Exlabelwidth=\skip60
-\Extopsep=\skip61
-\Exindent=\skip62
-\SubExleftmargin=\skip63
-\SubSubExleftmargin=\skip64
-\Exlabelsep=\skip65
-\alignSubExnegindent=\skip66
-\Exredux=\skip67
-\digitwidth=\skip68
-\mindigitwidth=\skip69
-\c@ExDepth=\count132
-\c@TempExDepth=\count133
-\CollectTokens=\toks33
+\c@ExNo=\count147
+\c@SubExNo=\count148
+\c@SubSubExNo=\count149
+\c@FnExNo=\count150
+\c@ABC=\count151
+\currentlabel=\skip57
+\lessthanten=\skip58
+\lessthanhundred=\skip59
+\lessthanthousand=\skip60
+\@Exleftmargin=\skip61
+\Exlabelwidth=\skip62
+\Extopsep=\skip63
+\Exindent=\skip64
+\SubExleftmargin=\skip65
+\SubSubExleftmargin=\skip66
+\Exlabelsep=\skip67
+\alignSubExnegindent=\skip68
+\Exredux=\skip69
+\digitwidth=\skip70
+\mindigitwidth=\skip71
+\c@ExDepth=\count152
+\c@TempExDepth=\count153
+\CollectTokens=\toks46
 LaTeX Info: Redefining \b on input line 307.
 LaTeX Info: Redefining \c on input line 311.
 LaTeX Info: Redefining \d on input line 313.
-\c@tmpaEx=\count134
+\c@tmpaEx=\count154
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\soul\soul.sty
 "
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks34
-\SOUL@lasttoken=\toks35
-\SOUL@cmds=\toks36
-\SOUL@buffer=\toks37
-\SOUL@token=\toks38
-\SOUL@spaceskip=\skip70
-\SOUL@ttwidth=\dimen127
-\SOUL@uldp=\dimen128
-\SOUL@ulht=\dimen129
+\SOUL@word=\toks47
+\SOUL@lasttoken=\toks48
+\SOUL@cmds=\toks49
+\SOUL@buffer=\toks50
+\SOUL@token=\toks51
+\SOUL@spaceskip=\skip72
+\SOUL@ttwidth=\dimen173
+\SOUL@uldp=\dimen174
+\SOUL@ulht=\dimen175
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subca
 ption.sty"
@@ -558,13 +872,13 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 on3.sty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen130
-\captionmargin@=\dimen131
-\captionwidth=\dimen132
-\caption@tempdima=\dimen133
-\caption@indent=\dimen134
-\caption@parindent=\dimen135
-\caption@hangindent=\dimen136
+\captionmargin=\dimen176
+\captionmargin@=\dimen177
+\captionwidth=\dimen178
+\caption@tempdima=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -576,22 +890,23 @@ See the caption package documentation for explanation.
 Package caption Info: \@makecaption = \long macro:#1#2-> \vskip \abovecaptionsk
 ip \parbox [t]{\hsize }{\floatcaption@size {\floatcaptionname@size #1}\hskip .5
 em #2\par }\vskip \belowcaptionskip .
-\c@caption@flags=\count135
-\c@ContinuedFloat=\count136
+\c@caption@flags=\count155
+\c@ContinuedFloat=\count156
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
 )
-\c@subfigure=\count137
-\c@subtable=\count138
+\c@subfigure=\count157
+\c@subtable=\count158
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\paralist\para
 list.sty"
 Package: paralist 2017/01/22 v2.7 Extended list environments
-\pltopsep=\skip71
-\plpartopsep=\skip72
-\plitemsep=\skip73
-\plparsep=\skip74
-\pl@lab=\toks39
+\pltopsep=\skip73
+\plpartopsep=\skip74
+\plitemsep=\skip75
+\plparsep=\skip76
+\pl@lab=\toks52
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fixltx2e
 .sty"
@@ -612,21 +927,21 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.s
 ty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen137
-\ar@mcellbox=\box43
-\extrarowheight=\dimen138
-\NC@list=\toks40
-\extratabsurround=\skip75
-\backup@length=\skip76
-\ar@cellbox=\box44
+\col@sep=\dimen183
+\ar@mcellbox=\box55
+\extrarowheight=\dimen184
+\NC@list=\toks53
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box56
 )
-\TX@col@width=\dimen139
-\TX@old@table=\dimen140
-\TX@old@col=\dimen141
-\TX@target=\dimen142
-\TX@delta=\dimen143
-\TX@cols=\count139
-\TX@ftn=\toks41
+\TX@col@width=\dimen185
+\TX@old@table=\dimen186
+\TX@old@col=\dimen187
+\TX@target=\dimen188
+\TX@delta=\dimen189
+\TX@cols=\count159
+\TX@ftn=\toks54
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\dcolumn
 .sty"
@@ -635,324 +950,24 @@ Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\book
 tabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen144
-\lightrulewidth=\dimen145
-\cmidrulewidth=\dimen146
-\belowrulesep=\dimen147
-\belowbottomsep=\dimen148
-\aboverulesep=\dimen149
-\abovetopsep=\dimen150
-\cmidrulesep=\dimen151
-\cmidrulekern=\dimen152
-\defaultaddspace=\dimen153
-\@cmidla=\count140
-\@cmidlb=\count141
-\@aboverulesep=\dimen154
-\@belowrulesep=\dimen155
-\@thisruleclass=\count142
-\@lastruleclass=\count143
-\@thisrulewidth=\dimen156
+\heavyrulewidth=\dimen190
+\lightrulewidth=\dimen191
+\cmidrulewidth=\dimen192
+\belowrulesep=\dimen193
+\belowbottomsep=\dimen194
+\aboverulesep=\dimen195
+\abovetopsep=\dimen196
+\cmidrulesep=\dimen197
+\cmidrulekern=\dimen198
+\defaultaddspace=\dimen199
+\@cmidla=\count160
+\@cmidlb=\count161
+\@aboverulesep=\dimen256
+\@belowrulesep=\dimen257
+\@thisruleclass=\count162
+\@lastruleclass=\count163
+\@thisrulewidth=\dimen258
 )
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendl
-ayer\tikz.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclaye
-r\pgf.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
-\pgfrcs.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfutil-common.tex"
-\pgfutil@everybye=\toks42
-\pgfutil@tempdima=\dimen157
-\pgfutil@tempdimb=\dimen158
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfutil-common-lists.tex"))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfutil-latex.def"
-\pgfutil@abb=\box45
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.s
-ty"
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfrcs.code.tex"
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclaye
-r\pgfcore.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlay
-er\pgfsys.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgfsys.code.tex"
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks43
-\pgfkeys@temptoks=\toks44
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks45
-))
-\pgf@x=\dimen159
-\pgf@y=\dimen160
-\pgf@xa=\dimen161
-\pgf@ya=\dimen162
-\pgf@xb=\dimen163
-\pgf@yb=\dimen164
-\pgf@xc=\dimen165
-\pgf@yc=\dimen166
-\w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count144
-\c@pgf@countb=\count145
-\c@pgf@countc=\count146
-\c@pgf@countd=\count147
-\t@pgf@toka=\toks46
-\t@pgf@tokb=\toks47
-\t@pgf@tokc=\toks48
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgf.cfg"
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgfsys-common-pdf.def"
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgfsyssoftpath.code.tex"
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count148
-\pgfsyssoftpath@bigbuffer@items=\count149
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systeml
-ayer\pgfsysprotocol.code.tex"
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmath.code.tex"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathcalc.code.tex"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathutil.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathparser.code.tex"
-\pgfmath@dimen=\dimen167
-\pgfmath@count=\count150
-\pgfmath@box=\box46
-\pgfmath@toks=\toks49
-\pgfmath@stack@operand=\toks50
-\pgfmath@stack@operation=\toks51
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.code.tex"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.basic.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.trigonometric.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.random.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.comparison.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.base.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.round.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.misc.code.tex")
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfunctions.integerarithmetics.code.tex")))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count151
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorepoints.code.tex"
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen168
-\pgf@picmaxx=\dimen169
-\pgf@picminy=\dimen170
-\pgf@picmaxy=\dimen171
-\pgf@pathminx=\dimen172
-\pgf@pathmaxx=\dimen173
-\pgf@pathminy=\dimen174
-\pgf@pathmaxy=\dimen175
-\pgf@xx=\dimen176
-\pgf@xy=\dimen177
-\pgf@yx=\dimen178
-\pgf@yy=\dimen179
-\pgf@zx=\dimen180
-\pgf@zy=\dimen181
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorepathconstruct.code.tex"
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen182
-\pgf@path@lasty=\dimen183
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorepathusage.code.tex"
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen184
-\pgf@shorten@start@additional=\dimen185
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorescopes.code.tex"
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box47
-\pgf@hbox=\box48
-\pgf@layerbox@main=\box49
-\pgf@picture@serial@count=\count152
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoregraphicstate.code.tex"
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen186
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoretransformations.code.tex"
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen187
-\pgf@pt@y=\dimen188
-\pgf@pt@temp=\dimen189
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorequick.code.tex"
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoreobjects.code.tex"
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorepathprocessing.code.tex"
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorearrows.code.tex"
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen190
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen191
-\pgf@sys@shading@range@num=\count153
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoreimage.code.tex"
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoreexternal.code.tex"
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box50
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorelayers.code.tex"
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcoretransparency.code.tex"
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basicla
-yer\pgfcorepatterns.code.tex"
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
-\pgfmoduleshapes.code.tex"
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box51
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
-\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibi
-lity\pgfcomp-version-0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen192
-\pgf@nodesepend=\dimen193
-)
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibi
-lity\pgfcomp-version-1-18.sty"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
-\pgffor.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities
-\pgfkeys.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgfkeys.code.tex"))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfm
-ath.sty"
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmath.code.tex"))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utiliti
-es\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pg
-fmath.code.tex")
-\pgffor@iter=\dimen194
-\pgffor@skip=\dimen195
-\pgffor@stack=\toks52
-\pgffor@toks=\toks53
-))
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\fronten
-dlayer\tikz\tikz.code.tex"
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\librari
-es\pgflibraryplothandlers.code.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count154
-\pgfplotmarksize=\dimen196
-)
-\tikz@lastx=\dimen197
-\tikz@lasty=\dimen198
-\tikz@lastxsaved=\dimen199
-\tikz@lastysaved=\dimen256
-\tikzleveldistance=\dimen257
-\tikzsiblingdistance=\dimen258
-\tikz@figbox=\box52
-\tikz@figbox@bg=\box53
-\tikz@tempbox=\box54
-\tikz@tempbox@bg=\box55
-\tikztreelevel=\count155
-\tikznumberofchildren=\count156
-\tikznumberofcurrentchild=\count157
-\tikz@fig@count=\count158
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules
-\pgfmodulematrix.code.tex"
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count159
-\pgfmatrixcurrentcolumn=\count160
-\pgf@matrix@numberofcolumns=\count161
-)
-\tikz@expandcount=\count162
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\fronten
-dlayer\tikz\libraries\tikzlibrarytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\bbding
 .sty"
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
@@ -1012,26 +1027,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 es\shapes\pgflibraryshapes.multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box56
-\pgfnodeparttwobox=\box57
-\pgfnodepartthreebox=\box58
-\pgfnodepartfourbox=\box59
-\pgfnodeparttwentybox=\box60
-\pgfnodepartnineteenbox=\box61
-\pgfnodeparteighteenbox=\box62
-\pgfnodepartseventeenbox=\box63
-\pgfnodepartsixteenbox=\box64
-\pgfnodepartfifteenbox=\box65
-\pgfnodepartfourteenbox=\box66
-\pgfnodepartthirteenbox=\box67
-\pgfnodeparttwelvebox=\box68
-\pgfnodepartelevenbox=\box69
-\pgfnodeparttenbox=\box70
-\pgfnodepartninebox=\box71
-\pgfnodeparteightbox=\box72
-\pgfnodepartsevenbox=\box73
-\pgfnodepartsixbox=\box74
-\pgfnodepartfivebox=\box75
+\pgfnodepartlowerbox=\box57
+\pgfnodeparttwobox=\box58
+\pgfnodepartthreebox=\box59
+\pgfnodepartfourbox=\box60
+\pgfnodeparttwentybox=\box61
+\pgfnodepartnineteenbox=\box62
+\pgfnodeparteighteenbox=\box63
+\pgfnodepartseventeenbox=\box64
+\pgfnodepartsixteenbox=\box65
+\pgfnodepartfifteenbox=\box66
+\pgfnodepartfourteenbox=\box67
+\pgfnodepartthirteenbox=\box68
+\pgfnodeparttwelvebox=\box69
+\pgfnodepartelevenbox=\box70
+\pgfnodeparttenbox=\box71
+\pgfnodepartninebox=\box72
+\pgfnodeparteightbox=\box73
+\pgfnodepartsevenbox=\box74
+\pgfnodepartsixbox=\box75
+\pgfnodepartfivebox=\box76
 )))
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\fronten
 dlayer\tikz\libraries\tikzlibraryarrows.code.tex"
@@ -1045,20 +1060,20 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\auth
 blk.sty"
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip77
-\@affilsep=\skip78
-\c@Maxaffil=\count163
-\c@authors=\count164
-\c@affil=\count165
+\affilsep=\skip79
+\@affilsep=\skip80
+\c@Maxaffil=\count164
+\c@authors=\count165
+\c@affil=\count166
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enum
 item.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip79
+\labelindent=\skip81
 \enit@outerparindent=\dimen260
-\enit@toks=\toks54
-\enit@inbox=\box76
-\enitdp@description=\count166
+\enit@toks=\toks55
+\enit@inbox=\box77
+\enitdp@description=\count167
 ) (bmc_article.aux
 
 LaTeX Warning: Label `tab:metValues' multiply defined.
@@ -1066,106 +1081,106 @@ LaTeX Warning: Label `tab:metValues' multiply defined.
 )
 \openout1 = `bmc_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 131.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 13
-0.
+1.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspzc
 cm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
+\scratchcounter=\count168
 \scratchdimen=\dimen261
-\scratchbox=\box77
-\nofMPsegments=\count168
-\nofMParguments=\count169
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count170
+\scratchbox=\box78
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count171
 \MPscratchDim=\dimen262
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
-\everyMPtoPDFconversion=\toks56
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks57
 )
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epst
 opdf-base.sty"
@@ -1184,9 +1199,9 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 130.
-\AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 130.
+(lastpage)             ! on input line 131.
+\AtBeginShipoutBox=\box79
+Package hyperref Info: Link coloring ON on input line 131.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\name
 ref.sty"
@@ -1196,107 +1211,102 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ttitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count173
+\c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 131.
+LaTeX Info: Redefining \pageref on input line 131.
+LaTeX Info: Redefining \nameref on input line 131.
  (bmc_article.out) (bmc_article.out)
 \@outlinefile=\write4
 \openout4 = `bmc_article.out'.
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 136.
+(Font)              scaled to size 8.99994pt on input line 137.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <13> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 136.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 11.69992pt on input line 136.
+(Font)              scaled to size 11.69992pt on input line 137.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 21.59985pt on input line 144.
+(Font)              scaled to size 21.59985pt on input line 145.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.89993pt on input line 165.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 165.
+(Font)              scaled to size 9.89993pt on input line 166.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 166.
 LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 16
-5.
+6.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm
 cm.fd"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 16
-5.
+6.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlptm
 cm.fd"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+psycm on input line 16
-5.
+6.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxpsy
 cm.fd"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 165.
+LaTeX Font Info:    Try loading font information for U+msa on input line 166.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa
 .fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 165.
+LaTeX Font Info:    Try loading font information for U+msb on input line 166.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb
 .fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.69997> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.92992pt on input line 165.
-\address@aff1=\toks57
-\address@aff2=\toks58
-\address@aff4=\toks59
+(Font)              scaled to size 6.92992pt on input line 166.
+\address@aff1=\toks58
+\address@aff2=\toks59
+\address@aff4=\toks60
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 226.
+(Font)              scaled to size 6.29996pt on input line 227.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 226.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 226.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 226.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 226.
-
-
-("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsphv
-.fd"
-File: omsphv.fd 
-)
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 226.
+(Font)              scaled to size 4.49997pt on input line 227.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 241.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 242.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 241.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 322.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 322.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 322.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 329.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 329.
+(Font)              scaled to size 8.99994pt on input line 242.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 246.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.19995pt on input line 329.
+(Font)              scaled to size 8.99994pt on input line 246.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 323.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 323.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 323.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 330.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 330.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 7.19995pt on input line 330.
 
 Overfull \hbox (1.0pt too wide) has occurred while \output is active
  [] 
@@ -1305,152 +1315,204 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{C:/Users/raghvendra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 374.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 374.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 374.
+Overfull \hbox (1.43394pt too wide) in paragraph at lines 374--374
+ \OT1/ptm/m/n/10 DH/DHF/DSS 
+ []
 
-[2]
-<1-AvgMonthlyRainfall.png, id=156, 505.89pt x 361.35pt>
+
+Overfull \hbox (1.43394pt too wide) in paragraph at lines 375--375
+ \OT1/ptm/m/n/10 DH/DHF/DSS 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 402.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (7.05489pt too wide) in paragraph at lines 401--402
+ [][] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 402--402
+[] [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+[2] [3]
+<1-AvgMonthlyRainfall.png, id=184, 505.89pt x 361.35pt>
 File: 1-AvgMonthlyRainfall.png Graphic file (type png)
 <use 1-AvgMonthlyRainfall.png>
-Package pdftex.def Info: 1-AvgMonthlyRainfall.png  used on input line 379.
+Package pdftex.def Info: 1-AvgMonthlyRainfall.png  used on input line 459.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 380.
+(caption)                particular \caption on input line 460.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 379--380
+Overfull \hbox (12.5pt too wide) in paragraph at lines 459--460
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 380--380
+Overfull \hbox (12.5pt too wide) in paragraph at lines 460--460
 [] [] 
  []
 
-<2-AvgMonthlyDTR.png, id=157, 505.89pt x 361.35pt>
+<2-AvgMonthlyDTR.png, id=185, 505.89pt x 361.35pt>
 File: 2-AvgMonthlyDTR.png Graphic file (type png)
 <use 2-AvgMonthlyDTR.png>
-Package pdftex.def Info: 2-AvgMonthlyDTR.png  used on input line 387.
+Package pdftex.def Info: 2-AvgMonthlyDTR.png  used on input line 467.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 388.
+(caption)                particular \caption on input line 468.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 387--388
+Overfull \hbox (12.5pt too wide) in paragraph at lines 467--468
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 388--388
+Overfull \hbox (12.5pt too wide) in paragraph at lines 468--468
 [] [] 
  []
 
-<3-AnuualDengueCases.png, id=162, 505.89pt x 361.35pt>
+<3-AnuualDengueCases.png, id=190, 505.89pt x 361.35pt>
 File: 3-AnuualDengueCases.png Graphic file (type png)
 <use 3-AnuualDengueCases.png>
-Package pdftex.def Info: 3-AnuualDengueCases.png  used on input line 409.
+Package pdftex.def Info: 3-AnuualDengueCases.png  used on input line 489.
 (pdftex.def)             Requested size: 350.17044pt x 250.12575pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 411.
+(caption)                particular \caption on input line 491.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.67044pt too wide) in paragraph at lines 409--411
+Overfull \hbox (1.67044pt too wide) in paragraph at lines 489--491
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 411--411
+Overfull \hbox (12.5pt too wide) in paragraph at lines 491--491
 [] [] 
  []
 
-<4-MonthlyDengueCases.png, id=165, 505.89pt x 361.35pt>
+<4-MonthlyDengueCases.png, id=193, 505.89pt x 361.35pt>
 File: 4-MonthlyDengueCases.png Graphic file (type png)
 <use 4-MonthlyDengueCases.png>
-Package pdftex.def Info: 4-MonthlyDengueCases.png  used on input line 418.
+Package pdftex.def Info: 4-MonthlyDengueCases.png  used on input line 498.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 419.
+(caption)                particular \caption on input line 499.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 418--419
+Overfull \hbox (12.5pt too wide) in paragraph at lines 498--499
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 419--419
+Overfull \hbox (12.5pt too wide) in paragraph at lines 499--499
 [] [] 
  []
 
-[3 <./1-AvgMonthlyRainfall.png>] [4 <./2-AvgMonthlyDTR.png> <./3-AnuualDengueCa
-ses.png>] [5 <./4-MonthlyDengueCases.png>]
-<5-MonthlyDengueAcrossYears.png, id=203, 505.89pt x 361.35pt>
+[4 <./1-AvgMonthlyRainfall.png>] [5 <./2-AvgMonthlyDTR.png> <./3-AnuualDengueCa
+ses.png>] [6 <./4-MonthlyDengueCases.png>]
+<5-MonthlyDengueAcrossYears.png, id=231, 505.89pt x 361.35pt>
 File: 5-MonthlyDengueAcrossYears.png Graphic file (type png)
 <use 5-MonthlyDengueAcrossYears.png>
-Package pdftex.def Info: 5-MonthlyDengueAcrossYears.png  used on input line 430
+Package pdftex.def Info: 5-MonthlyDengueAcrossYears.png  used on input line 510
 .
 (pdftex.def)             Requested size: 342.9489pt x 244.96487pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 431.
+(caption)                particular \caption on input line 511.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 431--431
+Overfull \hbox (12.5pt too wide) in paragraph at lines 511--511
 [] [] 
  []
 
-[6 <./5-MonthlyDengueAcrossYears.png>]
+[7 <./5-MonthlyDengueAcrossYears.png>]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 470.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 550.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
-
- []
-
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
 
  []
 
-[9]
-<6-DM1.png, id=277, 385.44pt x 313.17pt>
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+[10]
+<6-DM1.png, id=304, 385.44pt x 313.17pt>
 File: 6-DM1.png Graphic file (type png)
 <use 6-DM1.png>
-Package pdftex.def Info: 6-DM1.png  used on input line 556.
+Package pdftex.def Info: 6-DM1.png  used on input line 638.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 557.
+(caption)                particular \caption on input line 639.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 556--557
+Overfull \hbox (12.5pt too wide) in paragraph at lines 638--639
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 557--557
+Overfull \hbox (12.5pt too wide) in paragraph at lines 639--639
 [] [] 
  []
 
-[10 <./6-DM1.png>]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 598.
+<8-LongLagContour.png, id=313, 961.34157pt x 659.46375pt>
+File: 8-LongLagContour.png Graphic file (type png)
+<use 8-LongLagContour.png>
+Package pdftex.def Info: 8-LongLagContour.png  used on input line 680.
+(pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
+
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 680--681
+ [][] 
+ []
+
+<24-LagResposeLongLagMany.png, id=314, 961.34157pt x 659.46375pt>
+File: 24-LagResposeLongLagMany.png Graphic file (type png)
+<use 24-LagResposeLongLagMany.png>
+Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 687.
+(pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
+
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 687--688
+ [][] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 691.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 691--691
+[] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 698.
 
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlptm
@@ -1458,308 +1520,253 @@ LaTeX Font Info:    Try loading font information for OML+ptm on input line 598.
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 598.
-<8-LongLagContour.png, id=298, 961.34157pt x 659.46375pt>
-File: 8-LongLagContour.png Graphic file (type png)
-<use 8-LongLagContour.png>
-Package pdftex.def Info: 8-LongLagContour.png  used on input line 607.
-(pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
-
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 607--608
- [][] 
- []
-
-<9-LagResposeLongLag.png, id=299, 961.34157pt x 659.46375pt>
-File: 9-LagResposeLongLag.png Graphic file (type png)
-<use 9-LagResposeLongLag.png>
-Package pdftex.def Info: 9-LagResposeLongLag.png  used on input line 614.
-(pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
-
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 614--615
- [][] 
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 618.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 618--618
-[] [] 
- []
-
-<Fit-OptimalRepresentation+Garbage.png, id=304, 541.27219pt x 371.88937pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 698.
+ [11] [12 <./6-DM1.png>] [13 <./8-LongLagContour.png> <./24-LagResposeLongLagMa
+ny.png>]
+<Fit-OptimalRepresentation+Garbage.png, id=349, 541.27219pt x 371.88937pt>
 File: Fit-OptimalRepresentation+Garbage.png Graphic file (type png)
 <use Fit-OptimalRepresentation+Garbage.png>
 Package pdftex.def Info: Fit-OptimalRepresentation+Garbage.png  used on input l
-ine 639.
+ine 713.
 (pdftex.def)             Requested size: 350.17044pt x 240.59598pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 640.
+(caption)                particular \caption on input line 714.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.67044pt too wide) in paragraph at lines 639--640
+Overfull \hbox (1.67044pt too wide) in paragraph at lines 713--714
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 640--640
+Overfull \hbox (12.5pt too wide) in paragraph at lines 714--714
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pred-SeasonalNaive.png, id=305, 385.44pt x 313.17pt>
-File: Pred-SeasonalNaive.png Graphic file (type png)
-<use Pred-SeasonalNaive.png>
-Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 651.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-MetOptimal.png, id=306, 385.44pt x 313.17pt>
-File: Pred-MetOptimal.png Graphic file (type png)
-<use Pred-MetOptimal.png>
-Package pdftex.def Info: Pred-MetOptimal.png  used on input line 654.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalLag.png, id=307, 385.44pt x 313.17pt>
-File: Pred-OptimalLag.png Graphic file (type png)
-<use Pred-OptimalLag.png>
-Package pdftex.def Info: Pred-OptimalLag.png  used on input line 657.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-Met-OptimalLag.png, id=308, 385.44pt x 313.17pt>
-File: Pred-Met-OptimalLag.png Graphic file (type png)
-<use Pred-Met-OptimalLag.png>
-Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 660.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalRepresentation.png, id=309, 385.44pt x 313.17pt>
-File: Pred-OptimalRepresentation.png Graphic file (type png)
-<use Pred-OptimalRepresentation.png>
-Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 663
-.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-SocialIncluded.png, id=310, 385.44pt x 313.17pt>
-File: Pred-SocialIncluded.png Graphic file (type png)
-<use Pred-SocialIncluded.png>
-Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 666.
-(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<19-resid-diagnosis.png, id=350, 385.44pt x 313.17pt>
+File: 19-resid-diagnosis.png Graphic file (type png)
+<use 19-resid-diagnosis.png>
+Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 723.
+(pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 670.
+(caption)                particular \caption on input line 724.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 648--670
+Overfull \hbox (12.5pt too wide) in paragraph at lines 723--724
+ [] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 724--724
+[] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Pred-SeasonalNaive.png, id=354, 385.44pt x 313.17pt>
+File: Pred-SeasonalNaive.png Graphic file (type png)
+<use Pred-SeasonalNaive.png>
+Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 739.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<Pred-MetOptimal.png, id=355, 385.44pt x 313.17pt>
+File: Pred-MetOptimal.png Graphic file (type png)
+<use Pred-MetOptimal.png>
+Package pdftex.def Info: Pred-MetOptimal.png  used on input line 742.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<Pred-OptimalLag.png, id=356, 385.44pt x 313.17pt>
+File: Pred-OptimalLag.png Graphic file (type png)
+<use Pred-OptimalLag.png>
+Package pdftex.def Info: Pred-OptimalLag.png  used on input line 745.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<Pred-Met-OptimalLag.png, id=357, 385.44pt x 313.17pt>
+File: Pred-Met-OptimalLag.png Graphic file (type png)
+<use Pred-Met-OptimalLag.png>
+Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 748.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<Pred-OptimalRepresentation.png, id=358, 385.44pt x 313.17pt>
+File: Pred-OptimalRepresentation.png Graphic file (type png)
+<use Pred-OptimalRepresentation.png>
+Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 751
+.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+<Pred-SocialIncluded.png, id=359, 385.44pt x 313.17pt>
+File: Pred-SocialIncluded.png Graphic file (type png)
+<use Pred-SocialIncluded.png>
+Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 754.
+(pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 758.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 736--758
  []$[]$ 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 670--670
+Overfull \hbox (12.5pt too wide) in paragraph at lines 758--758
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 50.9808pt on input line 672.
+LaTeX Warning: Float too large for page by 50.9808pt on input line 760.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 700.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 770.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 702.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 772.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 702.
+(Font)              scaled to size 7.19995pt on input line 772.
 
-Overfull \hbox (26.22513pt too wide) in paragraph at lines 700--712
+Overfull \hbox (26.22513pt too wide) in paragraph at lines 770--782
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [11]
-[12 <./8-LongLagContour.png> <./9-LagResposeLongLag.png>]
-<19-resid-diagnosis.png, id=333, 385.44pt x 313.17pt>
-File: 19-resid-diagnosis.png Graphic file (type png)
-<use 19-resid-diagnosis.png>
-Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 724.
+<Final-Prediction.png, id=361, 385.44pt x 313.17pt>
+File: Final-Prediction.png Graphic file (type png)
+<use Final-Prediction.png>
+Package pdftex.def Info: Final-Prediction.png  used on input line 872.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 725.
+(caption)                particular \caption on input line 873.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 724--725
+Overfull \hbox (12.5pt too wide) in paragraph at lines 872--873
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 725--725
+Overfull \hbox (12.5pt too wide) in paragraph at lines 873--873
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./Fit-OptimalRepresentation+Garbage.png>] [14 <./Pred-SeasonalNaive.png> <
-./Pred-MetOptimal.png> <./Pred-OptimalLag.png> <./Pred-Met-OptimalLag.png> <./P
-red-OptimalRepresentation.png> <./Pred-SocialIncluded.png>] [15 <./19-resid-dia
-gnosis.png>]
-<Final-Prediction.png, id=369, 385.44pt x 313.17pt>
-File: Final-Prediction.png Graphic file (type png)
-<use Final-Prediction.png>
-Package pdftex.def Info: Final-Prediction.png  used on input line 776.
-(pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 777.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 776--777
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[]|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 777--777
-[] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[]|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-LaTeX Warning: Reference `fig:validate1' on page 16 undefined on input line 785
-.
+Underfull \hbox (badness 10000) in paragraph at lines 888--889
+[]|\OT1/phv/b/n/8 Out-Sample
+ []
 
-
-Underfull \hbox (badness 2941) in paragraph at lines 793--793
+[14]
+Underfull \hbox (badness 2941) in paragraph at lines 906--906
 []|\OT1/phv/m/n/8 monthly av-er-age cases ($\OT1/ptmcm/m/n/8 2008 \OMS/pzccm/m/
 n/8  
  []
 
 
-Underfull \hbox (badness 954) in paragraph at lines 793--793
+Underfull \hbox (badness 954) in paragraph at lines 906--906
 []|\OT1/phv/m/n/8 (mean of a mov-ing win-dow over
  []
 
-[16 <./Final-Prediction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 812--812
-[]|\OT1/phv/b/n/8 Out-Sample
- []
+[15 <./Fit-OptimalRepresentation+Garbage.png>]
+Underfull \vbox (badness 2762) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 812--812
-[]|\OT1/phv/b/n/8 Out-Sample
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 812--813
-[]|\OT1/phv/b/n/8 Out-Sample
- []
-
-[17]
+ [16 <./19-resid-diagnosis.png>] [17 <./Pred-SeasonalNaive.png> <./Pred-MetOpti
+mal.png> <./Pred-OptimalLag.png> <./Pred-Met-OptimalLag.png> <./Pred-OptimalRep
+resentation.png> <./Pred-SocialIncluded.png>] [18 <./Final-Prediction.png>] [19
+]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 865.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 963.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 865.
- [18
+(Font)              scaled to size 6.29996pt on input line 963.
+ [20
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 984.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1082.
+
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 984.
- [19
+(Font)              scaled to size 6.29996pt on input line 1082.
+
+[21
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
-<23-Cross-Cor-1.png, id=438, 505.89pt x 361.35pt>
+ [22]
+<23-Cross-Cor-1.png, id=460, 505.89pt x 361.35pt>
 File: 23-Cross-Cor-1.png Graphic file (type png)
 <use 23-Cross-Cor-1.png>
-Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 1954.
+Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 2054.
 (pdftex.def)             Requested size: 341.43306pt x 243.88419pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1955.
+(caption)                particular \caption on input line 2055.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1955--1955
-[] [] 
- []
-
-<24-LagResposeLongLagMany.png, id=439, 961.34157pt x 659.46375pt>
-File: 24-LagResposeLongLagMany.png Graphic file (type png)
-<use 24-LagResposeLongLagMany.png>
-Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 1967.
-
-(pdftex.def)             Requested size: 361.0pt x 247.64041pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1968.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1967--1968
- [] 
- []
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1968--1968
+Overfull \hbox (12.5pt too wide) in paragraph at lines 2055--2055
 [] [] 
  []
 
 
 AED: lastpage setting LastPage
-[21 <./23-Cross-Cor-1.png>] [22 <./24-LagResposeLongLagMany.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2009.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2009.
-
-(bmc_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2009.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2009.
+[23 <./23-Cross-Cor-1.png>] [24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2109.
+ (bmc_article.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2109.
 
 Package rerunfilecheck Info: File `bmc_article.out' has not changed.
-(rerunfilecheck)             Checksum: DB6535AC6C97C73687591F1377A5BFFF;453.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 7C8EBC9F8D62201AAEC84C67C8142609;422.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2009.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2109.
  ) 
 Here is how much of TeX's memory you used:
- 23527 strings out of 492970
- 452174 string characters out of 3124373
- 552228 words of memory out of 3000000
- 26720 multiletter control sequences out of 15000+200000
- 74868 words of font info for 146 fonts, out of 3000000 for 9000
+ 23778 strings out of 492970
+ 456152 string characters out of 3124373
+ 611502 words of memory out of 3000000
+ 26970 multiletter control sequences out of 15000+200000
+ 76754 words of font info for 148 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,67p,1796b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,67p,2477b,2005s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raghvendra/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/raghvendra
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:
-/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucr
-r8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
-helvetic/uhvb8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghven
-dra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/User
-s/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on bmc_article.pdf (22 pages, 634177 bytes).
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users
+/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.p
+fb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helve
+tic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghvendra/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/raghvendra/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bmc_article.pdf (24 pages, 656119 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

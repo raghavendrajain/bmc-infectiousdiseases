@@ -65,7 +65,8 @@
 \usepackage{multirow}
 %\usepackage[caption=false]{subfig}
 
-
+\usepackage{rotating}
+\usepackage{tikz}
 
 
 \usepackage{amssymb}
@@ -220,7 +221,7 @@ email={helmut@nii.ac.jp}
 
 \begin{artnotes}
 %\note{Sample of title note}     % note to the article
-\note[id=n1]{Equal contributor} % note, connected to author
+%\note[id=n1]{Equal contributor} % note, connected to author
 \end{artnotes}
 
 \end{fmbox}% comment this for two column layout
@@ -240,9 +241,9 @@ email={helmut@nii.ac.jp}
 \begin{abstract} % abstract
 \parttitle{Background} The goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health-care systems. 
 
-\parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models we evaluate the predictive ability of the fitted models according to RMSE and SRMSE.
+\parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models, we evaluate the predictive ability of the fitted models according to RMSE and SRMSE as well as adjusted R-squared value, deviance explained and change in AIC. 
 
-\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. The discriminating ability of the optimal model was evaluated against Bangkok specific and WHO threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).
+\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. The discriminating ability of the final model was evaluated against Bangkok specific \textit{constant} threshold and WHO \textit{moving} threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).
 
 
 \parttitle{Conclusions} Along with the high accuracy of prediction of our model, the novel contribution of this research is also that we determine that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. This suggests the influence of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic.
@@ -330,10 +331,96 @@ Dengue, a mosquito-borne viral disease, is caused by four distinct, but closely 
 
 Thailand began to experience Dengue fever in 1949 and it became pandemic in the country for the first time in 1958 in Bangkok \cite{hammon1964virological}. The information about the clinically diagnosed cases of dengue fever(DF), dengue hemorrhagic fever (DHF) and dengue shock syndrome (DSS) are sent to the Epidemiology Department in Bangkok \cite{chareonsook1999changing} via the Provincial Health Offices. The transmission of DENV which occurs through the bite of infected Aedes mosquitoes, principally Aedes aegypti, has dramatically increased in the last two decades \cite{hesse2007dengue} and occurrence of dengue fever is likely to rise \cite{wilder2012denguetools}.
 
-A combination of several factors determine the risk of DENV transmission. These factors include density of infected mosquitoes, (level of) immunity of people to dengue serotypes, meteorology, human related factors e.g. housing type, population density and demographics, cleanliness etc. Several potential predictive indicators that contribute to the above mentioned factors have been described\cite{leitmeyer1999dengue,runge2008does,thammapalo2008environmental,sarfraz2014near}. For example, the density of infected mosquitoes depends on total mosquito density \cite{scott2003aedes,alto2008larval} which depends on inside house breeding \cite{syarifah2008ovitrap} and outside house breeding \cite{sarfraz2014near}. The inside house breeding depends on cleaning activity \cite{chareonviriyaphap2003larval,raju2008application} and housing type \cite{favier2005influence} among other factors whereas outside house breeding is primarily influenced by neglected garbage \cite{arunachalam2010eco}, population density \cite{chang2009combining,knudsen1992vector,troyo2009urban} and rain \cite{nakhapakorn2005information}. The seasonal influence on rain \cite{WPR2015,stoddard2014long} and temperature \cite{lambrechts2011impact,carrington2013reduction,stoddard2014long} contributes to the mosquito density \cite{lambrechts2011impact,sulaiman1996relationship,thammapalo2008environmental,sarfraz2014near,nakhapakorn2005information}. The density of infected mosquitoes in the region is influenced by dengue rate in the region  \cite{halstead2008dengue,esteva2000influence} and so is the number of people with immunity \cite{adams2006cross,alto2008larval} along with the population demographics \cite{cummings2009impact,wilder2012denguetools,whodenvsym2015}. 
 
 
-Despite the numerous urban outbreaks of dengue with significant health and economic impact \cite{gubler2002epidemic,gubler2004cities,anuradha19981996,vaughn2000invited}, the detailed surveillance for diagnosing dengue has been limited which makes it difficult to generate detailed information on its epidemiology \cite{ooi2009dengue,guzman2004dengue}. Moreover, there are currently no licensed vaccines or specific therapeutics for the treatment of the infected people. A variety of dengue vector control strategies have been adopted in different regions \cite{erlanger2008effect,horstick2010dengue,vanlerberghe2009community,luz2011dengue} but this has not stopped its rapid emergence and global spread \cite{tatem2006global}. Therefore, the goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health care systems. It yields practical results (e.g., results of value to a national public health, control, screening or prevention program, or local resource planning program along with serving to re-demonstrate a previously well-documented phenomenon. 
+
+
+\begin{figure}[htbp!]
+\centering	
+\begin{sideways}
+	\begin{tikzpicture}[
+	node distance=1cm and 0cm,
+	mynode/.style={draw,  rectangle, text width=2cm,align=center}
+	]
+	
+	
+	\node[mynode] (pd) {Population Density};	
+	\node[mynode, left = 0.2 cm of pd]  (ht){Housing Type};
+	\node[mynode,below = of pd]  (grb){Neglected Garbage};
+	\node[mynode,left = 0.2 cm of grb]  (ca){Cleaning Activity};
+	\node[mynode,below =of grb]  (ob){Outside House Breeding};
+	\node[mynode,below =of ca]  (ib){Inside House Breeding};
+	\node[mynode,below  = of ob]  (md){Mosquito Density};
+	
+	\node[mynode, right = 1.5 cm of pd]  (season){Season};
+	\node[mynode, below left = of season, right = 0.2 cm of grb]  (rain){Rain};
+	\node[mynode, below right = of season, right = 0.2 cm of rain]  (DTR){DTR};
+	
+	
+	
+	\node[mynode, right = 0.4 cm of season]  (mndr){Surrounding Dengue Rate};
+	\node[mynode, right = 0.2 cm of mndr]  (dr){Dengue Rate};
+	\node[mynode, right = 0.3 cm of dr]  (pdr){Population Demographics};
+	
+	\node[mynode,right = 3.0 cm of md]  (dim){Density of Infected Mosquitoes};
+	\node[mynode,right = 3.0 cm of dim]  (idp){Immune Dengue People};
+	
+	\node[mynode,below left = 0.8cm of idp]  (dh){Actual DH/DHF/DSS Cases};
+	\node[mynode,below = 0.7 cm of dh, fill=blue!20] (rdh){Reported DH/DHF/DSS Cases};
+	
+	
+	\path (season) edge[-latex, ] node[left=1pt] {\cite{WPR2015, stoddard2014long}}   (rain)
+	(season) edge[-latex] node[right=1pt] {\cite{lambrechts2011impact, carrington2013reduction, stoddard2014long}} (DTR)    
+	(rain) edge[-latex]  node[left=1pt] {\cite{nakhapakorn2005information}} (ob)
+	(DTR) edge[-latex] node[left=1pt] {\cite{lambrechts2011impact}}   (md)  
+	(dr) edge[-latex] node[left=1pt] {\cite{adams2006cross, alto2008larval}} (idp)
+	(pdr) edge[-latex] node[left=1pt]{\cite{whodenvsym2015}} (idp)
+	(pdr) edge[-latex] node[right=1pt]{\cite{cummings2009impact,wilder2012denguetools}} (idp)
+	(dr) edge[-latex]  node[left=1pt] {\cite{halstead2008dengue, esteva2000influence}} (dim)
+	(mndr) edge[-latex] (dim)
+	(ht) edge[-latex, bend right=45] node {\cite{favier2005influence}} (ib)
+	
+	(pd) edge[-latex]  node[left=1pt] {\cite{chang2009combining,knudsen1992vector,troyo2009urban}}   (grb)
+	(grb) edge[-latex] node[left=1pt]{\cite{arunachalam2010eco}} (ob)
+	(ob) edge[-latex] node[left=1pt] {\cite{sarfraz2014near}}  (md) 
+	(ib) edge[-latex] node[left=1pt]{\cite{syarifah2008ovitrap}} (md) 
+	(md) edge[-latex] node[above=1pt]{\cite{scott2003aedes, alto2008larval}} (dim)
+	(dim) edge[-latex] node[right=1pt]{\cite{chareonsook1999changing}}   (dh)
+	(idp) edge[-latex] node[left=1pt]{\cite{whodenvsym2015}} (dh)
+	%(idp) edge[-latex] node[right=1pt]{\cite{reiter2010yellow}} (dh)
+	(ca) edge[-latex] node[left=1pt]{\cite{chareonviriyaphap2003larval}} (ib)
+	(ca) edge[-latex] node[right=1pt]{\cite{raju2008application}} (ib)
+	(dh) edge[-latex] node[left=1pt]{\cite{bhatt2013global}} (rdh);	
+	\end{tikzpicture}
+    \end{sideways}
+	\caption{Dependency chart for the occurence of DH/DHF/DSS Cases. }
+	\label{figure-bn}
+\end{figure}
+
+
+
+A combination of several factors determine the risk of DENV transmission as shown in Figure~\ref{figure-bn}. These factors include density of infected mosquitoes, (level of) immunity of people to dengue serotypes, meteorology, human related factors e.g. housing type, population density and demographics, cleanliness etc. Several potential predictive indicators that contribute to the above mentioned factors have been described\cite{leitmeyer1999dengue,runge2008does,thammapalo2008environmental,sarfraz2014near}. For example, the density of infected mosquitoes depends on total mosquito density \cite{scott2003aedes,alto2008larval} which depends on inside house breeding \cite{syarifah2008ovitrap} and outside house breeding \cite{sarfraz2014near}. The inside house breeding depends on cleaning activity \cite{chareonviriyaphap2003larval,raju2008application} and housing type \cite{favier2005influence} among other factors whereas outside house breeding is primarily influenced by neglected garbage \cite{arunachalam2010eco}, population density \cite{chang2009combining,knudsen1992vector,troyo2009urban} and rain \cite{nakhapakorn2005information}. The seasonal influence on rain \cite{WPR2015,stoddard2014long} and temperature \cite{lambrechts2011impact,carrington2013reduction,stoddard2014long} contributes to the mosquito density \cite{lambrechts2011impact,sulaiman1996relationship,thammapalo2008environmental,sarfraz2014near,nakhapakorn2005information}. The density of infected mosquitoes in the region is influenced by dengue rate in the region  \cite{halstead2008dengue,esteva2000influence} and so is the number of people with immunity \cite{adams2006cross,alto2008larval} along with the population demographics \cite{cummings2009impact,wilder2012denguetools,whodenvsym2015}. 
+
+
+
+Despite the numerous urban outbreaks of dengue with significant health and economic impact \cite{gubler2002epidemic,gubler2004cities,anuradha19981996,vaughn2000invited}, the detailed surveillance for diagnosing dengue has been limited which makes it difficult to generate detailed information on its epidemiology \cite{ooi2009dengue,guzman2004dengue}. Moreover, there are currently no licensed vaccines or specific therapeutics for the treatment of the infected people. A variety of dengue vector control strategies have been adopted in different regions \cite{erlanger2008effect,horstick2010dengue,vanlerberghe2009community,luz2011dengue} but this has not stopped its rapid emergence and global spread \cite{tatem2006global}. \hl{}
+
+
+
+
+Therefore, the goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health care systems. It yields practical results (e.g., results of value to a national public health, control, screening or prevention program, or local resource planning program along with serving to re-demonstrate a previously well-documented phenomenon. 
+
+
+
+
+%Previous studies has shown that the implementation of Dengue Control Programs has not
+%given satisfactory result due to, among others, dengue surveillance program implementation in Indonesia which are mostly passive [6], the difference in communication intensity between the authorities responsible for the Dengue Control Programs, and the different levels of public knowledge about dengue in the community [38]. In addition, dengue vector, Aedes aegypti, have been resistant to some insecticides from the group of organophosphates, and pyrethroids carbamic [39]. Therefore, despite some of the limitations mentioned above, early warning based on this model might be used as a part of the advocacy process for develop a cross-secto- rial networking in the surveillance and control of dengue. The models allowed some recogni- tion, although not perfect, of outbreak periods at an early stage with 2 months lead-time. Thus, development of early warning system could benefit from these predictions since one main rea- son for vector control being less successful is related to the poor and reactive management tar- geting interventions too late in the epidemics [8]. It may target high-risk periods, for when, health education and public health interventions can effectively prepare communities and potentially curb the epidemic
+
+
+
+
+
+
 
 
 
@@ -488,7 +575,7 @@ log (C_{0,t}) \sim \alpha +  \sum_{l=0}^{3} ns(\rlap{T}c _ {lt}, d =3) + \sum_{l
 
 where log() denotes the natural logarithm, \textit{C} represents the total dengue count data, \textit{t} denotes to time in months, \rlap{T}c represents DTR ($^{\circ}$C), \textit{R} denotes the mean monthly rainfall (mm) and  l, denotes the lag variables, ns() denotes a natural cubic spline. \\
 
-\hl{High correlation among predictor variables may give rise to singularity problems when fitting a statistical model. However, for GAMs, checking for collinearity is not sufficient. Since, we are now fitting smooth functions, it should be determined whether the smooth function of one variable can be produced using a combination of the smooths of the other terms in the model. This is called checking for \textit{concurvity}. We performed the concurvity check for all the predictor variables.}
+\hl{High correlation among predictor variables may give rise to singularity problems when fitting a statistical model. However, for GAMs, checking for collinearity is not sufficient. Since, we are now fitting smooth functions; it should be determined whether the smooth function of one variable can be produced using a combination of the smooths of the other terms in the model. This is called checking for \textit{concurvity}. We performed the concurvity check for all the predictor variables.}
 
 \textbf{Disease surveillance data of each districts as predictor}
 
@@ -544,12 +631,14 @@ Thus using the above-mentioned predictors, we evaluated the following models:
 
 
 
-\section{Results} \label{results}
+\section{Results and Discussion} \label{results}
 
 
-In this section, we explain about the models (A-F) listed in last section. The performance of these model is shown in Table~\ref{resultsPrediction} and the visual analyses of the prediction are shown in Figure~\ref{fig:lolo}. The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. For comparing  $\Delta$ AIC, all the fitted models (B-F) are compared to model A. 
+In this section, we explain about the models (A-F) listed in last section. The performance of these model is shown in Table~\ref{resultsPrediction} and the visual analyses of the prediction are shown in Figure~\ref{fig:lolo}. The vertical axis in Figure~\ref{fig:lolo} represents the number of DHF cases and the horizontal axis depicts the time in months from 2008-2012. \hl{The errors RMSE/SRMSE are calculated by testing on in-sample data. The prediction performance is compared over the same time periods (months $23-60$) to reduce the potential bias. This period is chosen because the final model uses lagged dengue data of past  $23^{rd}$ month (as explained later in this section). The increase in adjusted R-squared value happens only if the new term improves the model more than what would be expected by chance (the higher the better). Deviance is a goodness-of-fit statistic for a statistical model (the higher the better) and the larger difference in AIC indicates stronger evidence for one model over the other (the lower the better). For comparing  the difference in AIC, all the fitted models (B-F) are compared to base model A (Seasonal Na\"{i}ve model) .  The discriminating ability of the the finally selected model was evaluated against Bangkok specific and WHO threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).}
 
-As a first step, the data for lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall was used to analyze the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. Table~\ref{tab:metValues} shown the approximate statistical significance of the smooth terms for DTR and rainfall. As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). 
+
+
+As a first step for model fitting, the data for lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall was used to analyze the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. Table~\ref{tab:metValues} shown the approximate statistical significance of the smooth terms for DTR and rainfall. As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). 
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -570,10 +659,7 @@ As a first step, the data for lags of month 0\textendash3 of Diurnal Temperature
 
 
 
-
-
-We calculated the cross-correlation of dengue cases with (a) dengue cases of lag of 0\textendash3 months (b) DTR of lag of 0\textendash3 months (c) rainfall of lag of 0\textendash3 months and (d) the dengue cases of lag of 0\textendash3 months from the surrounding districts.  
-Figure~\ref{figure-Cross-Cor-1} shows the cross-correlation indicate that the highest positive association between dengue incidence and lagged dengue incidences were found at lag 0 (r, 0.667), with rainfall at lag 2 (r, 0.428) and with dengue incidences from surrounding districts at lag 1 (r, 0.514). There was a negative correlation of DTR with dengue incidence at all the lags. For lag 0 (r, -0.261), lag 1 (r, -0.373), lag 2 (r,  -0.309) and lag 3 (r,  -0.154) was observed. 
+We calculated the cross-correlation of dengue cases with (a) dengue cases of lag of 0\textendash3 months (b) DTR of lag of 0\textendash3 months (c) rainfall of lag of 0\textendash3 months and (d) the dengue cases of lag of 0\textendash3 months from the surrounding districts. Figure~\ref{figure-Cross-Cor-1} shows the cross-correlation indicate that the highest positive association between dengue incidence and lagged dengue incidences were found at lag 0 (r, 0.667), with rainfall at lag 2 (r, 0.428) and with dengue incidences from surrounding districts at lag 1 (r, 0.514). There was a negative correlation of DTR with dengue incidence at all the lags. For lag 0 (r, -0.261), lag 1 (r, -0.373), lag 2 (r,  -0.309) and lag 3 (r,  -0.154) was observed. 
 
 
 
@@ -590,14 +676,8 @@ Figure~\ref{figure-Cross-Cor-1} shows the cross-correlation indicate that the hi
 %\end{figure}
 
 
-We then perfomed the analyses solely using the data of lagged dengue incidences. For short term lags, the data from past $1-4$ months was included. When the long-term lagged dengue incidence data was taken into account, the non-linear distributed lag models were used using dlnm package\cite{gasparrini2011distributed}. The influence of long-term lagged data of dengue incidences is shown using the contour plot in Figure~\ref{fig:targetContour}. It is observed that lagged long-term data has lower relative risks of transmission up to almost 2 years following a large outbreak in around lag 24. This suggests a negative feedback cyclic pattern. Figure~\ref{fig:lagPeak} suggests that when an outbreak happens in a particular month then dengue risk in each of the following months will increase with a peak in next 23 months (Figure~\ref{fig:lagPeak}). Both Figure~\ref{fig:lagPeak} and Figure~\ref{fig:multipleRRlongLag} are the lag-response curve for the differing number of dengue cases after an outbreak happens in a specified month. Thus based on these  analyses, the optimal variables for the prediction models included dengue count at lag 1,2 for short-term lags and lag 23 for long term lag. We then combined the meteorological variables for lag greater than 1 month and dengue lag terms used in `Optimal Lag Surveillance' model (model C) to determine their association with dengue incidences. This model is termed as `Optimal Met and Lag Surveillance Model' (model D). 
-
-
-%The model that consists of these lags is termed as `Optimal Lag Surveillance' model (model C). The performance of the model is shown in Table~\ref{resultsPrediction}. The visual analyses of the prediction of the model are shown in Figure~\ref{fig:lolo}. 
-
-Since one of our hypotheses is that the significance of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic in statistically significant. In other words, the dengue cases in a particular district are influenced by the dengue cases in there surrounding districts. To test the hypothesis, we determine how the occurrence of dengue in a target district is influenced by the occurrence of dengue in its surrounding districts. Both short-term and long-term lagged dengue cases data of the dengue incidences in surrounding districts was taken into account. For short-term lags, we considered the lagged data of past 1-4 months in which the data of lag 1 and 2 months was found to be statistically significant (p \textless 0.05). For long-term lags, the data up to the past 30 months was used. To determine the relative risks of transmission following an outbreak in a specified month, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. For the sake of brevity, the lag-response curve for the differing number of dengue cases is not shown here. Based on the aforementioned analyses, the optimal lag terms of dengue incidences in surrounding districts were found to be for lag 1, lag 2 and lag 12 (p \(>\!\!>\) 0.05).  These smooth terms were combined with that of Model D and termed as `Optimal Representation Model' (model E). Our last model (F) included waste disposal data (as a socioeconomic indicator) from each district as a predictor. The association of the smooth terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. 
-
-%Figure~\ref{fig:surroundingDistrictContour} suggests that when a large outbreak happens in a particular district in some specified month, then dengue risk in its surrounding districts will increase with a peak in the next 12 months. Similar to Figure~\ref{fig:targetContour} this suggests a negative feedback cyclic pattern. 
+\hl{But in order to create an early warning system (EWS), it is required to give a certain lead time. Thus, in subsequent analysis all the data that we use shall have a lag of atleast one month.}  The second model that we fit consists solely the data of lagged dengue incidences. For short term lags, the data from past $1-4$ months was included. When the long-term lagged dengue incidence data was taken into account, the non-linear distributed lag models were used using dlnm package\cite{gasparrini2011distributed}. The influence of long-term lagged data of dengue incidences is shown using the contour plot in Figure~\ref{fig:targetContour}. It is observed that lagged long-term data has lower relative risks of transmission up to almost 2 years following a large outbreak in around lag 23. This suggests a negative feedback cyclic pattern. Figure~\ref{fig:lagPeak} suggests that when an outbreak happens in a particular month then dengue risk in each of the following months will increase with a peak in next 23 months (Figure~\ref{fig:lagPeak}). %and Figure~\ref{fig:multipleRRlongLag}  
+Figure~\ref{fig:lagPeak} contains the lag-response curve for the differing number of dengue cases after an outbreak happens in a specified month. Thus based on these  analyses, the optimal variables for the prediction models included dengue count at lag 1,2 for short-term lags and lag 23 for long term lag. We then combined the meteorological variables for lag greater than 1 month and dengue lag terms used in `Optimal Lag Surveillance' model (model C) to determine their association with dengue incidences. This model is termed as `Optimal Met and Lag Surveillance Model' (model D). 
 
 
 \begin{figure}[htbp]
@@ -611,12 +691,108 @@ Since one of our hypotheses is that the significance of movement patterns of peo
 	\\[1.5ex]
 	\begin{minipage}{0.8\textwidth}
 		\centering
-		\includegraphics[width= 1.1\textwidth]{9-LagResposeLongLag}
+		\includegraphics[width= 1.1\textwidth]{24-LagResposeLongLagMany}
 		\subcaption{}
 		\label{fig:lagPeak}
 	\end{minipage}
-	\caption{Retrospective transmission period is calculated to account for the influence \\ of dengue incidences in each of the target districts (Fig \ref{fig:targetContour}) and lag-response curve for \\ an increase in 1100 units of dengue incidences (Fig \ref{fig:lagPeak}).}
+	\caption{Retrospective transmission period is calculated to account for the influence \\ of dengue incidences in each of the target districts (Fig \ref{fig:targetContour}) and lag-response curve for \\ an increase in various units of dengue incidences (Fig \ref{fig:lagPeak}).}
 \end{figure}
+
+
+
+%The model that consists of these lags is termed as `Optimal Lag Surveillance' model (model C). The performance of the model is shown in Table~\ref{resultsPrediction}. The visual analyses of the prediction of the model are shown in Figure~\ref{fig:lolo}. 
+
+Since one of our hypotheses is that the significance of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic in statistically significant. In other words, the dengue cases in a particular district are influenced by the dengue cases in there surrounding districts. To test the hypothesis, we determine how the occurrence of dengue in a target district is influenced by the occurrence of dengue in its surrounding districts. Both short-term and long-term lagged dengue cases data of the dengue incidences in surrounding districts was taken into account. For short-term lags, we considered the lagged data of past 1-4 months in which the data of lag 1 and 2 months was found to be statistically significant (p \textless 0.05). For long-term lags, the data up to the past 30 months was used. To determine the relative risks of transmission following an outbreak in a specified month, the non-linear distributed lag models were used using dlnm package \cite{gasparrini2011distributed}. For the sake of brevity, the lag-response curve for the differing number of dengue cases is not shown here. Based on the aforementioned analyses, the optimal lag terms of dengue incidences in surrounding districts were found to be for lag 1, lag 2 and lag 12 (p \(>\!\!>\) 0.05).  These smooth terms were combined with that of Model D and termed as `Optimal Representation Model' (model E) according to Equation~\ref{eq:optimal}.
+
+\begin{equation}
+\begin{aligned}
+\label{eq:optimal}
+log (C_{0,t}) \sim \alpha +  \sum_{l=0}^{3} ns(\rlap{T}c _ {lt}, d =3) + \sum_{l=0}^{3} ns(R_ {lt}, d =3) +\sum_{l=1}^{2} ns(C_ {lt}, d =3)  + \\
+\sum_{l=23}^{23} ns(C_ {lt}, d =3) + \sum_{l=1}^{2} ns(SC_ {lt}, d =3) + \sum_{l=12}^{12} ns(SC_ {lt}, d =3)
+\end{aligned}
+\end{equation}
+
+where \textit{C} represents the dengue counts in the target district, \rlap{T}c represents DTR ($^{\circ}$C), \textit{R} denotes the mean monthly rainfall (mm) and \textit{SC} denotes the dengue counts in the surrounding districts. 
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width= 0.97 \textwidth]{Fit-OptimalRepresentation+Garbage}
+		\caption{Association between past dengue count over optimal lags (lag 1,2 and 23) \\ for each target district and lag 1,12 for surrounding district count data and garbage data \\ with dengue outbreak.  Solid lines represent relative risks (RR) of dengue cases whereas\\ the dotted lines depict the upper and lower limits of 95\% confidence intervals.}
+		\label{figure-mostOptimalFit}
+	\end{center}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width= 1.0\textwidth]{19-resid-diagnosis}
+		\caption{\textbf{Residual Diagnosis.} Top-left is the histogram of residuals; top-right is the \\ partial ACF plot. On bottom-left is the Q-Q plot for the deviance residuals whereas \\ the relationship between the reported and predicted cases is shown on bottom-right}.
+		\label{figure:resid-diagnosis}
+	\end{center}
+\end{figure}
+
+
+
+Our last model (F) included waste disposal data (as a socioeconomic indicator) from each district as a predictor. The association of the smooth terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. After the final model (F) is fit, the residuals are inferred; and their normality and residual autocorrelation are checked. Figure ~\ref{figure:resid-diagnosis} shows that residual histograms (top-left) are symmetric and follow a unimodal distribution. The Q-Q plot of deviance residuals which are conditional on the fitted model coefficients and scale parameter (bottom-left) is close to a straight line. This suggests that the distributional assumptions of the model are satisfied. The plot of reported and predicted cases indicate linear relation (bottom-right). The partial autocorrelation function plot (top-right) does show significant autocorrelation for some long-term lags, but it was found that keeping those lagged terms increases the complexity of the model without any significant increase in prediction performance. Thus, they were chosen to be ignored in the model \footnote{Including those additional terms does not as well provide insights in favor of our hypothesis too}. 
+
+
+
+\begin{figure}[htbp]
+	\begin{minipage}[c]{1.0\textwidth}
+		\vspace*{\fill}
+		\centering
+		\includegraphics[width=9cm,height=3.9cm]{Pred-SeasonalNaive}
+		%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
+		\label{fig:testnaive}\par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-MetOptimal}
+		%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
+		\label{fig:lolo:test1}\par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalLag}
+		%		\subcaption{Optimal short-lagged (lag 1, lag 2) \& long-lagged (lag 23) DHF count for invidual districts.}
+		\label{fig:test2} \par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-Met-OptimalLag}
+		%		\subcaption{Combination of data used in models B and C. }
+		\label{fig:test3} \par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalRepresentation}
+		%		\subcaption{Combination of meteorology data (lag 1-3)  \& DHF count for invidual districts (lag 1,2,23) \&  \\ its \textit{surrounding district} (lag 1,2, 12).}
+		\label{fig:test4} \par\vfill
+		\includegraphics[width=9cm,height=3.9cm]{Pred-SocialIncluded}
+		%		\subcaption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used.}
+		\label{fig:test5}
+	\end{minipage}
+	\caption{Monthly Observed and Predicted Dengue Cases from 2008-2012.}
+	\label{fig:lolo}
+\end{figure}
+
+
+
+
+The simplest Seasonal Na\"{i}ve model (A) that used month of the year data for making the forecasts showed the poorest performance when compared with the other models. The quality of fit and predictive ability increases with the subsequent models as shown (Table~\ref{resultsPrediction}). 
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|lccccc|}
+		\hline
+		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \textbf{$\Delta$ AIC} \\ 
+		\hline
+		A: Seasonal Na\"{i}ve  & 10.22 & 0.62 & 0.16 & 0.16 & 0\\ 
+		B: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & -492.64\\ 
+		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2420.39 \\ 
+		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2725.62\\ 
+		E: Optimal Representation Model & 6.12 & 0.37 & 0.64 & 0.66 & -2718.90\\ 
+		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2713.86 \\ 
+		\hline
+	\end{tabular}
+	\caption{Predictive performance statistics of different models evaluated on the training data for the same time period. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).), high deviance and low $\Delta$ AIC. The prediction performance is compared over the same time periods (months $23-60$) to reduce the potential bias.}
+	\label{resultsPrediction}
+\end{table}
+
+%Figure~\ref{fig:surroundingDistrictContour} suggests that when a large outbreak happens in a particular district in some specified month, then dengue risk in its surrounding districts will increase with a peak in the next 12 months. Similar to Figure~\ref{fig:targetContour} this suggests a negative feedback cyclic pattern. 
+
+
 
 
 
@@ -634,42 +810,10 @@ Since one of our hypotheses is that the significance of movement patterns of peo
 %\end{figure}
 
 
-\begin{figure}[h!]
-	\begin{center}
-		\includegraphics[width= 0.97 \textwidth]{Fit-OptimalRepresentation+Garbage}
-		\caption{Association between past dengue count over optimal lags (lag 1,2 and 23) \\ for each target district and lag 1,12 for surrounding district count data and garbage data \\ with dengue outbreak.  Solid lines represent relative risks (RR) of dengue cases whereas\\ the dotted lines depict the upper and lower limits of 95\% confidence intervals.}
-		\label{figure-mostOptimalFit}
-	\end{center}
-\end{figure}
 
 
 
-\begin{figure}[htbp]
-	\begin{minipage}[c]{1.0\textwidth}
-		\vspace*{\fill}
-		\centering
-		\includegraphics[width=9cm,height=3.9cm]{Pred-SeasonalNaive}
-%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
-		\label{fig:testnaive}\par\vfill
-		\includegraphics[width=9cm,height=3.9cm]{Pred-MetOptimal}
-%		\subcaption{Monthly Rainfall and DTR data with statistical significance (lag 1-3) of Bagkok city.}
-		\label{fig:lolo:test1}\par\vfill
-		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalLag}
-%		\subcaption{Optimal short-lagged (lag 1, lag 2) \& long-lagged (lag 23) DHF count for invidual districts.}
-		\label{fig:test2} \par\vfill
-		\includegraphics[width=9cm,height=3.9cm]{Pred-Met-OptimalLag}
-%		\subcaption{Combination of data used in models B and C. }
-		\label{fig:test3} \par\vfill
-		\includegraphics[width=9cm,height=3.9cm]{Pred-OptimalRepresentation}
-%		\subcaption{Combination of meteorology data (lag 1-3)  \& DHF count for invidual districts (lag 1,2,23) \&  \\ its \textit{surrounding district} (lag 1,2, 12).}
-		\label{fig:test4} \par\vfill
-		\includegraphics[width=9cm,height=3.9cm]{Pred-SocialIncluded}
-%		\subcaption{The optimal combination of data (rainfall, DTR, lagged dengue data) of each target district and \\ its \textit{surrounding district} as well the data representing social capital i.e. monthly garbage collection \\ is used.}
-		\label{fig:test5}
-	\end{minipage}
-	\caption{Monthly Observed and Predicted Dengue Cases from 2008-2012.}
-	\label{fig:lolo}
-\end{figure}
+
 
 
 
@@ -695,58 +839,17 @@ Since one of our hypotheses is that the significance of movement patterns of peo
 
 
 
-\begin{table}
-	\centering
-	\begin{tabular}{|lccccc|}
-		\hline
-		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \textbf{$\Delta$ AIC} \\ 
-		\hline
-		A: Seasonal Na\"{i}ve  & 10.22 & 0.62 & 0.16 & 0.16 & 0\\ 
-		B: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & -492.64\\ 
-		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2420.39 \\ 
-		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2725.62\\ 
-		E: Optimal Representation Model & 6.12 & 0.37 & 0.64 & 0.66 & -2718.90\\ 
-		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2713.86 \\ 
-		\hline
-	\end{tabular}
-	\caption{Predictive performance statistics of different models evaluated on the training data for the same time period. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).) }
-	\label{resultsPrediction}
-\end{table}
-
-\section{Discussion} \label{discussion}
-
-As discussed in our analyses above, the `Optimal Representation Model' (model E) shows the best\footnote{Although it is shown in Table ~\ref{resultsPrediction} that model F has similar predictive performance as that of model E, since the later has comparatively smaller complexity it is considered to be the candidate model for evaluation on external data set. However, in terms of over-all performance, model F is deemed to be most suitable.} performance of all the aforementioned models (model A-F). The predictive performance statistics of different models evaluated on the training data from the years $2008-2012$ is also listed in Table~\ref{resultsPrediction}. 
 
 
 
-\begin{figure}[h!]
-	\begin{center}
-		\includegraphics[width= 1.0\textwidth]{19-resid-diagnosis}
-		\caption{\textbf{Residual Diagnosis.} Top-left is the histogram of residuals; top-right is the \\ partial ACF plot. On bottom-left is the Q-Q plot for the deviance residuals whereas \\ the relationship between the reported and predicted cases is shown on bottom-right}.
-		\label{figure:resid-diagnosis}
-	\end{center}
-\end{figure}
 
 
-The simplest model (A) using only meteorological variables showed the poorest performance when compared with the other models. The quality of fit and predictive ability increases with the subsequent models 
-as shown (Table~\ref{resultsPrediction}).  For instance, the model B that includes short-term dengue incidences data, showed, poor predictions as compared to the model C which has optimal autoregressive model terms including dengue at lag 1, 2 and lags 23. The combination of optimal meteorological variables with optimal autoregressive model terms had a 
-rather good predictive performance. Finally, the combination of optimal autoregressive model terms of the data from surrounding districts has the best predictive ability. The predictive ability
-as evaluated by RMSE and SMRSE, as well as the values of R-sq.(adjusted) and `Deviance Explained' for the models A-E show that model (E) combining model (A) and (D) is the best-predictive model (Table~\ref{resultsPrediction}).
-
-The final ``Optimal Representation'' model (E) included combinations of the meteorological variables and the autoregressive lag terms of dengue counts in the past (both for target districts and its surrounding districts) according to:
-
-\begin{equation}
-\begin{aligned}
-\label{eq:optimal}
-log (C_{0,t}) \sim \alpha +  \sum_{l=0}^{3} ns(\rlap{T}c _ {lt}, d =3) + \sum_{l=0}^{3} ns(R_ {lt}, d =3) +\sum_{l=1}^{2} ns(C_ {lt}, d =3)  + \\
-\sum_{l=23}^{23} ns(C_ {lt}, d =3) + \sum_{l=1}^{2} ns(SC_ {lt}, d =3) + \sum_{l=12}^{12} ns(SC_ {lt}, d =3)
-\end{aligned}
-\end{equation}
-
-where \textit{C} represents the dengue counts in the target district, \rlap{T}c represents DTR ($^{\circ}$C), \textit{R} denotes the mean monthly rainfall (mm) and \textit{SC} denotes the dengue counts in the surrounding districts. 
 
 
-After the `Optimal Representation' model of Equation~\ref{eq:optimal} is fit, the residuals are inferred; and their normality and residual autocorrelation are checked. Figure ~\ref{figure:resid-diagnosis} shows that residual histograms (top-left) are symmetric and follow a unimodal distribution. The Q-Q plot of deviance residuals which are conditional on the fitted model coefficients and scale parameter (bottom-left) is close to a straight line. This suggests that the distributional assumptions of the model are satisfied. The plot of reported and predicted cases indicate linear relation (bottom-right). The partial autocorrelation function plot (top-right) does show significant autocorrelation for long-term lags (lag $10-13$, lag 22, lag 25 etc.), but it was found that keeping those lagged terms increases the complexity of the model without any significant increase in prediction performance. Thus, they were chosen to be ignored in the model \footnote{Including those additional terms does not as well provide some additional insight in favor of our hypothesis too}. 
+
+
+
+
 
 
 
@@ -774,7 +877,7 @@ After the `Optimal Representation' model of Equation~\ref{eq:optimal} is fit, th
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width= 1.0\textwidth]{Final-Prediction}
-		\caption{The model E (Equation ~\ref{eq:optimal}) was trained on the data from $2008-2014$ for \\ validation on external data set.}.
+		\caption{The final model (F) was trained on the data from $2008-2014$ and the \\ validation is performed on external data of year $2015$.}.
 		\label{fig:validate}
 	\end{center}
 \end{figure}
@@ -782,27 +885,7 @@ After the `Optimal Representation' model of Equation~\ref{eq:optimal} is fit, th
 
 
 
-To evaluated the predictive performance of our final model (E), several external validation data sets were created.   The visual analyses is provided in Figure~\ref{fig:validate} and the results are mentioned in Table~\ref{tab:resultsOfValidation}. The `red' line shows the prediction on training data set and the `blue' line shows the prediction on validation sets while the `black' line represents the observed dengue cases. The horizontal gray line represents the mean monthly dengue cases across $2008-2015$ which we consider to be the threshold of the epidemic. The visual analysis of Figure~\ref{fig:validate1} shows the poorest performance with a significant difference between predicted and observed cases for the external data set (i.e. for the months in the year 2013 and so on). The model trained on the larger set of training data shows the better predictive performance as the influence of both, the direct and  retrospective transmission could be learned in the model (Table~\ref{tab:resultsOfValidation}).   
-
-\begin{table}
-	\centering
-	\label{my-label}
-	\begin{tabular}{|l|p{4.0cm}|p{4.0cm}|ll}
-		\hline
-		\textbf{Prediction Accuracy} & \textbf{Epidemic constant threshold}  & \textbf{Epidemic moving threshold} \\
-	                                 & monthly average cases ($2008-2015$)  & (mean of a moving window over preeding 5 years + 2 SD) \\  \cline{1-3}
-		\textbf{Sensitivity} & 87.0  & 100.0  \\ 
-	    \textbf{Specificity} & 92.60 &  57.14  \\ 
-		\textbf{PPV} & 95.72 &  90.62         \\ 
-		\textbf{NPV} & 78.80  &  100.0        \\\cline{1-3}
-	\end{tabular}
-	\caption{The discriminating ability of model E was evaluated against our specified threshold of the epidemic (790 monthly dengue cases) and WHO threshold  of the epidemic.}
-\end{table}
-
-The discriminating ability of model E was evaluated against our specified threshold of the epidemic (790 monthly dengue cases) and WHO threshold of the epidemic. To separate transmission months above and below 790 cases, the specificity was 85.1\% and sensitivity was 84.7\%. The positive predictive value was observed to be 91.6\% and the negative predictive value was 74.5\%. The WHO moving outbreak threshold \cite{world2009dengue} is the sum total of monthly average cases of preceding 5 years and twice their standard deviation. This value comes out to be around 1287 dengue cases per month. To separate transmission months above and below 1287 cases, the specificity was 72.72\% and sensitivity was 96.0\%. The positive predictive value and negative predictive value were both estimated to be around 89.0\%.
-
-
-
+To evaluated the predictive performance of our final model (F), few external validation data sets were created for which the predictive performance is shown in Table~\ref{tab:resultsOfValidation}. The model trained on the larger set of training data shows the better predictive performance as the influence of both, the direct and retrospective transmission could be learned in the model. For one the case in which model was trained on data from $2008-2014$ and evaluation performed for year $2015$, the visual analysis is shown is provided in Figure~\ref{fig:validate}. 
 
 
 \begin{table}[H]
@@ -811,7 +894,7 @@ The discriminating ability of model E was evaluated against our specified thresh
 		\hline
 		\textbf{Training Dataset} & \textbf{In-sample} &  \textbf{Out-Sample} (2014-2015) & \textbf{Out-Sample} (2014) & \textbf{Out-Sample} (2015) \\ 
 		\hline
-%		\textbf{2008-2012} & 0.37 & 303.28 & 410.74 & 21.66 & 1.43 & 437.50 \\ 
+		%		\textbf{2008-2012} & 0.37 & 303.28 & 410.74 & 21.66 & 1.43 & 437.50 \\ 
 		\textbf{2008-2013} & 0.41 &  0.62 &  0.35 & 0.60 \\ 
 		\textbf{2008-2014} & 0.41 &       &       & 0.54 \\ 
 		\hline
@@ -821,19 +904,41 @@ The discriminating ability of model E was evaluated against our specified thresh
 \end{table}
 
 
+\begin{table}
+	\centering
+	\label{my-label}
+	\begin{tabular}{|l|p{4.0cm}|p{4.0cm}|ll}
+		\hline
+		\textbf{Prediction Accuracy} & \textbf{Epidemic constant threshold}  & \textbf{Epidemic moving threshold} \\
+		& monthly average cases ($2008-2015$) = 790 cases  & (mean of a moving window over preeding 5 years + 2 SD) \\  \cline{1-3}
+		\textbf{Sensitivity} & 87.0  & 100.0  \\ 
+		\textbf{Specificity} & 92.60 &  57.14  \\ 
+		\textbf{PPV} & 95.72 &  90.62         \\ 
+		\textbf{NPV} & 78.80  &  100.0        \\\cline{1-3}
+	\end{tabular}
+	\caption{The discriminating ability of the final model (F).} 
+	\label{tab:resultsBinary}
+\end{table}
+
+\hl{The  results of the discriminating ability of model (F) evaluated against the constant threshold of the epidemic (average monthly dengue cases from $2008-2015$) as well WHO moving threshold is shown in} Table~\ref{tab:resultsBinary}. \hl{The comparison is done in terms of Sensitivity (true positive rate), Specificity (true negative rate), positive and negative predictive values (PPV and NPV respectively).  In other words, Sensitivity means the proportion of observed positives that were predicted to be positive. The Specificity is the proportion of observed negatives that were predicted to be negatives. The PPV is the proportion that answers the question: `How likely is it that this dengue outbreak will happen given that the prediction result is positive?` The NPV answers the question: `How likely is it that outbreak does not happen given that the prediction result is negative?`. Because of the higher values of the WHO threshold, the NPV is 100\% as compared to that of moderate values of constant threshold. However, it should be noted that Thailand suffered a big unexpected outbreak in year 2015 for which the quality of prediction results deteriorated.}
 
 
-%
-%
 
 
-\section{Conclusion} \label{conclusion}
+\section{Conclusion} \label{discussion}
 
 
-In this study, the dengue incidences were predicted using a variety of data. The best model for dengue prediction includes meteorological data (rainfall, DTR), lagged dengue data from specified districts and their surroundings and the socioeconomic data. We proved that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. Thus for forecasting dengue outbreaks and taking preventing measures, the epidemiologists and health authorities should consider the influence of movement patterns of people and spatial heterogeneity of human activities. In our future work, we intend to develop customized models for each individual district, include more demographic data and data from government surveys e.g. House index (HI), Breteau index (BI) and Container index (CI). Also, we would like to integrate the information from social media platforms to track the dengue incidences in real time. 
+In this study, the dengue incidences were predicted using a variety of data. The best model for the dengue prediction is the one that includes lagged meteorological data (rainfall, DTR), lagged dengue data of the target districts as well as their surroundings and the socioeconomic data. We proved that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. Thus for forecasting dengue outbreaks and taking preventing measures, the epidemiologists and health authorities should consider the influence of movement patterns of people and spatial heterogeneity of human activities. The results also support previous studies that suggest temperature, precipitation, short and long term lagged incidences are related with dengue occurrence and its transmission. 
+
+\hl{A number of limitations are apparent for this study.  First, the predictive model that finally selected, could explain only 73 per cent of the variation in the occurrence of dengue cases. The remaining 27 per cent unexplained variation could be due to the influence of other factors. The out of sample predictive performance was considerably worse than within sample. Rather than dismissing it as a case of over-fitting, the case demands that we look into the facts and `plausible causes` behind it. Thailand had an unexpected dengue outbreak in year 2015, the worst in last 20 years. It was the year for dengue outbreaks across Asia. Along with Thailand, other countries like Malaysia, the Philippines, Thailand, Taiwan, Vietnam and India were among the worst hit countries. According to the World Health Organization, Malaysia reported nearly 18\% more cases from 2014, The Philippines reported an almost 50\% rise in cases compared with 2014 and India reported double the cases as compared to the previous year. Thus, the characters of the validation dataset found less representation in the training dataset. Second, the study simply used monthly dengue aggregate data rather than using direct analysis of laboratory surveillance reports. The monthly dengue aggregate data constitutes only the laboratory confirmed dengue cases. But almost three-quarters of people who catch dengue have few or no symptoms. Despite being asymptomatic, these people may play a key role in the dengue transmission cycle. But our data does not represent such cases nor does it put weighted emphasis on people that suffer from multiple infections from different serotypes which puts one at greater risk for deadly severe dengue haemorrhagic fever (DHF) and dengue shock syndrome (DSS).  Third, dengue severity is a key determinant of underreporting. There are several impediments of reporting dengue cases in Thailand and we need to incorporate the measure to estimate the underreporting of dengue inpatients on the district level. The results show that binary system of classifying months into outbreaks and non-outbreaks as proposed in the paper worked quite well in our evaluation. We need to add more data and collect a more diverse data. The diverse data may include House index (HI), Breteau index (BI), Container index (CI) and integrating the information from social media platforms to track the dengue incidences in real time will likely better the prediction.
+Social media has become a key component in understanding dengue. For example in 2015, popular actor Thrisadee `Por' Sahawong died due to dengue infection. This case created a sense of panic which motivated people to understand the facts, symptoms, mechanism of virus transmission  and the preventive measures including vaccination.	
+We also aim to develop customized models for each individual district that includes demographic data, data from government surveys and above-mentioned additional features at a more granular level. }
+
+
+
 
 \section*{List of abbreviations}
-DENV: Dengue Virus; DF: Dengue Fever; DHF: Dengue Haemorrhagic Fever; DSS: Dengue Shock Syndrome; DTR: Diurnal Temperature Range; GAM: Generalized Additive Model; DLNM: Distributed Lag Non-Linear Models; RMSE: Root Mean Squared Error; SRMSE: Standard Root Mean Squared Error. 
+DENV: Dengue Virus; DF: Dengue Fever; DHF: Dengue Haemorrhagic Fever; DSS: Dengue Shock Syndrome; DTR: Diurnal Temperature Range; GAM: Generalized Additive Model; DLNM: Distributed Lag Non-Linear Models; RMSE: Root Mean Squared Error; SRMSE: Standard Root Mean Squared Error; PPV: Positive Predictive Value; NPV: Negative Predictive Value. 
 
 
 
@@ -1886,6 +1991,8 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 	\end{bbook}
 	\endbibitem
 	
+	
+	
 \end{thebibliography}
 
 
@@ -1962,13 +2069,13 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 %\textbf{Lag-Response }
 
 
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width= 1.0\textwidth]{24-LagResposeLongLagMany}
-		\caption{Association of different units of increase in the number of dengue cases \\ with the specified number of months.}
-		\label{fig:multipleRRlongLag}
-	\end{center}
-\end{figure}
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width= 1.0\textwidth]{24-LagResposeLongLagMany}
+%		\caption{Association of different units of increase in the number of dengue cases \\ with the specified number of months.}
+%		\label{fig:multipleRRlongLag}
+%	\end{center}
+%\end{figure}
 
 
 
