@@ -1,65 +1,244 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: bmc_article.aux
 The style file: bmc-mathphys.bst
-I found no \bibdata command---while reading file bmc_article.aux
-Warning--I didn't find a database entry for "gubler1995dengue"
-Warning--I didn't find a database entry for "whodenvtype2015"
-Warning--I didn't find a database entry for "hammon1964virological"
-Warning--I didn't find a database entry for "chareonsook1999changing"
-Warning--I didn't find a database entry for "hesse2007dengue"
-Warning--I didn't find a database entry for "wilder2012denguetools"
-Warning--I didn't find a database entry for "leitmeyer1999dengue"
-Warning--I didn't find a database entry for "runge2008does"
-Warning--I didn't find a database entry for "thammapalo2008environmental"
-Warning--I didn't find a database entry for "sarfraz2014near"
-Warning--I didn't find a database entry for "scott2003aedes"
-Warning--I didn't find a database entry for "alto2008larval"
-Warning--I didn't find a database entry for "syarifah2008ovitrap"
-Warning--I didn't find a database entry for "chareonviriyaphap2003larval"
-Warning--I didn't find a database entry for "raju2008application"
-Warning--I didn't find a database entry for "favier2005influence"
-Warning--I didn't find a database entry for "arunachalam2010eco"
-Warning--I didn't find a database entry for "chang2009combining"
-Warning--I didn't find a database entry for "knudsen1992vector"
-Warning--I didn't find a database entry for "troyo2009urban"
-Warning--I didn't find a database entry for "nakhapakorn2005information"
-Warning--I didn't find a database entry for "WPR2015"
-Warning--I didn't find a database entry for "stoddard2014long"
-Warning--I didn't find a database entry for "lambrechts2011impact"
-Warning--I didn't find a database entry for "carrington2013reduction"
-Warning--I didn't find a database entry for "sulaiman1996relationship"
-Warning--I didn't find a database entry for "halstead2008dengue"
-Warning--I didn't find a database entry for "esteva2000influence"
-Warning--I didn't find a database entry for "adams2006cross"
-Warning--I didn't find a database entry for "cummings2009impact"
-Warning--I didn't find a database entry for "whodenvsym2015"
-Warning--I didn't find a database entry for "malavige2004dengue"
-Warning--I didn't find a database entry for "whitehorn2010dengue"
-Warning--I didn't find a database entry for "reiter2010yellow"
-Warning--I didn't find a database entry for "wichmann2011dengue"
-Warning--I didn't find a database entry for "bhatt2013global"
-Warning--I didn't find a database entry for "gubler2002epidemic"
-Warning--I didn't find a database entry for "gubler2004cities"
-Warning--I didn't find a database entry for "anuradha19981996"
-Warning--I didn't find a database entry for "vaughn2000invited"
-Warning--I didn't find a database entry for "ooi2009dengue"
-Warning--I didn't find a database entry for "guzman2004dengue"
-Warning--I didn't find a database entry for "erlanger2008effect"
-Warning--I didn't find a database entry for "horstick2010dengue"
-Warning--I didn't find a database entry for "vanlerberghe2009community"
-Warning--I didn't find a database entry for "luz2011dengue"
-Warning--I didn't find a database entry for "tatem2006global"
-Warning--I didn't find a database entry for "wwo2012"
-Warning--I didn't find a database entry for "johansson2009multiyear"
-Warning--I didn't find a database entry for "morin2013climate"
-Warning--I didn't find a database entry for "thai2011role"
-Warning--I didn't find a database entry for "denguethai2015"
-Warning--I didn't find a database entry for "Rsoftware"
-Warning--I didn't find a database entry for "mgcv"
-Warning--I didn't find a database entry for "ramadona2016prediction"
-Warning--I didn't find a database entry for "hii2012optimal"
-Warning--I didn't find a database entry for "reich2013interactions"
-Warning--I didn't find a database entry for "gasparrini2010distributed"
-Warning--I didn't find a database entry for "mondini2008spatial"
-Warning--I didn't find a database entry for "wu2009higher"
-Warning--I didn't find a database entry for "gasparrini2011distributed"
-(There was 1 error message)
+Database file #1: mybibfileNew.bib
+Repeated entry---line 296 of file mybibfileNew.bib
+ : @article{bhatt2013global
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 458 of file mybibfileNew.bib
+ : @article{bhatt2013global
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 730 of file mybibfileNew.bib
+ : @article{gubler2002epidemic
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 767 of file mybibfileNew.bib
+ : @article{chareonsook1999changing
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 808 of file mybibfileNew.bib
+ : @misc{denguethai2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 924 of file mybibfileNew.bib
+ : @article{thammapalo2008environmental
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 948 of file mybibfileNew.bib
+ : @article{sarfraz2014near
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 989 of file mybibfileNew.bib
+ : @article{lambrechts2011impact
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1000 of file mybibfileNew.bib
+ : @article{wu2009higher
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1282 of file mybibfileNew.bib
+ : @article{adams2006cross
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1364 of file mybibfileNew.bib
+ : @article{lowe2011spatio
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1402 of file mybibfileNew.bib
+ : @article{favier2005influence
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1413 of file mybibfileNew.bib
+ : @article{raju2008application
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1434 of file mybibfileNew.bib
+ : @article{chareonsook1999changing
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1458 of file mybibfileNew.bib
+ : @article{bhatt2013global
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1469 of file mybibfileNew.bib
+ : @article{scott2003aedes
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1478 of file mybibfileNew.bib
+ : @article{adams2006cross
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1490 of file mybibfileNew.bib
+ : @article{alto2008larval
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1503 of file mybibfileNew.bib
+ : @article{esteva2000influence
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1515 of file mybibfileNew.bib
+ : @article{halstead2008dengue
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1527 of file mybibfileNew.bib
+ : @article{chareonviriyaphap2003larval
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1533 of file mybibfileNew.bib
+ : @article{syarifah2008ovitrap
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1542 of file mybibfileNew.bib
+ : @article{arunachalam2010eco
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1553 of file mybibfileNew.bib
+ : @article{lambrechts2011impact
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1564 of file mybibfileNew.bib
+ : @article{carrington2013reduction
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1576 of file mybibfileNew.bib
+ : @article{stoddard2014long
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1620 of file mybibfileNew.bib
+ : @article{bhatt2013global
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1631 of file mybibfileNew.bib
+ : @article{gubler2002epidemic
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1642 of file mybibfileNew.bib
+ : @article{gubler2004cities
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1653 of file mybibfileNew.bib
+ : @article{anuradha19981996
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1659 of file mybibfileNew.bib
+ : @article{vaughn2000invited
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1715 of file mybibfileNew.bib
+ : @article{leitmeyer1999dengue
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1726 of file mybibfileNew.bib
+ : @article{runge2008does
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1737 of file mybibfileNew.bib
+ : @article{thammapalo2008environmental
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1748 of file mybibfileNew.bib
+ : @article{sarfraz2014near
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1846 of file mybibfileNew.bib
+ : @misc{whodenvsym2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1854 of file mybibfileNew.bib
+ : @article{gubler1995dengue
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1865 of file mybibfileNew.bib
+ : @misc{whodenvtype2015
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1881 of file mybibfileNew.bib
+ : @article{hesse2007dengue
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1892 of file mybibfileNew.bib
+ : @article{gubler2002epidemic
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1903 of file mybibfileNew.bib
+ : @article{tatem2006global
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1918 of file mybibfileNew.bib
+ : @article{hammon1964virological
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1929 of file mybibfileNew.bib
+ : @article{chareonsook1999changing
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1940 of file mybibfileNew.bib
+ : @misc{denguethai2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1948 of file mybibfileNew.bib
+ : @article{cummings2009impact
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1958 of file mybibfileNew.bib
+ : @article{wilder2012denguetools
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1970 of file mybibfileNew.bib
+ : @misc{denguethai2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2034 of file mybibfileNew.bib
+ : @article{chang2009combining
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2045 of file mybibfileNew.bib
+ : @article{knudsen1992vector
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2056 of file mybibfileNew.bib
+ : @article{troyo2009urban
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2077 of file mybibfileNew.bib
+ : @article{sulaiman1996relationship
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2086 of file mybibfileNew.bib
+ : @article{thammapalo2008environmental
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2110 of file mybibfileNew.bib
+ : @article{sarfraz2014near
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2123 of file mybibfileNew.bib
+ : @article{nakhapakorn2005information
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2151 of file mybibfileNew.bib
+ : @article{lambrechts2011impact
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2162 of file mybibfileNew.bib
+ : @article{wu2009higher
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2397 of file mybibfileNew.bib
+ : @misc{WPR2015
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2405 of file mybibfileNew.bib
+ : @misc{wwo2012
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2433 of file mybibfileNew.bib
+ : @article{reiter2010yellow
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2485 of file mybibfileNew.bib
+ : @article{lowe2011spatio
+ :                        ,
+I'm skipping whatever remains of this entry
+(There were 60 error messages)

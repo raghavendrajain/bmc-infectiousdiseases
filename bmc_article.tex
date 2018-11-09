@@ -77,7 +77,10 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 %\usepackage{color}
-\usepackage{soul}
+\usepackage{soul, color}
+\soulregister\cite7
+\soulregister\ref7
+\soulregister\pageref7
 
 %\usepackage{subfigure}
 
@@ -241,9 +244,9 @@ email={helmut@nii.ac.jp}
 \begin{abstract} % abstract
 \parttitle{Background} The goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health-care systems. 
 
-\parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models, we evaluate the predictive ability of the fitted models according to RMSE and SRMSE as well as adjusted R-squared value, deviance explained and change in AIC. 
+\parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models, we evaluate the predictive ability of the fitted models according to RMSE and SRMSE \hl{as well as using adjusted R-squared value, deviance explained and change in AIC.} 
 
-\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. The discriminating ability of the final model was evaluated against Bangkok specific \textit{constant} threshold and WHO \textit{moving} threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).
+\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. \hl{The discriminating ability of the final model was evaluated against Bangkok specific \textit{constant} threshold and WHO \textit{moving} threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).}
 
 
 \parttitle{Conclusions} Along with the high accuracy of prediction of our model, the novel contribution of this research is also that we determine that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. This suggests the influence of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic.
@@ -329,7 +332,7 @@ email={helmut@nii.ac.jp}
 Dengue, a mosquito-borne viral disease, is caused by four distinct, but closely related, serotypes of the virus \cite{gubler1995dengue,whodenvtype2015}. Recovery from infection by one of these four (DEN-1, DEN-2, DEN-3, and DEN-4) provides the infected person lifelong immunity against that particular serotype and cross-immunity to the other serotypes. The time duration for this cross-immunity is 6-12 months \cite{gubler1995dengue}. If the person is infected by other serotypes subsequently then the risk of severe dengue increases. The uninfected mosquitoes get the virus from infected humans and thus the later becomes the primary carrier, multiplier, and transmitter of the DENV (dengue virus).
 
 
-Thailand began to experience Dengue fever in 1949 and it became pandemic in the country for the first time in 1958 in Bangkok \cite{hammon1964virological}. The information about the clinically diagnosed cases of dengue fever(DF), dengue hemorrhagic fever (DHF) and dengue shock syndrome (DSS) are sent to the Epidemiology Department in Bangkok \cite{chareonsook1999changing} via the Provincial Health Offices. The transmission of DENV which occurs through the bite of infected Aedes mosquitoes, principally Aedes aegypti, has dramatically increased in the last two decades \cite{hesse2007dengue} and occurrence of dengue fever is likely to rise \cite{wilder2012denguetools}.
+Thailand began to experience Dengue fever in 1949 and it became pandemic in the country for the first time in 1958 in Bangkok \cite{hammon1964virological}. The information about the clinically diagnosed cases of dengue fever(DF), dengue hemorrhagic fever (DHF) and dengue shock syndrome (DSS) are sent to the Epidemiology Department in Bangkok \cite{chareonsook1999changing} via the Provincial Health Offices. The transmission of DENV which occurs through the bite of infected Aedes mosquitoes, principally Aedes aegypti, has dramatically increased in the last two decades \cite{hesse2007dengue} and occurrence of dengue fever is likely to rise \cite{wilder2012denguetools} due to the combination of several direct and indirect factors. \hl{The causal dependency of some of the prominent factors on DENV transmission is shown shown in Figure~\ref{figure-bn}.}
 
 
 
@@ -387,7 +390,7 @@ Thailand began to experience Dengue fever in 1949 and it became pandemic in the 
 	(md) edge[-latex] node[above=1pt]{\cite{scott2003aedes, alto2008larval}} (dim)
 	(dim) edge[-latex] node[right=1pt]{\cite{chareonsook1999changing}}   (dh)
 	(idp) edge[-latex] node[left=1pt]{\cite{whodenvsym2015}} (dh)
-	%(idp) edge[-latex] node[right=1pt]{\cite{reiter2010yellow}} (dh)
+	(idp) edge[-latex] node[right=1pt]{\cite{reiter2010yellow}} (dh)
 	(ca) edge[-latex] node[left=1pt]{\cite{chareonviriyaphap2003larval}} (ib)
 	(ca) edge[-latex] node[right=1pt]{\cite{raju2008application}} (ib)
 	(dh) edge[-latex] node[left=1pt]{\cite{bhatt2013global}} (rdh);	
@@ -399,14 +402,17 @@ Thailand began to experience Dengue fever in 1949 and it became pandemic in the 
 
 
 
-A combination of several factors determine the risk of DENV transmission as shown in Figure~\ref{figure-bn}. These factors include density of infected mosquitoes, (level of) immunity of people to dengue serotypes, meteorology, human related factors e.g. housing type, population density and demographics, cleanliness etc. Several potential predictive indicators that contribute to the above mentioned factors have been described\cite{leitmeyer1999dengue,runge2008does,thammapalo2008environmental,sarfraz2014near}. For example, the density of infected mosquitoes depends on total mosquito density \cite{scott2003aedes,alto2008larval} which depends on inside house breeding \cite{syarifah2008ovitrap} and outside house breeding \cite{sarfraz2014near}. The inside house breeding depends on cleaning activity \cite{chareonviriyaphap2003larval,raju2008application} and housing type \cite{favier2005influence} among other factors whereas outside house breeding is primarily influenced by neglected garbage \cite{arunachalam2010eco}, population density \cite{chang2009combining,knudsen1992vector,troyo2009urban} and rain \cite{nakhapakorn2005information}. The seasonal influence on rain \cite{WPR2015,stoddard2014long} and temperature \cite{lambrechts2011impact,carrington2013reduction,stoddard2014long} contributes to the mosquito density \cite{lambrechts2011impact,sulaiman1996relationship,thammapalo2008environmental,sarfraz2014near,nakhapakorn2005information}. The density of infected mosquitoes in the region is influenced by dengue rate in the region  \cite{halstead2008dengue,esteva2000influence} and so is the number of people with immunity \cite{adams2006cross,alto2008larval} along with the population demographics \cite{cummings2009impact,wilder2012denguetools,whodenvsym2015}. 
+These factors include density of infected mosquitoes, (level of) immunity of people to dengue serotypes, meteorology, human related factors e.g. housing type, population density and demographics, cleanliness etc. Several potential predictive indicators that contribute to the above mentioned factors have been described\cite{leitmeyer1999dengue,runge2008does,thammapalo2008environmental,sarfraz2014near}. For example, the density of infected mosquitoes depends on total mosquito density \cite{scott2003aedes,alto2008larval} which depends on inside house breeding \cite{syarifah2008ovitrap} and outside house breeding \cite{sarfraz2014near}. The inside house breeding depends on cleaning activity \cite{chareonviriyaphap2003larval,raju2008application} and housing type \cite{favier2005influence} among other factors whereas outside house breeding is primarily influenced by neglected garbage \cite{arunachalam2010eco}, population density \cite{chang2009combining,knudsen1992vector,troyo2009urban} and rain \cite{nakhapakorn2005information}. The seasonal influence on rain \cite{WPR2015,stoddard2014long} and temperature \cite{lambrechts2011impact,carrington2013reduction,stoddard2014long} contributes to the mosquito density \cite{lambrechts2011impact,sulaiman1996relationship,thammapalo2008environmental,sarfraz2014near,nakhapakorn2005information}. The density of infected mosquitoes in the region is influenced by dengue rate in the region  \cite{halstead2008dengue,esteva2000influence} and so is the number of people with immunity \cite{adams2006cross,alto2008larval} along with the population demographics \cite{cummings2009impact,wilder2012denguetools,whodenvsym2015}. 
 
 
 
-Despite the numerous urban outbreaks of dengue with significant health and economic impact \cite{gubler2002epidemic,gubler2004cities,anuradha19981996,vaughn2000invited}, the detailed surveillance for diagnosing dengue has been limited which makes it difficult to generate detailed information on its epidemiology \cite{ooi2009dengue,guzman2004dengue}. Moreover, there are currently no licensed vaccines or specific therapeutics for the treatment of the infected people. A variety of dengue vector control strategies have been adopted in different regions \cite{erlanger2008effect,horstick2010dengue,vanlerberghe2009community,luz2011dengue} but this has not stopped its rapid emergence and global spread \cite{tatem2006global}. \hl{}
+Despite the numerous urban outbreaks of dengue with significant health and economic impact \cite{gubler2002epidemic,gubler2004cities,anuradha19981996,vaughn2000invited}, the detailed surveillance for diagnosing dengue has been limited which makes it difficult to generate detailed information on its epidemiology \cite{ooi2009dengue,guzman2004dengue}. Moreover, there are currently no licensed vaccines or specific therapeutics for the treatment of the infected people. \hl{Thus, effective vector control interventions are the only way to control the transmission of dengue and other Aedes-borne arboviral diseases.} A variety of dengue vector control strategies have been adopted in different regions\cite{erlanger2008effect,horstick2010dengue,vanlerberghe2009community,luz2011dengue} but this has not stopped its rapid emergence and global spread \cite{tatem2006global}. \hl{ To predict the future outbreaks using information on the risk factors of the disease, epidemiological models have been proposed (\cite{racloz2012surveillance} for a review). Lowe et al. \cite{lowe2011spatio} created an EWS using climate (temperature and precipitation data) and other covariates on a longitude–latitude grid with time lags relevant to dengue transmission. They also incorporated other relevant socio-economic and environmental variables. We found that for the modeling process, many previous studies have not sufficiently accounted for the spatio-temporal features of the disease, its socio-environmental aspects and factors due to increased movements of people. However, incorporation such information as well as the socio-environmental aspect allowed for its use as an early warning system, albeit limited geographically to a local scale.	}
 
 
 
+
+
+% \hl{Previous studies aimed to create early-warning systems for efficient and cost-effective local responses.  } 
 
 Therefore, the goal of this research is to create a system that can use the available relevant information about the factors responsible for the spread of dengue and; use it to predict the occurrence of dengue within a geographical region, so that public health experts can prepare for, manage and control the epidemic. Our study presents new geospatial insights into our understanding and management of health, disease and health care systems. It yields practical results (e.g., results of value to a national public health, control, screening or prevention program, or local resource planning program along with serving to re-demonstrate a previously well-documented phenomenon. 
 
@@ -1020,7 +1026,7 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 
 % if your bibliography is in bibtex format, use those commands:
 \bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
-%\bibliography{mybibfileNew}     % Bibliography file (usually '*.bib' )
+\bibliography{mybibfileNew}     % Bibliography file (usually '*.bib' )
 
 
 
@@ -1032,968 +1038,968 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{60}
-	% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
-	\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
-	\ifx \binits  \undefined \def \binits#1{#1}\fi
-	\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
-	\ifx \batitle  \undefined \def \batitle#1{#1}\fi
-	\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
-	\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
-	\ifx \byear  \undefined \def \byear#1{#1}\fi
-	\ifx \bissue  \undefined \def \bissue#1{#1}\fi
-	\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
-	\ifx \blpage  \undefined \def \blpage #1{#1}\fi
-	\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
-	\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
-	\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
-	\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
-	\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
-	\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
-	\ifx \beditor  \undefined \def \beditor#1{#1}\fi
-	\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
-	\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
-	\ifx \bedition  \undefined \def \bedition#1{#1}\fi
-	\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
-	\ifx \blocation  \undefined \def \blocation#1{#1}\fi
-	\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
-	\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
-	\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
-	\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
-	\ifx \barticle \undefined \def \barticle#1{#1}\fi
-	\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
-	\ifx \botherref \undefined \def \botherref #1{#1}\fi
-	\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
-	\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
-	\ifx \bbook \undefined \def \bbook#1{#1}\fi
-	\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
-	\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
-	\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
-	\ifx \endbibitem  \undefined \def \endbibitem {}\fi
-	\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
-	\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
-	\csname PreBibitemsHook\endcsname
-	
-	%%% 1
-	\bibitem{bhatt2013global}
-	\begin{barticle}
-		\bauthor{\bsnm{Bhatt}, \binits{S.}},
-		\bauthor{\bsnm{Gething}, \binits{P.W.}},
-		\bauthor{\bsnm{Brady}, \binits{O.J.}},
-		\bauthor{\bsnm{Messina}, \binits{J.P.}},
-		\bauthor{\bsnm{Farlow}, \binits{A.W.}},
-		\bauthor{\bsnm{Moyes}, \binits{C.L.}},
-		\bauthor{\bsnm{Drake}, \binits{J.M.}},
-		\bauthor{\bsnm{Brownstein}, \binits{J.S.}},
-		\bauthor{\bsnm{Hoen}, \binits{A.G.}},
-		\bauthor{\bsnm{Sankoh}, \binits{O.}}, \betal:
-		\batitle{The global distribution and burden of dengue}.
-		\bjtitle{Nature}
-		\bvolume{496}(\bissue{7446}),
-		\bfpage{504}--\blpage{507}
-		(\byear{2013})
-	\end{barticle}
-	\endbibitem
-	
-
-	
-	%%% 2
-	\bibitem{guzman2002dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
-		\bauthor{\bsnm{Kouri}, \binits{G.}}:
-		\batitle{Dengue: an update}.
-		\bjtitle{The Lancet infectious diseases}
-		\bvolume{2}(\bissue{1}),
-		\bfpage{33}--\blpage{42}
-		(\byear{2002})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 3
-	\bibitem{gubler1995dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Gubler}, \binits{D.J.}},
-		\bauthor{\bsnm{Clark}, \binits{G.G.}}:
-		\batitle{Dengue/dengue hemorrhagic fever: the emergence of a global health
-			problem.}
-		\bjtitle{Emerging infectious diseases}
-		\bvolume{1}(\bissue{2}),
-		\bfpage{55}
-		(\byear{1995})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 4
-	\bibitem{whodenvtype2015}
-	\begin{botherref}
-		\oauthor{\bsnm{WHO}}:
-		Dengue Type.
-		\url{http://www.who.int/mediacentre/factsheets/fs117/en/}.
-		Accessed 2015-11-20
-		(2015)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 5
-	\bibitem{hammon1964virological}
-	\begin{barticle}
-		\bauthor{\bsnm{Hammon}, \binits{W.M.}},
-		\bauthor{\bsnm{Sather}, \binits{G.}}:
-		\batitle{Virological findings in the 1960 hemorrhagic fever epidemic (dengue)
-			in thailand}.
-		\bjtitle{The American journal of tropical medicine and hygiene}
-		\bvolume{13}(\bissue{4}),
-		\bfpage{629}--\blpage{641}
-		(\byear{1964})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 6
-	\bibitem{chareonsook1999changing}
-	\begin{barticle}
-		\bauthor{\bsnm{Chareonsook}, \binits{O.}},
-		\bauthor{\bsnm{Foy}, \binits{H.}},
-		\bauthor{\bsnm{Teeraratkul}, \binits{A.}},
-		\bauthor{\bsnm{Silarug}, \binits{N.}}:
-		\batitle{Changing epidemiology of dengue hemorrhagic fever in thailand}.
-		\bjtitle{Epidemiology and infection}
-		\bvolume{122}(\bissue{01}),
-		\bfpage{161}--\blpage{166}
-		(\byear{1999})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 7
-	\bibitem{hesse2007dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Hesse}, \binits{R.R.}}:
-		\batitle{Dengue virus evolution and virulence models}.
-		\bjtitle{Clinical Infectious Diseases}
-		\bvolume{44}(\bissue{11}),
-		\bfpage{1462}--\blpage{1466}
-		(\byear{2007})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 8
-	\bibitem{wilder2012denguetools}
-	\begin{botherref}
-		\oauthor{\bsnm{Wilder-Smith}, \binits{A.}},
-		\oauthor{\bsnm{Renhorn}, \binits{K.-E.}},
-		\oauthor{\bsnm{Tissera}, \binits{H.}},
-		\oauthor{\bsnm{Bakar}, \binits{S.A.}},
-		\oauthor{\bsnm{Alphey}, \binits{L.}},
-		\oauthor{\bsnm{Kittayapong}, \binits{P.}},
-		\oauthor{\bsnm{Lindsay}, \binits{S.}},
-		\oauthor{\bsnm{Logan}, \binits{J.}},
-		\oauthor{\bsnm{Hatz}, \binits{C.}},
-		\oauthor{\bsnm{Reiter}, \binits{P.}}, et al.:
-		Denguetools: innovative tools and strategies for the surveillance and control
-		of dengue.
-		Global health action
-		\textbf{5}
-		(2012)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 9
-	\bibitem{leitmeyer1999dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Leitmeyer}, \binits{K.C.}},
-		\bauthor{\bsnm{Vaughn}, \binits{D.W.}},
-		\bauthor{\bsnm{Watts}, \binits{D.M.}},
-		\bauthor{\bsnm{Salas}, \binits{R.}},
-		\bauthor{\bsnm{Villalobos}, \binits{I.}},
-		\bauthor{\bsnm{Ramos}, \binits{C.}},
-		\bauthor{\bsnm{Rico-Hesse}, \binits{R.}}, \betal:
-		\batitle{Dengue virus structural differences that correlate with pathogenesis}.
-		\bjtitle{Journal of virology}
-		\bvolume{73}(\bissue{6}),
-		\bfpage{4738}--\blpage{4747}
-		(\byear{1999})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 10
-	\bibitem{runge2008does}
-	\begin{barticle}
-		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
-		\bauthor{\bsnm{Horstick}, \binits{O.}},
-		\bauthor{\bsnm{Marx}, \binits{M.}},
-		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
-		\batitle{What does dengue disease surveillance contribute to predicting and
-			detecting outbreaks and describing trends?}
-		\bjtitle{Tropical Medicine \& International Health}
-		\bvolume{13}(\bissue{8}),
-		\bfpage{1022}--\blpage{1041}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 11
-	\bibitem{thammapalo2008environmental}
-	\begin{barticle}
-		\bauthor{\bsnm{Thammapalo}, \binits{S.}},
-		\bauthor{\bsnm{Chongsuvivatwong}, \binits{V.}},
-		\bauthor{\bsnm{Geater}, \binits{A.}},
-		\bauthor{\bsnm{Dueravee}, \binits{M.}}:
-		\batitle{Environmental factors and incidence of dengue fever and dengue
-			haemorrhagic fever in an urban area, southern thailand}.
-		\bjtitle{Epidemiology and Infection}
-		\bvolume{136}(\bissue{01}),
-		\bfpage{135}--\blpage{143}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 12
-	\bibitem{sarfraz2014near}
-	\begin{barticle}
-		\bauthor{\bsnm{Sarfraz}, \binits{M.S.}},
-		\bauthor{\bsnm{Tripathi}, \binits{N.K.}},
-		\bauthor{\bsnm{Kitamoto}, \binits{A.}}:
-		\batitle{Near real-time characterisation of urban environments: a holistic
-			approach for monitoring dengue fever risk areas}.
-		\bjtitle{International Journal of Digital Earth}
-		\bvolume{7}(\bissue{11}),
-		\bfpage{916}--\blpage{934}
-		(\byear{2014})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 13
-	\bibitem{scott2003aedes}
-	\begin{barticle}
-		\bauthor{\bsnm{Scott}, \binits{T.W.}},
-		\bauthor{\bsnm{Morrison}, \binits{A.C.}}:
-		\batitle{Aedes aegypti density and the risk of dengue-virus}.
-		\bjtitle{Ecol. Aspects Appl. Genet. Modi. Mosq}
-		\bvolume{2},
-		\bfpage{187}
-		(\byear{2003})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 14
-	\bibitem{alto2008larval}
-	\begin{barticle}
-		\bauthor{\bsnm{Alto}, \binits{B.W.}},
-		\bauthor{\bsnm{Lounibos}, \binits{L.P.}},
-		\bauthor{\bsnm{Mores}, \binits{C.N.}},
-		\bauthor{\bsnm{Reiskind}, \binits{M.H.}}:
-		\batitle{Larval competition alters susceptibility of adult aedes mosquitoes to
-			dengue infection}.
-		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
-		\bvolume{275}(\bissue{1633}),
-		\bfpage{463}--\blpage{471}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 15
-	\bibitem{syarifah2008ovitrap}
-	\begin{barticle}
-		\bauthor{\bsnm{Syarifah}, \binits{N.}},
-		\bauthor{\bsnm{Rusmatini}, \binits{T.}},
-		\bauthor{\bsnm{Djatie}, \binits{T.}},
-		\bauthor{\bsnm{Huda}, \binits{F.}}:
-		\batitle{Ovitrap ratio of aedes aegypti larvae collected inside and outside
-			houses in a community survey to prevent dengue outbreak, bandung, indonesia,
-			2007}.
-		\bjtitle{Proc Assoc Southeast Asian Nations Congr Trop Med Parasitolol}
-		\bvolume{3},
-		\bfpage{116}--\blpage{120}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 16
-	\bibitem{chareonviriyaphap2003larval}
-	\begin{botherref}
-		\oauthor{\bsnm{Chareonviriyaphap}, \binits{T.}},
-		\oauthor{\bsnm{Akratanakul}, \binits{P.}},
-		\oauthor{\bsnm{Nettanomsak}, \binits{S.}},
-		\oauthor{\bsnm{Huntamai}, \binits{S.}}:
-		Larval habitats and distribution patterns of aedes aegypti (linnaeus) and aedes
-		albopictus (skuse), in thailand.
-		(2003)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 17
-	\bibitem{raju2008application}
-	\begin{barticle}
-		\bauthor{\bsnm{Raju}, \binits{K.}},
-		\bauthor{\bsnm{Sokhi}, \binits{B.}}:
-		\batitle{Application of gis modeling for dengue fever prone area based on
-			socio-cultural and environmental factors--a case study of delhi city zone}.
-		\bjtitle{Int Arch Photogramm Remote Sens Spat Inf Sci}
-		\bvolume{37},
-		\bfpage{165}--\blpage{170}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 18
-	\bibitem{favier2005influence}
-	\begin{barticle}
-		\bauthor{\bsnm{Favier}, \binits{C.}},
-		\bauthor{\bsnm{Schmit}, \binits{D.}},
-		\bauthor{\bsnm{M{\"u}ller-Graf}, \binits{C.D.}},
-		\bauthor{\bsnm{Cazelles}, \binits{B.}},
-		\bauthor{\bsnm{Degallier}, \binits{N.}},
-		\bauthor{\bsnm{Mondet}, \binits{B.}},
-		\bauthor{\bsnm{Dubois}, \binits{M.A.}}:
-		\batitle{Influence of spatial heterogeneity on an emerging infectious disease:
-			the case of dengue epidemics}.
-		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
-		\bvolume{272}(\bissue{1568}),
-		\bfpage{1171}--\blpage{1177}
-		(\byear{2005})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 19
-	\bibitem{arunachalam2010eco}
-	\begin{barticle}
-		\bauthor{\bsnm{Arunachalam}, \binits{N.}},
-		\bauthor{\bsnm{Tana}, \binits{S.}},
-		\bauthor{\bsnm{Espino}, \binits{F.}},
-		\bauthor{\bsnm{Kittayapong}, \binits{P.}},
-		\bauthor{\bsnm{Abeyewickrem}, \binits{W.}},
-		\bauthor{\bsnm{Wai}, \binits{K.T.}},
-		\bauthor{\bsnm{Tyagi}, \binits{B.K.}},
-		\bauthor{\bsnm{Kroeger}, \binits{A.}},
-		\bauthor{\bsnm{Sommerfeld}, \binits{J.}},
-		\bauthor{\bsnm{Petzold}, \binits{M.}}:
-		\batitle{Eco-bio-social determinants of dengue vector breeding: a multicountry
-			study in urban and periurban asia}.
-		\bjtitle{Bulletin of the World Health Organization}
-		\bvolume{88}(\bissue{3}),
-		\bfpage{173}--\blpage{184}
-		(\byear{2010})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 20
-	\bibitem{chang2009combining}
-	\begin{barticle}
-		\bauthor{\bsnm{Chang}, \binits{A.Y.}},
-		\bauthor{\bsnm{Parrales}, \binits{M.E.}},
-		\bauthor{\bsnm{Jimenez}, \binits{J.}},
-		\bauthor{\bsnm{Sobieszczyk}, \binits{M.E.}},
-		\bauthor{\bsnm{Hammer}, \binits{S.M.}},
-		\bauthor{\bsnm{Copenhaver}, \binits{D.J.}},
-		\bauthor{\bsnm{Kulkarni}, \binits{R.P.}}:
-		\batitle{Combining google earth and gis mapping technologies in a dengue
-			surveillance system for developing countries}.
-		\bjtitle{International journal of health geographics}
-		\bvolume{8}(\bissue{1}),
-		\bfpage{49}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 21
-	\bibitem{knudsen1992vector}
-	\begin{barticle}
-		\bauthor{\bsnm{Knudsen}, \binits{A.B.}},
-		\bauthor{\bsnm{Slooff}, \binits{R.}}:
-		\batitle{Vector-borne disease problems in rapid urbanization: new approaches to
-			vector control.}
-		\bjtitle{Bulletin of the World Health Organization}
-		\bvolume{70}(\bissue{1}),
-		\bfpage{1}
-		(\byear{1992})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 22
-	\bibitem{troyo2009urban}
-	\begin{barticle}
-		\bauthor{\bsnm{Troyo}, \binits{A.}},
-		\bauthor{\bsnm{Fuller}, \binits{D.O.}},
-		\bauthor{\bsnm{Calder{\'o}n-Arguedas}, \binits{O.}},
-		\bauthor{\bsnm{Solano}, \binits{M.E.}},
-		\bauthor{\bsnm{Beier}, \binits{J.C.}}:
-		\batitle{Urban structure and dengue incidence in puntarenas, costa rica}.
-		\bjtitle{Singapore journal of tropical geography}
-		\bvolume{30}(\bissue{2}),
-		\bfpage{265}--\blpage{282}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 23
-	\bibitem{nakhapakorn2005information}
-	\begin{barticle}
-		\bauthor{\bsnm{Nakhapakorn}, \binits{K.}},
-		\bauthor{\bsnm{Tripathi}, \binits{N.K.}}:
-		\batitle{An information value based analysis of physical and climatic factors
-			affecting dengue fever and dengue haemorrhagic fever incidence}.
-		\bjtitle{International Journal of Health Geographics}
-		\bvolume{4}(\bissue{1}),
-		\bfpage{13}
-		(\byear{2005})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 24
-	\bibitem{WPR2015}
-	\begin{botherref}
-		\oauthor{\bsnm{{World Population Review}}}:
-		Bangkok Population 2015.
-		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
-		Accessed 2016-01-18
-		(2015)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 25
-	\bibitem{stoddard2014long}
-	\begin{barticle}
-		\bauthor{\bsnm{Stoddard}, \binits{S.T.}},
-		\bauthor{\bsnm{Wearing}, \binits{H.J.}},
-		\bauthor{\bsnm{Reiner~Jr}, \binits{R.C.}},
-		\bauthor{\bsnm{Morrison}, \binits{A.C.}},
-		\bauthor{\bsnm{Astete}, \binits{H.}},
-		\bauthor{\bsnm{Vilcarromero}, \binits{S.}},
-		\bauthor{\bsnm{Alvarez}, \binits{C.}},
-		\bauthor{\bsnm{Ramal-Asayag}, \binits{C.}},
-		\bauthor{\bsnm{Sihuincha}, \binits{M.}},
-		\bauthor{\bsnm{Rocha}, \binits{C.}}, \betal:
-		\batitle{Long-term and seasonal dynamics of dengue in iquitos, peru}.
-		\bjtitle{PLoS Negl Trop Dis}
-		\bvolume{8}(\bissue{7}),
-		\bfpage{3003}
-		(\byear{2014})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 26
-	\bibitem{lambrechts2011impact}
-	\begin{barticle}
-		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
-		\bauthor{\bsnm{Paaijmans}, \binits{K.P.}},
-		\bauthor{\bsnm{Fansiri}, \binits{T.}},
-		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
-		\bauthor{\bsnm{Kramer}, \binits{L.D.}},
-		\bauthor{\bsnm{Thomas}, \binits{M.B.}},
-		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
-		\batitle{Impact of daily temperature fluctuations on dengue virus transmission
-			by aedes aegypti}.
-		\bjtitle{Proceedings of the National Academy of Sciences}
-		\bvolume{108}(\bissue{18}),
-		\bfpage{7460}--\blpage{7465}
-		(\byear{2011})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 27
-	\bibitem{carrington2013reduction}
-	\begin{barticle}
-		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
-		\bauthor{\bsnm{Seifert}, \binits{S.N.}},
-		\bauthor{\bsnm{Armijos}, \binits{M.V.}},
-		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
-		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
-		\batitle{Reduction of aedes aegypti vector competence for dengue virus under
-			large temperature fluctuations}.
-		\bjtitle{The American journal of tropical medicine and hygiene}
-		\bvolume{88}(\bissue{4}),
-		\bfpage{689}--\blpage{697}
-		(\byear{2013})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 28
-	\bibitem{sulaiman1996relationship}
-	\begin{barticle}
-		\bauthor{\bsnm{Sulaiman}, \binits{S.}},
-		\bauthor{\bsnm{Pawanchee}, \binits{Z.A.}},
-		\bauthor{\bsnm{Arifin}, \binits{Z.}},
-		\bauthor{\bsnm{Wahab}, \binits{A.}}:
-		\batitle{Relationship between breteau and house indices and cases of
-			dengue/dengue hemorrhagic fever in kuala lumpur, malaysia}.
-		\bjtitle{American Mosquito Control Association}
-		\bvolume{12},
-		\bfpage{494}--\blpage{496}
-		(\byear{1996})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 29
-	\bibitem{halstead2008dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Halstead}, \binits{S.B.}}:
-		\batitle{Dengue virus-mosquito interactions}.
-		\bjtitle{Annu. Rev. Entomol.}
-		\bvolume{53},
-		\bfpage{273}--\blpage{291}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 30
-	\bibitem{esteva2000influence}
-	\begin{barticle}
-		\bauthor{\bsnm{Esteva}, \binits{L.}},
-		\bauthor{\bsnm{Vargas}, \binits{C.}}:
-		\batitle{Influence of vertical and mechanical transmission on the dynamics of
-			dengue disease}.
-		\bjtitle{Mathematical biosciences}
-		\bvolume{167}(\bissue{1}),
-		\bfpage{51}--\blpage{64}
-		(\byear{2000})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 31
-	\bibitem{adams2006cross}
-	\begin{barticle}
-		\bauthor{\bsnm{Adams}, \binits{B.}},
-		\bauthor{\bsnm{Holmes}, \binits{E.}},
-		\bauthor{\bsnm{Zhang}, \binits{C.}},
-		\bauthor{\bsnm{Mammen}, \binits{M.}},
-		\bauthor{\bsnm{Nimmannitya}, \binits{S.}},
-		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
-		\bauthor{\bsnm{Boots}, \binits{M.}}:
-		\batitle{Cross-protective immunity can account for the alternating epidemic
-			pattern of dengue virus serotypes circulating in bangkok}.
-		\bjtitle{Proceedings of the National Academy of Sciences}
-		\bvolume{103}(\bissue{38}),
-		\bfpage{14234}--\blpage{14239}
-		(\byear{2006})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 32
-	\bibitem{cummings2009impact}
-	\begin{barticle}
-		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
-		\bauthor{\bsnm{Iamsirithaworn}, \binits{S.}},
-		\bauthor{\bsnm{Lessler}, \binits{J.T.}},
-		\bauthor{\bsnm{McDermott}, \binits{A.}},
-		\bauthor{\bsnm{Prasanthong}, \binits{R.}},
-		\bauthor{\bsnm{Nisalak}, \binits{A.}},
-		\bauthor{\bsnm{Jarman}, \binits{R.G.}},
-		\bauthor{\bsnm{Burke}, \binits{D.S.}},
-		\bauthor{\bsnm{Gibbons}, \binits{R.V.}}, \betal:
-		\batitle{The impact of the demographic transition on dengue in thailand:
-			insights from a statistical analysis and mathematical modeling}.
-		\bjtitle{PLoS medicine}
-		\bvolume{6}(\bissue{9}),
-		\bfpage{999}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 33
-	\bibitem{whodenvsym2015}
-	\begin{botherref}
-		\oauthor{\bsnm{WHO}}:
-		Human Dengue Symptoms.
-		\url{http://www.who.int/denguecontrol/human/en/}.
-		Accessed 2015-11-19
-		(2015)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 34
-	\bibitem{gubler2002epidemic}
-	\begin{barticle}
-		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
-		\batitle{Epidemic dengue/dengue hemorrhagic fever as a public health, social
-			and economic problem in the 21st century}.
-		\bjtitle{Trends in microbiology}
-		\bvolume{10}(\bissue{2}),
-		\bfpage{100}--\blpage{103}
-		(\byear{2002})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 35
-	\bibitem{gubler2004cities}
-	\begin{barticle}
-		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
-		\batitle{Cities spawn epidemic dengue viruses}.
-		\bjtitle{Nature medicine}
-		\bvolume{10}(\bissue{2}),
-		\bfpage{129}--\blpage{130}
-		(\byear{2004})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 36
-	\bibitem{anuradha19981996}
-	\begin{botherref}
-		\oauthor{\bsnm{Anuradha}, \binits{S.}},
-		\oauthor{\bsnm{Singh}, \binits{N.}},
-		\oauthor{\bsnm{Rizvi}, \binits{S.}},
-		\oauthor{\bsnm{Agarwal}, \binits{S.}},
-		\oauthor{\bsnm{Gur}, \binits{R.}},
-		\oauthor{\bsnm{Mathur}, \binits{M.}}:
-		The 1996 outbreak of dengue hemorrhagic fever in delhi, india.
-		(1998)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 37
-	\bibitem{vaughn2000invited}
-	\begin{barticle}
-		\bauthor{\bsnm{Vaughn}, \binits{D.W.}}:
-		\batitle{Invited commentary: Dengue lessons from cuba}.
-		\bjtitle{American Journal of Epidemiology}
-		\bvolume{152}(\bissue{9}),
-		\bfpage{800}--\blpage{803}
-		(\byear{2000})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 38
-	\bibitem{ooi2009dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Ooi}, \binits{E.-E.}},
-		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
-		\batitle{Dengue in southeast asia: epidemiological characteristics and
-			strategic challenges in disease prevention}.
-		\bjtitle{Cadernos de saude publica}
-		\bvolume{25},
-		\bfpage{115}--\blpage{124}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 39
-	\bibitem{guzman2004dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
-		\bauthor{\bsnm{Kour{\i}'} \binits{G.}}:
-		\batitle{Dengue diagnosis, advances and challenges}.
-		\bjtitle{International journal of infectious diseases}
-		\bvolume{8}(\bissue{2}),
-		\bfpage{69}--\blpage{80}
-		(\byear{2004})
-	\end{barticle}
-	\endbibitem  
-	
-	%%% 40
-	\bibitem{erlanger2008effect}
-	\begin{barticle}
-		\bauthor{\bsnm{Erlanger}, \binits{T.}},
-		\bauthor{\bsnm{Keiser}, \binits{J.}},
-		\bauthor{\bsnm{Utzinger}, \binits{J.}}:
-		\batitle{Effect of dengue vector control interventions on entomological
-			parameters in developing countries: a systematic review and meta-analysis}.
-		\bjtitle{Medical and veterinary entomology}
-		\bvolume{22}(\bissue{3}),
-		\bfpage{203}--\blpage{221}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 41
-	\bibitem{horstick2010dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Horstick}, \binits{O.}},
-		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
-		\bauthor{\bsnm{Nathan}, \binits{M.B.}},
-		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
-		\batitle{Dengue vector-control services: how do they work? a systematic
-			literature review and country case studies}.
-		\bjtitle{Transactions of the Royal Society of Tropical Medicine and Hygiene}
-		\bvolume{104}(\bissue{6}),
-		\bfpage{379}--\blpage{386}
-		(\byear{2010})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 42
-	\bibitem{vanlerberghe2009community}
-	\begin{barticle}
-		\bauthor{\bsnm{Vanlerberghe}, \binits{V.}},
-		\bauthor{\bsnm{Toledo}, \binits{M.}},
-		\bauthor{\bsnm{Rodriguez}, \binits{M.}},
-		\bauthor{\bsnm{Gomez}, \binits{D.}},
-		\bauthor{\bsnm{Baly}, \binits{A.}},
-		\bauthor{\bsnm{Benitez}, \binits{J.}},
-		\bauthor{\bsnm{Van Der~Stuyft}, \binits{P.}}:
-		\batitle{Community involvement in dengue vector control: cluster randomised
-			trial}.
-		\bjtitle{Bmj}
-		\bvolume{338},
-		\bfpage{1959}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 43
-	\bibitem{luz2011dengue}
-	\begin{barticle}
-		\bauthor{\bsnm{Luz}, \binits{P.M.}},
-		\bauthor{\bsnm{Vanni}, \binits{T.}},
-		\bauthor{\bsnm{Medlock}, \binits{J.}},
-		\bauthor{\bsnm{Paltiel}, \binits{A.D.}},
-		\bauthor{\bsnm{Galvani}, \binits{A.P.}}:
-		\batitle{Dengue vector control strategies in an urban setting: an economic
-			modelling assessment}.
-		\bjtitle{The Lancet}
-		\bvolume{377}(\bissue{9778}),
-		\bfpage{1673}--\blpage{1680}
-		(\byear{2011})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 44
-	\bibitem{tatem2006global}
-	\begin{barticle}
-		\bauthor{\bsnm{Tatem}, \binits{A.J.}},
-		\bauthor{\bsnm{Hay}, \binits{S.I.}},
-		\bauthor{\bsnm{Rogers}, \binits{D.J.}}:
-		\batitle{Global traffic and disease vector dispersal}.
-		\bjtitle{Proceedings of the National Academy of Sciences}
-		\bvolume{103}(\bissue{16}),
-		\bfpage{6242}--\blpage{6247}
-		(\byear{2006})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 45
-	\bibitem{wwo2012}
-	\begin{botherref}
-		\oauthor{\bsnm{{World Weather Online}}}:
-		Bangkok average temperature and rain from year 2000 to 2012.
-		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
-		Accessed 2016-01-18
-		(2012)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 46
-	\bibitem{johansson2009multiyear}
-	\begin{barticle}
-		\bauthor{\bsnm{Johansson}, \binits{M.A.}},
-		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
-		\bauthor{\bsnm{Glass}, \binits{G.E.}}:
-		\batitle{Multiyear climate variability and dengue—el nino southern
-			oscillation, weather, and dengue incidence in puerto rico, mexico, and
-			thailand: a longitudinal data analysis}.
-		\bjtitle{PLoS Med}
-		\bvolume{6}(\bissue{11}),
-		\bfpage{1000168}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 47
-	\bibitem{morin2013climate}
-	\begin{barticle}
-		\bauthor{\bsnm{Morin}, \binits{C.W.}},
-		\bauthor{\bsnm{Comrie}, \binits{A.C.}},
-		\bauthor{\bsnm{Ernst}, \binits{K.}}:
-		\batitle{Climate and dengue transmission: evidence and implications}.
-		\bjtitle{Environmental Health Perspectives (Online)}
-		\bvolume{121}(\bissue{11-12}),
-		\bfpage{1264}
-		(\byear{2013})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 48
-	\bibitem{thai2011role}
-	\begin{barticle}
-		\bauthor{\bsnm{Thai}, \binits{K.T.}},
-		\bauthor{\bsnm{Anders}, \binits{K.L.}}:
-		\batitle{The role of climate variability and change in the transmission
-			dynamics and geographic distribution of dengue}.
-		\bjtitle{Experimental Biology and Medicine}
-		\bvolume{236}(\bissue{8}),
-		\bfpage{944}--\blpage{954}
-		(\byear{2011})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 49
-	\bibitem{denguethai2015}
-	\begin{botherref}
-		\oauthor{\bparticle{of} \bsnm{Vector-Borne Diseases~Thailand}, \binits{B.}}:
-		Dengue fever situation in Thailand.
-		\url{http://www.thaivbd.org}.
-		Accessed 2015-12-1
-		(2015)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 50
-	\bibitem{Rsoftware}
-	\begin{bbook}
-		\bauthor{\bsnm{{R Core Team}}}:
-		\bbtitle{R: A Language and Environment for Statistical Computing}.
-		\bpublisher{R Foundation for Statistical Computing},
-		\blocation{Vienna, Austria}
-		(\byear{2016}).
-		\bcomment{R Foundation for Statistical Computing}.
-		\burl{https://www.R-project.org/}
-	\end{bbook}
-	\endbibitem
-	
-	%%% 51
-	\bibitem{mgcv}
-	\begin{bbook}
-		\bauthor{\bsnm{Wood}, \binits{S.N.}}:
-		\bbtitle{Generalized Additive Models: An Introduction with R}.
-		\bpublisher{Chapman and Hall/CRC}
-		(\byear{2006})
-	\end{bbook}
-	\endbibitem
-	
-	%%% 52
-	\bibitem{ramadona2016prediction}
-	\begin{barticle}
-		\bauthor{\bsnm{Ramadona}, \binits{A.L.}},
-		\bauthor{\bsnm{Lazuardi}, \binits{L.}},
-		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
-		\bauthor{\bsnm{Holmner}, \binits{{\AA}.}},
-		\bauthor{\bsnm{Kusnanto}, \binits{H.}},
-		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}}:
-		\batitle{Prediction of dengue outbreaks based on disease surveillance and
-			meteorological data}.
-		\bjtitle{PloS one}
-		\bvolume{11}(\bissue{3}),
-		\bfpage{0152688}
-		(\byear{2016})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 53
-	\bibitem{hii2012optimal}
-	\begin{barticle}
-		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
-		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}},
-		\bauthor{\bsnm{Wall}, \binits{S.}},
-		\bauthor{\bsnm{Ng}, \binits{L.C.}},
-		\bauthor{\bsnm{Tang}, \binits{C.S.}},
-		\bauthor{\bsnm{Ng}, \binits{N.}}:
-		\batitle{Optimal lead time for dengue forecast}.
-		\bjtitle{PLoS Negl Trop Dis}
-		\bvolume{6}(\bissue{10}),
-		\bfpage{1848}
-		(\byear{2012})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 54
-	\bibitem{reich2013interactions}
-	\begin{barticle}
-		\bauthor{\bsnm{Reich}, \binits{N.G.}},
-		\bauthor{\bsnm{Shrestha}, \binits{S.}},
-		\bauthor{\bsnm{King}, \binits{A.A.}},
-		\bauthor{\bsnm{Rohani}, \binits{P.}},
-		\bauthor{\bsnm{Lessler}, \binits{J.}},
-		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
-		\bauthor{\bsnm{Yoon}, \binits{I.-K.}},
-		\bauthor{\bsnm{Gibbons}, \binits{R.V.}},
-		\bauthor{\bsnm{Burke}, \binits{D.S.}},
-		\bauthor{\bsnm{Cummings}, \binits{D.A.}}:
-		\batitle{Interactions between serotypes of dengue highlight epidemiological
-			impact of cross-immunity}.
-		\bjtitle{Journal of The Royal Society Interface}
-		\bvolume{10}(\bissue{86}),
-		\bfpage{20130414}
-		(\byear{2013})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 55
-	\bibitem{gasparrini2010distributed}
-	\begin{barticle}
-		\bauthor{\bsnm{Gasparrini}, \binits{A.}},
-		\bauthor{\bsnm{Armstrong}, \binits{B.}},
-		\bauthor{\bsnm{Kenward}, \binits{M.G.}}:
-		\batitle{Distributed lag non-linear models}.
-		\bjtitle{Statistics in medicine}
-		\bvolume{29}(\bissue{21}),
-		\bfpage{2224}--\blpage{2234}
-		(\byear{2010})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 56
-	\bibitem{mondini2008spatial}
-	\begin{barticle}
-		\bauthor{\bsnm{Mondini}, \binits{A.}},
-		\bauthor{\bsnm{Chiaravalloti-Neto}, \binits{F.}}:
-		\batitle{Spatial correlation of incidence of dengue with socioeconomic,
-			demographic and environmental variables in a brazilian city}.
-		\bjtitle{Science of the Total Environment}
-		\bvolume{393}(\bissue{2}),
-		\bfpage{241}--\blpage{248}
-		(\byear{2008})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 57
-	\bibitem{wu2009higher}
-	\begin{barticle}
-		\bauthor{\bsnm{Wu}, \binits{P.-C.}},
-		\bauthor{\bsnm{Lay}, \binits{J.-G.}},
-		\bauthor{\bsnm{Guo}, \binits{H.-R.}},
-		\bauthor{\bsnm{Lin}, \binits{C.-Y.}},
-		\bauthor{\bsnm{Lung}, \binits{S.-C.}},
-		\bauthor{\bsnm{Su}, \binits{H.-J.}}:
-		\batitle{Higher temperature and urbanization affect the spatial patterns of
-			dengue fever transmission in subtropical taiwan}.
-		\bjtitle{Science of the total Environment}
-		\bvolume{407}(\bissue{7}),
-		\bfpage{2224}--\blpage{2233}
-		(\byear{2009})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 58
-	\bibitem{gasparrini2011distributed}
-	\begin{barticle}
-		\bauthor{\bsnm{Gasparrini}, \binits{A.}}:
-		\batitle{Distributed lag linear and non-linear models in r: the package dlnm}.
-		\bjtitle{Journal of statistical software}
-		\bvolume{43}(\bissue{8}),
-		\bfpage{1}
-		(\byear{2011})
-	\end{barticle}
-	\endbibitem
-	
-	%%% 59
-	\bibitem{satterthwaite1997environmental}
-	\begin{botherref}
-		\oauthor{\bsnm{Satterthwaite}, \binits{D.}}:
-		Environmental transformations in cities as they get larger, wealthier and
-		better managed.
-		Geographical Journal,
-		216--224
-		(1997)
-	\end{botherref}
-	\endbibitem
-	
-	%%% 60
-	\bibitem{world2009dengue}
-	\begin{bbook}
-		\bauthor{\bsnm{Organization}, \binits{W.H.}},
-		\bauthor{\bparticle{for} \bsnm{Research}, \binits{S.P.}},
-		\bauthor{\bparticle{in} \bsnm{Tropical~Diseases}, \binits{T.}},
-		\bauthor{\bparticle{of~Control~of} \bsnm{Neglected Tropical~Diseases},
-			\binits{W.H.O.D.}},
-		\bauthor{\bsnm{Epidemic}, \binits{W.H.O.}},
-		\bauthor{\bsnm{Alert}, \binits{P.}}:
-		\bbtitle{Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control}.
-		\bpublisher{World Health Organization}
-		(\byear{2009})
-	\end{bbook}
-	\endbibitem
-	
-	
-	
-\end{thebibliography}
+%\begin{thebibliography}{60}
+%	% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+%	\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+%	\ifx \binits  \undefined \def \binits#1{#1}\fi
+%	\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+%	\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+%	\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+%	\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+%	\ifx \byear  \undefined \def \byear#1{#1}\fi
+%	\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+%	\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+%	\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+%	\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+%	\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+%	\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+%	\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+%	\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+%	\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+%	\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+%	\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+%	\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+%	\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+%	\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+%	\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+%	\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+%	\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+%	\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+%	\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+%	\ifx \barticle \undefined \def \barticle#1{#1}\fi
+%	\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+%	\ifx \botherref \undefined \def \botherref #1{#1}\fi
+%	\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+%	\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+%	\ifx \bbook \undefined \def \bbook#1{#1}\fi
+%	\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+%	\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+%	\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+%	\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+%	\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+%	\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+%	\csname PreBibitemsHook\endcsname
+%	
+%	%%% 1
+%	\bibitem{bhatt2013global}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Bhatt}, \binits{S.}},
+%		\bauthor{\bsnm{Gething}, \binits{P.W.}},
+%		\bauthor{\bsnm{Brady}, \binits{O.J.}},
+%		\bauthor{\bsnm{Messina}, \binits{J.P.}},
+%		\bauthor{\bsnm{Farlow}, \binits{A.W.}},
+%		\bauthor{\bsnm{Moyes}, \binits{C.L.}},
+%		\bauthor{\bsnm{Drake}, \binits{J.M.}},
+%		\bauthor{\bsnm{Brownstein}, \binits{J.S.}},
+%		\bauthor{\bsnm{Hoen}, \binits{A.G.}},
+%		\bauthor{\bsnm{Sankoh}, \binits{O.}}, \betal:
+%		\batitle{The global distribution and burden of dengue}.
+%		\bjtitle{Nature}
+%		\bvolume{496}(\bissue{7446}),
+%		\bfpage{504}--\blpage{507}
+%		(\byear{2013})
+%	\end{barticle}
+%	\endbibitem
+%	
+%
+%	
+%	%%% 2
+%	\bibitem{guzman2002dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
+%		\bauthor{\bsnm{Kouri}, \binits{G.}}:
+%		\batitle{Dengue: an update}.
+%		\bjtitle{The Lancet infectious diseases}
+%		\bvolume{2}(\bissue{1}),
+%		\bfpage{33}--\blpage{42}
+%		(\byear{2002})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 3
+%	\bibitem{gubler1995dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Gubler}, \binits{D.J.}},
+%		\bauthor{\bsnm{Clark}, \binits{G.G.}}:
+%		\batitle{Dengue/dengue hemorrhagic fever: the emergence of a global health
+%			problem.}
+%		\bjtitle{Emerging infectious diseases}
+%		\bvolume{1}(\bissue{2}),
+%		\bfpage{55}
+%		(\byear{1995})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 4
+%	\bibitem{whodenvtype2015}
+%	\begin{botherref}
+%		\oauthor{\bsnm{WHO}}:
+%		Dengue Type.
+%		\url{http://www.who.int/mediacentre/factsheets/fs117/en/}.
+%		Accessed 2015-11-20
+%		(2015)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 5
+%	\bibitem{hammon1964virological}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Hammon}, \binits{W.M.}},
+%		\bauthor{\bsnm{Sather}, \binits{G.}}:
+%		\batitle{Virological findings in the 1960 hemorrhagic fever epidemic (dengue)
+%			in thailand}.
+%		\bjtitle{The American journal of tropical medicine and hygiene}
+%		\bvolume{13}(\bissue{4}),
+%		\bfpage{629}--\blpage{641}
+%		(\byear{1964})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 6
+%	\bibitem{chareonsook1999changing}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Chareonsook}, \binits{O.}},
+%		\bauthor{\bsnm{Foy}, \binits{H.}},
+%		\bauthor{\bsnm{Teeraratkul}, \binits{A.}},
+%		\bauthor{\bsnm{Silarug}, \binits{N.}}:
+%		\batitle{Changing epidemiology of dengue hemorrhagic fever in thailand}.
+%		\bjtitle{Epidemiology and infection}
+%		\bvolume{122}(\bissue{01}),
+%		\bfpage{161}--\blpage{166}
+%		(\byear{1999})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 7
+%	\bibitem{hesse2007dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Hesse}, \binits{R.R.}}:
+%		\batitle{Dengue virus evolution and virulence models}.
+%		\bjtitle{Clinical Infectious Diseases}
+%		\bvolume{44}(\bissue{11}),
+%		\bfpage{1462}--\blpage{1466}
+%		(\byear{2007})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 8
+%	\bibitem{wilder2012denguetools}
+%	\begin{botherref}
+%		\oauthor{\bsnm{Wilder-Smith}, \binits{A.}},
+%		\oauthor{\bsnm{Renhorn}, \binits{K.-E.}},
+%		\oauthor{\bsnm{Tissera}, \binits{H.}},
+%		\oauthor{\bsnm{Bakar}, \binits{S.A.}},
+%		\oauthor{\bsnm{Alphey}, \binits{L.}},
+%		\oauthor{\bsnm{Kittayapong}, \binits{P.}},
+%		\oauthor{\bsnm{Lindsay}, \binits{S.}},
+%		\oauthor{\bsnm{Logan}, \binits{J.}},
+%		\oauthor{\bsnm{Hatz}, \binits{C.}},
+%		\oauthor{\bsnm{Reiter}, \binits{P.}}, et al.:
+%		Denguetools: innovative tools and strategies for the surveillance and control
+%		of dengue.
+%		Global health action
+%		\textbf{5}
+%		(2012)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 9
+%	\bibitem{leitmeyer1999dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Leitmeyer}, \binits{K.C.}},
+%		\bauthor{\bsnm{Vaughn}, \binits{D.W.}},
+%		\bauthor{\bsnm{Watts}, \binits{D.M.}},
+%		\bauthor{\bsnm{Salas}, \binits{R.}},
+%		\bauthor{\bsnm{Villalobos}, \binits{I.}},
+%		\bauthor{\bsnm{Ramos}, \binits{C.}},
+%		\bauthor{\bsnm{Rico-Hesse}, \binits{R.}}, \betal:
+%		\batitle{Dengue virus structural differences that correlate with pathogenesis}.
+%		\bjtitle{Journal of virology}
+%		\bvolume{73}(\bissue{6}),
+%		\bfpage{4738}--\blpage{4747}
+%		(\byear{1999})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 10
+%	\bibitem{runge2008does}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
+%		\bauthor{\bsnm{Horstick}, \binits{O.}},
+%		\bauthor{\bsnm{Marx}, \binits{M.}},
+%		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
+%		\batitle{What does dengue disease surveillance contribute to predicting and
+%			detecting outbreaks and describing trends?}
+%		\bjtitle{Tropical Medicine \& International Health}
+%		\bvolume{13}(\bissue{8}),
+%		\bfpage{1022}--\blpage{1041}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 11
+%	\bibitem{thammapalo2008environmental}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Thammapalo}, \binits{S.}},
+%		\bauthor{\bsnm{Chongsuvivatwong}, \binits{V.}},
+%		\bauthor{\bsnm{Geater}, \binits{A.}},
+%		\bauthor{\bsnm{Dueravee}, \binits{M.}}:
+%		\batitle{Environmental factors and incidence of dengue fever and dengue
+%			haemorrhagic fever in an urban area, southern thailand}.
+%		\bjtitle{Epidemiology and Infection}
+%		\bvolume{136}(\bissue{01}),
+%		\bfpage{135}--\blpage{143}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 12
+%	\bibitem{sarfraz2014near}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Sarfraz}, \binits{M.S.}},
+%		\bauthor{\bsnm{Tripathi}, \binits{N.K.}},
+%		\bauthor{\bsnm{Kitamoto}, \binits{A.}}:
+%		\batitle{Near real-time characterisation of urban environments: a holistic
+%			approach for monitoring dengue fever risk areas}.
+%		\bjtitle{International Journal of Digital Earth}
+%		\bvolume{7}(\bissue{11}),
+%		\bfpage{916}--\blpage{934}
+%		(\byear{2014})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 13
+%	\bibitem{scott2003aedes}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Scott}, \binits{T.W.}},
+%		\bauthor{\bsnm{Morrison}, \binits{A.C.}}:
+%		\batitle{Aedes aegypti density and the risk of dengue-virus}.
+%		\bjtitle{Ecol. Aspects Appl. Genet. Modi. Mosq}
+%		\bvolume{2},
+%		\bfpage{187}
+%		(\byear{2003})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 14
+%	\bibitem{alto2008larval}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Alto}, \binits{B.W.}},
+%		\bauthor{\bsnm{Lounibos}, \binits{L.P.}},
+%		\bauthor{\bsnm{Mores}, \binits{C.N.}},
+%		\bauthor{\bsnm{Reiskind}, \binits{M.H.}}:
+%		\batitle{Larval competition alters susceptibility of adult aedes mosquitoes to
+%			dengue infection}.
+%		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
+%		\bvolume{275}(\bissue{1633}),
+%		\bfpage{463}--\blpage{471}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 15
+%	\bibitem{syarifah2008ovitrap}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Syarifah}, \binits{N.}},
+%		\bauthor{\bsnm{Rusmatini}, \binits{T.}},
+%		\bauthor{\bsnm{Djatie}, \binits{T.}},
+%		\bauthor{\bsnm{Huda}, \binits{F.}}:
+%		\batitle{Ovitrap ratio of aedes aegypti larvae collected inside and outside
+%			houses in a community survey to prevent dengue outbreak, bandung, indonesia,
+%			2007}.
+%		\bjtitle{Proc Assoc Southeast Asian Nations Congr Trop Med Parasitolol}
+%		\bvolume{3},
+%		\bfpage{116}--\blpage{120}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 16
+%	\bibitem{chareonviriyaphap2003larval}
+%	\begin{botherref}
+%		\oauthor{\bsnm{Chareonviriyaphap}, \binits{T.}},
+%		\oauthor{\bsnm{Akratanakul}, \binits{P.}},
+%		\oauthor{\bsnm{Nettanomsak}, \binits{S.}},
+%		\oauthor{\bsnm{Huntamai}, \binits{S.}}:
+%		Larval habitats and distribution patterns of aedes aegypti (linnaeus) and aedes
+%		albopictus (skuse), in thailand.
+%		(2003)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 17
+%	\bibitem{raju2008application}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Raju}, \binits{K.}},
+%		\bauthor{\bsnm{Sokhi}, \binits{B.}}:
+%		\batitle{Application of gis modeling for dengue fever prone area based on
+%			socio-cultural and environmental factors--a case study of delhi city zone}.
+%		\bjtitle{Int Arch Photogramm Remote Sens Spat Inf Sci}
+%		\bvolume{37},
+%		\bfpage{165}--\blpage{170}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 18
+%	\bibitem{favier2005influence}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Favier}, \binits{C.}},
+%		\bauthor{\bsnm{Schmit}, \binits{D.}},
+%		\bauthor{\bsnm{M{\"u}ller-Graf}, \binits{C.D.}},
+%		\bauthor{\bsnm{Cazelles}, \binits{B.}},
+%		\bauthor{\bsnm{Degallier}, \binits{N.}},
+%		\bauthor{\bsnm{Mondet}, \binits{B.}},
+%		\bauthor{\bsnm{Dubois}, \binits{M.A.}}:
+%		\batitle{Influence of spatial heterogeneity on an emerging infectious disease:
+%			the case of dengue epidemics}.
+%		\bjtitle{Proceedings of the Royal Society of London B: Biological Sciences}
+%		\bvolume{272}(\bissue{1568}),
+%		\bfpage{1171}--\blpage{1177}
+%		(\byear{2005})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 19
+%	\bibitem{arunachalam2010eco}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Arunachalam}, \binits{N.}},
+%		\bauthor{\bsnm{Tana}, \binits{S.}},
+%		\bauthor{\bsnm{Espino}, \binits{F.}},
+%		\bauthor{\bsnm{Kittayapong}, \binits{P.}},
+%		\bauthor{\bsnm{Abeyewickrem}, \binits{W.}},
+%		\bauthor{\bsnm{Wai}, \binits{K.T.}},
+%		\bauthor{\bsnm{Tyagi}, \binits{B.K.}},
+%		\bauthor{\bsnm{Kroeger}, \binits{A.}},
+%		\bauthor{\bsnm{Sommerfeld}, \binits{J.}},
+%		\bauthor{\bsnm{Petzold}, \binits{M.}}:
+%		\batitle{Eco-bio-social determinants of dengue vector breeding: a multicountry
+%			study in urban and periurban asia}.
+%		\bjtitle{Bulletin of the World Health Organization}
+%		\bvolume{88}(\bissue{3}),
+%		\bfpage{173}--\blpage{184}
+%		(\byear{2010})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 20
+%	\bibitem{chang2009combining}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Chang}, \binits{A.Y.}},
+%		\bauthor{\bsnm{Parrales}, \binits{M.E.}},
+%		\bauthor{\bsnm{Jimenez}, \binits{J.}},
+%		\bauthor{\bsnm{Sobieszczyk}, \binits{M.E.}},
+%		\bauthor{\bsnm{Hammer}, \binits{S.M.}},
+%		\bauthor{\bsnm{Copenhaver}, \binits{D.J.}},
+%		\bauthor{\bsnm{Kulkarni}, \binits{R.P.}}:
+%		\batitle{Combining google earth and gis mapping technologies in a dengue
+%			surveillance system for developing countries}.
+%		\bjtitle{International journal of health geographics}
+%		\bvolume{8}(\bissue{1}),
+%		\bfpage{49}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 21
+%	\bibitem{knudsen1992vector}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Knudsen}, \binits{A.B.}},
+%		\bauthor{\bsnm{Slooff}, \binits{R.}}:
+%		\batitle{Vector-borne disease problems in rapid urbanization: new approaches to
+%			vector control.}
+%		\bjtitle{Bulletin of the World Health Organization}
+%		\bvolume{70}(\bissue{1}),
+%		\bfpage{1}
+%		(\byear{1992})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 22
+%	\bibitem{troyo2009urban}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Troyo}, \binits{A.}},
+%		\bauthor{\bsnm{Fuller}, \binits{D.O.}},
+%		\bauthor{\bsnm{Calder{\'o}n-Arguedas}, \binits{O.}},
+%		\bauthor{\bsnm{Solano}, \binits{M.E.}},
+%		\bauthor{\bsnm{Beier}, \binits{J.C.}}:
+%		\batitle{Urban structure and dengue incidence in puntarenas, costa rica}.
+%		\bjtitle{Singapore journal of tropical geography}
+%		\bvolume{30}(\bissue{2}),
+%		\bfpage{265}--\blpage{282}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 23
+%	\bibitem{nakhapakorn2005information}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Nakhapakorn}, \binits{K.}},
+%		\bauthor{\bsnm{Tripathi}, \binits{N.K.}}:
+%		\batitle{An information value based analysis of physical and climatic factors
+%			affecting dengue fever and dengue haemorrhagic fever incidence}.
+%		\bjtitle{International Journal of Health Geographics}
+%		\bvolume{4}(\bissue{1}),
+%		\bfpage{13}
+%		(\byear{2005})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 24
+%	\bibitem{WPR2015}
+%	\begin{botherref}
+%		\oauthor{\bsnm{{World Population Review}}}:
+%		Bangkok Population 2015.
+%		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
+%		Accessed 2016-01-18
+%		(2015)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 25
+%	\bibitem{stoddard2014long}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Stoddard}, \binits{S.T.}},
+%		\bauthor{\bsnm{Wearing}, \binits{H.J.}},
+%		\bauthor{\bsnm{Reiner~Jr}, \binits{R.C.}},
+%		\bauthor{\bsnm{Morrison}, \binits{A.C.}},
+%		\bauthor{\bsnm{Astete}, \binits{H.}},
+%		\bauthor{\bsnm{Vilcarromero}, \binits{S.}},
+%		\bauthor{\bsnm{Alvarez}, \binits{C.}},
+%		\bauthor{\bsnm{Ramal-Asayag}, \binits{C.}},
+%		\bauthor{\bsnm{Sihuincha}, \binits{M.}},
+%		\bauthor{\bsnm{Rocha}, \binits{C.}}, \betal:
+%		\batitle{Long-term and seasonal dynamics of dengue in iquitos, peru}.
+%		\bjtitle{PLoS Negl Trop Dis}
+%		\bvolume{8}(\bissue{7}),
+%		\bfpage{3003}
+%		(\byear{2014})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 26
+%	\bibitem{lambrechts2011impact}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
+%		\bauthor{\bsnm{Paaijmans}, \binits{K.P.}},
+%		\bauthor{\bsnm{Fansiri}, \binits{T.}},
+%		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
+%		\bauthor{\bsnm{Kramer}, \binits{L.D.}},
+%		\bauthor{\bsnm{Thomas}, \binits{M.B.}},
+%		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
+%		\batitle{Impact of daily temperature fluctuations on dengue virus transmission
+%			by aedes aegypti}.
+%		\bjtitle{Proceedings of the National Academy of Sciences}
+%		\bvolume{108}(\bissue{18}),
+%		\bfpage{7460}--\blpage{7465}
+%		(\byear{2011})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 27
+%	\bibitem{carrington2013reduction}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Carrington}, \binits{L.B.}},
+%		\bauthor{\bsnm{Seifert}, \binits{S.N.}},
+%		\bauthor{\bsnm{Armijos}, \binits{M.V.}},
+%		\bauthor{\bsnm{Lambrechts}, \binits{L.}},
+%		\bauthor{\bsnm{Scott}, \binits{T.W.}}:
+%		\batitle{Reduction of aedes aegypti vector competence for dengue virus under
+%			large temperature fluctuations}.
+%		\bjtitle{The American journal of tropical medicine and hygiene}
+%		\bvolume{88}(\bissue{4}),
+%		\bfpage{689}--\blpage{697}
+%		(\byear{2013})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 28
+%	\bibitem{sulaiman1996relationship}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Sulaiman}, \binits{S.}},
+%		\bauthor{\bsnm{Pawanchee}, \binits{Z.A.}},
+%		\bauthor{\bsnm{Arifin}, \binits{Z.}},
+%		\bauthor{\bsnm{Wahab}, \binits{A.}}:
+%		\batitle{Relationship between breteau and house indices and cases of
+%			dengue/dengue hemorrhagic fever in kuala lumpur, malaysia}.
+%		\bjtitle{American Mosquito Control Association}
+%		\bvolume{12},
+%		\bfpage{494}--\blpage{496}
+%		(\byear{1996})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 29
+%	\bibitem{halstead2008dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Halstead}, \binits{S.B.}}:
+%		\batitle{Dengue virus-mosquito interactions}.
+%		\bjtitle{Annu. Rev. Entomol.}
+%		\bvolume{53},
+%		\bfpage{273}--\blpage{291}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 30
+%	\bibitem{esteva2000influence}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Esteva}, \binits{L.}},
+%		\bauthor{\bsnm{Vargas}, \binits{C.}}:
+%		\batitle{Influence of vertical and mechanical transmission on the dynamics of
+%			dengue disease}.
+%		\bjtitle{Mathematical biosciences}
+%		\bvolume{167}(\bissue{1}),
+%		\bfpage{51}--\blpage{64}
+%		(\byear{2000})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 31
+%	\bibitem{adams2006cross}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Adams}, \binits{B.}},
+%		\bauthor{\bsnm{Holmes}, \binits{E.}},
+%		\bauthor{\bsnm{Zhang}, \binits{C.}},
+%		\bauthor{\bsnm{Mammen}, \binits{M.}},
+%		\bauthor{\bsnm{Nimmannitya}, \binits{S.}},
+%		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
+%		\bauthor{\bsnm{Boots}, \binits{M.}}:
+%		\batitle{Cross-protective immunity can account for the alternating epidemic
+%			pattern of dengue virus serotypes circulating in bangkok}.
+%		\bjtitle{Proceedings of the National Academy of Sciences}
+%		\bvolume{103}(\bissue{38}),
+%		\bfpage{14234}--\blpage{14239}
+%		(\byear{2006})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 32
+%	\bibitem{cummings2009impact}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
+%		\bauthor{\bsnm{Iamsirithaworn}, \binits{S.}},
+%		\bauthor{\bsnm{Lessler}, \binits{J.T.}},
+%		\bauthor{\bsnm{McDermott}, \binits{A.}},
+%		\bauthor{\bsnm{Prasanthong}, \binits{R.}},
+%		\bauthor{\bsnm{Nisalak}, \binits{A.}},
+%		\bauthor{\bsnm{Jarman}, \binits{R.G.}},
+%		\bauthor{\bsnm{Burke}, \binits{D.S.}},
+%		\bauthor{\bsnm{Gibbons}, \binits{R.V.}}, \betal:
+%		\batitle{The impact of the demographic transition on dengue in thailand:
+%			insights from a statistical analysis and mathematical modeling}.
+%		\bjtitle{PLoS medicine}
+%		\bvolume{6}(\bissue{9}),
+%		\bfpage{999}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 33
+%	\bibitem{whodenvsym2015}
+%	\begin{botherref}
+%		\oauthor{\bsnm{WHO}}:
+%		Human Dengue Symptoms.
+%		\url{http://www.who.int/denguecontrol/human/en/}.
+%		Accessed 2015-11-19
+%		(2015)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 34
+%	\bibitem{gubler2002epidemic}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+%		\batitle{Epidemic dengue/dengue hemorrhagic fever as a public health, social
+%			and economic problem in the 21st century}.
+%		\bjtitle{Trends in microbiology}
+%		\bvolume{10}(\bissue{2}),
+%		\bfpage{100}--\blpage{103}
+%		(\byear{2002})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 35
+%	\bibitem{gubler2004cities}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+%		\batitle{Cities spawn epidemic dengue viruses}.
+%		\bjtitle{Nature medicine}
+%		\bvolume{10}(\bissue{2}),
+%		\bfpage{129}--\blpage{130}
+%		(\byear{2004})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 36
+%	\bibitem{anuradha19981996}
+%	\begin{botherref}
+%		\oauthor{\bsnm{Anuradha}, \binits{S.}},
+%		\oauthor{\bsnm{Singh}, \binits{N.}},
+%		\oauthor{\bsnm{Rizvi}, \binits{S.}},
+%		\oauthor{\bsnm{Agarwal}, \binits{S.}},
+%		\oauthor{\bsnm{Gur}, \binits{R.}},
+%		\oauthor{\bsnm{Mathur}, \binits{M.}}:
+%		The 1996 outbreak of dengue hemorrhagic fever in delhi, india.
+%		(1998)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 37
+%	\bibitem{vaughn2000invited}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Vaughn}, \binits{D.W.}}:
+%		\batitle{Invited commentary: Dengue lessons from cuba}.
+%		\bjtitle{American Journal of Epidemiology}
+%		\bvolume{152}(\bissue{9}),
+%		\bfpage{800}--\blpage{803}
+%		(\byear{2000})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 38
+%	\bibitem{ooi2009dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Ooi}, \binits{E.-E.}},
+%		\bauthor{\bsnm{Gubler}, \binits{D.J.}}:
+%		\batitle{Dengue in southeast asia: epidemiological characteristics and
+%			strategic challenges in disease prevention}.
+%		\bjtitle{Cadernos de saude publica}
+%		\bvolume{25},
+%		\bfpage{115}--\blpage{124}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 39
+%	\bibitem{guzman2004dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Guzm{\'a}n}, \binits{M.G.}},
+%		\bauthor{\bsnm{Kour{\i}'} \binits{G.}}:
+%		\batitle{Dengue diagnosis, advances and challenges}.
+%		\bjtitle{International journal of infectious diseases}
+%		\bvolume{8}(\bissue{2}),
+%		\bfpage{69}--\blpage{80}
+%		(\byear{2004})
+%	\end{barticle}
+%	\endbibitem  
+%	
+%	%%% 40
+%	\bibitem{erlanger2008effect}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Erlanger}, \binits{T.}},
+%		\bauthor{\bsnm{Keiser}, \binits{J.}},
+%		\bauthor{\bsnm{Utzinger}, \binits{J.}}:
+%		\batitle{Effect of dengue vector control interventions on entomological
+%			parameters in developing countries: a systematic review and meta-analysis}.
+%		\bjtitle{Medical and veterinary entomology}
+%		\bvolume{22}(\bissue{3}),
+%		\bfpage{203}--\blpage{221}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 41
+%	\bibitem{horstick2010dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Horstick}, \binits{O.}},
+%		\bauthor{\bsnm{Runge-Ranzinger}, \binits{S.}},
+%		\bauthor{\bsnm{Nathan}, \binits{M.B.}},
+%		\bauthor{\bsnm{Kroeger}, \binits{A.}}:
+%		\batitle{Dengue vector-control services: how do they work? a systematic
+%			literature review and country case studies}.
+%		\bjtitle{Transactions of the Royal Society of Tropical Medicine and Hygiene}
+%		\bvolume{104}(\bissue{6}),
+%		\bfpage{379}--\blpage{386}
+%		(\byear{2010})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 42
+%	\bibitem{vanlerberghe2009community}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Vanlerberghe}, \binits{V.}},
+%		\bauthor{\bsnm{Toledo}, \binits{M.}},
+%		\bauthor{\bsnm{Rodriguez}, \binits{M.}},
+%		\bauthor{\bsnm{Gomez}, \binits{D.}},
+%		\bauthor{\bsnm{Baly}, \binits{A.}},
+%		\bauthor{\bsnm{Benitez}, \binits{J.}},
+%		\bauthor{\bsnm{Van Der~Stuyft}, \binits{P.}}:
+%		\batitle{Community involvement in dengue vector control: cluster randomised
+%			trial}.
+%		\bjtitle{Bmj}
+%		\bvolume{338},
+%		\bfpage{1959}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 43
+%	\bibitem{luz2011dengue}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Luz}, \binits{P.M.}},
+%		\bauthor{\bsnm{Vanni}, \binits{T.}},
+%		\bauthor{\bsnm{Medlock}, \binits{J.}},
+%		\bauthor{\bsnm{Paltiel}, \binits{A.D.}},
+%		\bauthor{\bsnm{Galvani}, \binits{A.P.}}:
+%		\batitle{Dengue vector control strategies in an urban setting: an economic
+%			modelling assessment}.
+%		\bjtitle{The Lancet}
+%		\bvolume{377}(\bissue{9778}),
+%		\bfpage{1673}--\blpage{1680}
+%		(\byear{2011})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 44
+%	\bibitem{tatem2006global}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Tatem}, \binits{A.J.}},
+%		\bauthor{\bsnm{Hay}, \binits{S.I.}},
+%		\bauthor{\bsnm{Rogers}, \binits{D.J.}}:
+%		\batitle{Global traffic and disease vector dispersal}.
+%		\bjtitle{Proceedings of the National Academy of Sciences}
+%		\bvolume{103}(\bissue{16}),
+%		\bfpage{6242}--\blpage{6247}
+%		(\byear{2006})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 45
+%	\bibitem{wwo2012}
+%	\begin{botherref}
+%		\oauthor{\bsnm{{World Weather Online}}}:
+%		Bangkok average temperature and rain from year 2000 to 2012.
+%		\url{http://worldpopulationreview.com/world-cities/bangkok-population/}.
+%		Accessed 2016-01-18
+%		(2012)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 46
+%	\bibitem{johansson2009multiyear}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Johansson}, \binits{M.A.}},
+%		\bauthor{\bsnm{Cummings}, \binits{D.A.}},
+%		\bauthor{\bsnm{Glass}, \binits{G.E.}}:
+%		\batitle{Multiyear climate variability and dengue—el nino southern
+%			oscillation, weather, and dengue incidence in puerto rico, mexico, and
+%			thailand: a longitudinal data analysis}.
+%		\bjtitle{PLoS Med}
+%		\bvolume{6}(\bissue{11}),
+%		\bfpage{1000168}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 47
+%	\bibitem{morin2013climate}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Morin}, \binits{C.W.}},
+%		\bauthor{\bsnm{Comrie}, \binits{A.C.}},
+%		\bauthor{\bsnm{Ernst}, \binits{K.}}:
+%		\batitle{Climate and dengue transmission: evidence and implications}.
+%		\bjtitle{Environmental Health Perspectives (Online)}
+%		\bvolume{121}(\bissue{11-12}),
+%		\bfpage{1264}
+%		(\byear{2013})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 48
+%	\bibitem{thai2011role}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Thai}, \binits{K.T.}},
+%		\bauthor{\bsnm{Anders}, \binits{K.L.}}:
+%		\batitle{The role of climate variability and change in the transmission
+%			dynamics and geographic distribution of dengue}.
+%		\bjtitle{Experimental Biology and Medicine}
+%		\bvolume{236}(\bissue{8}),
+%		\bfpage{944}--\blpage{954}
+%		(\byear{2011})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 49
+%	\bibitem{denguethai2015}
+%	\begin{botherref}
+%		\oauthor{\bparticle{of} \bsnm{Vector-Borne Diseases~Thailand}, \binits{B.}}:
+%		Dengue fever situation in Thailand.
+%		\url{http://www.thaivbd.org}.
+%		Accessed 2015-12-1
+%		(2015)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 50
+%	\bibitem{Rsoftware}
+%	\begin{bbook}
+%		\bauthor{\bsnm{{R Core Team}}}:
+%		\bbtitle{R: A Language and Environment for Statistical Computing}.
+%		\bpublisher{R Foundation for Statistical Computing},
+%		\blocation{Vienna, Austria}
+%		(\byear{2016}).
+%		\bcomment{R Foundation for Statistical Computing}.
+%		\burl{https://www.R-project.org/}
+%	\end{bbook}
+%	\endbibitem
+%	
+%	%%% 51
+%	\bibitem{mgcv}
+%	\begin{bbook}
+%		\bauthor{\bsnm{Wood}, \binits{S.N.}}:
+%		\bbtitle{Generalized Additive Models: An Introduction with R}.
+%		\bpublisher{Chapman and Hall/CRC}
+%		(\byear{2006})
+%	\end{bbook}
+%	\endbibitem
+%	
+%	%%% 52
+%	\bibitem{ramadona2016prediction}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Ramadona}, \binits{A.L.}},
+%		\bauthor{\bsnm{Lazuardi}, \binits{L.}},
+%		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
+%		\bauthor{\bsnm{Holmner}, \binits{{\AA}.}},
+%		\bauthor{\bsnm{Kusnanto}, \binits{H.}},
+%		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}}:
+%		\batitle{Prediction of dengue outbreaks based on disease surveillance and
+%			meteorological data}.
+%		\bjtitle{PloS one}
+%		\bvolume{11}(\bissue{3}),
+%		\bfpage{0152688}
+%		(\byear{2016})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 53
+%	\bibitem{hii2012optimal}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Hii}, \binits{Y.L.}},
+%		\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}},
+%		\bauthor{\bsnm{Wall}, \binits{S.}},
+%		\bauthor{\bsnm{Ng}, \binits{L.C.}},
+%		\bauthor{\bsnm{Tang}, \binits{C.S.}},
+%		\bauthor{\bsnm{Ng}, \binits{N.}}:
+%		\batitle{Optimal lead time for dengue forecast}.
+%		\bjtitle{PLoS Negl Trop Dis}
+%		\bvolume{6}(\bissue{10}),
+%		\bfpage{1848}
+%		(\byear{2012})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 54
+%	\bibitem{reich2013interactions}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Reich}, \binits{N.G.}},
+%		\bauthor{\bsnm{Shrestha}, \binits{S.}},
+%		\bauthor{\bsnm{King}, \binits{A.A.}},
+%		\bauthor{\bsnm{Rohani}, \binits{P.}},
+%		\bauthor{\bsnm{Lessler}, \binits{J.}},
+%		\bauthor{\bsnm{Kalayanarooj}, \binits{S.}},
+%		\bauthor{\bsnm{Yoon}, \binits{I.-K.}},
+%		\bauthor{\bsnm{Gibbons}, \binits{R.V.}},
+%		\bauthor{\bsnm{Burke}, \binits{D.S.}},
+%		\bauthor{\bsnm{Cummings}, \binits{D.A.}}:
+%		\batitle{Interactions between serotypes of dengue highlight epidemiological
+%			impact of cross-immunity}.
+%		\bjtitle{Journal of The Royal Society Interface}
+%		\bvolume{10}(\bissue{86}),
+%		\bfpage{20130414}
+%		(\byear{2013})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 55
+%	\bibitem{gasparrini2010distributed}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Gasparrini}, \binits{A.}},
+%		\bauthor{\bsnm{Armstrong}, \binits{B.}},
+%		\bauthor{\bsnm{Kenward}, \binits{M.G.}}:
+%		\batitle{Distributed lag non-linear models}.
+%		\bjtitle{Statistics in medicine}
+%		\bvolume{29}(\bissue{21}),
+%		\bfpage{2224}--\blpage{2234}
+%		(\byear{2010})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 56
+%	\bibitem{mondini2008spatial}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Mondini}, \binits{A.}},
+%		\bauthor{\bsnm{Chiaravalloti-Neto}, \binits{F.}}:
+%		\batitle{Spatial correlation of incidence of dengue with socioeconomic,
+%			demographic and environmental variables in a brazilian city}.
+%		\bjtitle{Science of the Total Environment}
+%		\bvolume{393}(\bissue{2}),
+%		\bfpage{241}--\blpage{248}
+%		(\byear{2008})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 57
+%	\bibitem{wu2009higher}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Wu}, \binits{P.-C.}},
+%		\bauthor{\bsnm{Lay}, \binits{J.-G.}},
+%		\bauthor{\bsnm{Guo}, \binits{H.-R.}},
+%		\bauthor{\bsnm{Lin}, \binits{C.-Y.}},
+%		\bauthor{\bsnm{Lung}, \binits{S.-C.}},
+%		\bauthor{\bsnm{Su}, \binits{H.-J.}}:
+%		\batitle{Higher temperature and urbanization affect the spatial patterns of
+%			dengue fever transmission in subtropical taiwan}.
+%		\bjtitle{Science of the total Environment}
+%		\bvolume{407}(\bissue{7}),
+%		\bfpage{2224}--\blpage{2233}
+%		(\byear{2009})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 58
+%	\bibitem{gasparrini2011distributed}
+%	\begin{barticle}
+%		\bauthor{\bsnm{Gasparrini}, \binits{A.}}:
+%		\batitle{Distributed lag linear and non-linear models in r: the package dlnm}.
+%		\bjtitle{Journal of statistical software}
+%		\bvolume{43}(\bissue{8}),
+%		\bfpage{1}
+%		(\byear{2011})
+%	\end{barticle}
+%	\endbibitem
+%	
+%	%%% 59
+%	\bibitem{satterthwaite1997environmental}
+%	\begin{botherref}
+%		\oauthor{\bsnm{Satterthwaite}, \binits{D.}}:
+%		Environmental transformations in cities as they get larger, wealthier and
+%		better managed.
+%		Geographical Journal,
+%		216--224
+%		(1997)
+%	\end{botherref}
+%	\endbibitem
+%	
+%	%%% 60
+%	\bibitem{world2009dengue}
+%	\begin{bbook}
+%		\bauthor{\bsnm{Organization}, \binits{W.H.}},
+%		\bauthor{\bparticle{for} \bsnm{Research}, \binits{S.P.}},
+%		\bauthor{\bparticle{in} \bsnm{Tropical~Diseases}, \binits{T.}},
+%		\bauthor{\bparticle{of~Control~of} \bsnm{Neglected Tropical~Diseases},
+%			\binits{W.H.O.D.}},
+%		\bauthor{\bsnm{Epidemic}, \binits{W.H.O.}},
+%		\bauthor{\bsnm{Alert}, \binits{P.}}:
+%		\bbtitle{Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control}.
+%		\bpublisher{World Health Organization}
+%		(\byear{2009})
+%	\end{bbook}
+%	\endbibitem
+%	
+%	
+%	
+%\end{thebibliography}
 
 
 

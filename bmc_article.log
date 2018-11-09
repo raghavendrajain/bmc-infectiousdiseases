@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  8 NOV 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  9 NOV 2018 18:17
 entering extended mode
 **./bmc_article.tex
 (bmc_article.tex
@@ -1081,91 +1081,91 @@ LaTeX Warning: Label `tab:metValues' multiply defined.
 )
 \openout1 = `bmc_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 131.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 134.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 13
-1.
+4.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspzc
 cm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 131.
-LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-p
 df.mkii"
@@ -1199,9 +1199,9 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 131.
+(lastpage)             ! on input line 134.
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring ON on input line 131.
+Package hyperref Info: Link coloring ON on input line 134.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\name
 ref.sty"
@@ -1213,9 +1213,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 131.
-LaTeX Info: Redefining \pageref on input line 131.
-LaTeX Info: Redefining \nameref on input line 131.
+LaTeX Info: Redefining \ref on input line 134.
+LaTeX Info: Redefining \pageref on input line 134.
+LaTeX Info: Redefining \nameref on input line 134.
  (bmc_article.out) (bmc_article.out)
 \@outlinefile=\write4
 \openout4 = `bmc_article.out'.
@@ -1225,88 +1225,88 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 137.
+(Font)              scaled to size 8.99994pt on input line 140.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <13> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 137.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 11.69992pt on input line 137.
+(Font)              scaled to size 11.69992pt on input line 140.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 21.59985pt on input line 145.
+(Font)              scaled to size 21.59985pt on input line 148.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.89993pt on input line 166.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 166.
+(Font)              scaled to size 9.89993pt on input line 169.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 169.
 LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 16
-6.
+9.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm
 cm.fd"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 16
-6.
+9.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlptm
 cm.fd"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+psycm on input line 16
-6.
+9.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxpsy
 cm.fd"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 166.
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa
 .fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 166.
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb
 .fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.69997> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.92992pt on input line 166.
+(Font)              scaled to size 6.92992pt on input line 169.
 \address@aff1=\toks58
 \address@aff2=\toks59
 \address@aff4=\toks60
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 227.
+(Font)              scaled to size 6.29996pt on input line 230.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 230.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 230.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 227.
+(Font)              scaled to size 4.49997pt on input line 230.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 242.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 245.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 242.
+(Font)              scaled to size 8.99994pt on input line 245.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 246.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 249.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 246.
+(Font)              scaled to size 8.99994pt on input line 249.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 323.
+(Font)              scaled to size 10.79993pt on input line 326.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 323.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 326.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 323.
+(Font)              scaled to size 10.79993pt on input line 326.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 330.
+(Font)              scaled to size 7.19995pt on input line 333.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 330.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 333.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.19995pt on input line 330.
+(Font)              scaled to size 7.19995pt on input line 333.
 
 Overfull \hbox (1.0pt too wide) has occurred while \output is active
  [] 
@@ -1315,204 +1315,388 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{C:/Users/raghvendra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-Overfull \hbox (1.43394pt too wide) in paragraph at lines 374--374
+Overfull \hbox (1.43394pt too wide) in paragraph at lines 371--371
  \OT1/ptm/m/n/10 DH/DHF/DSS 
  []
 
 
-Overfull \hbox (1.43394pt too wide) in paragraph at lines 375--375
+Overfull \hbox (1.43394pt too wide) in paragraph at lines 372--372
  \OT1/ptm/m/n/10 DH/DHF/DSS 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 402.
+(caption)                particular \caption on input line 399.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (7.05489pt too wide) in paragraph at lines 401--402
+Overfull \hbox (7.05489pt too wide) in paragraph at lines 398--399
  [][] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 402--402
+Overfull \hbox (12.5pt too wide) in paragraph at lines 399--399
 [] [] 
  []
 
+! Argument of \UTFviii@three@octets has an extra }.
+<inserted text> 
+                \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \UTFviii@three@octets was complete.
+<to be read again> 
+                   \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \UTFviii@three@octets has an extra }.
+<inserted text> 
+                \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \UTFviii@three@octets was complete.
+<to be read again> 
+                   \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \UTFviii@three@octets has an extra }.
+<inserted text> 
+                \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \UTFviii@three@octets was complete.
+<to be read again> 
+                   \par 
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+! Missing { inserted.
+<to be read again> 
+                   }
+l.409 ...imited geographically to a local scale.	}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+! Package inputenc Error: Invalid UTF-8 byte 147.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 147.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte 147.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package soul Error: Reconstruction failed.
+
+See the soul package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...imited geographically to a local scale.	}
+                                                  
+I came across hyphenatable material enclosed in group braces,
+which I can't handle. Either drop the braces or make the material
+unbreakable using an \mbox (\hbox). Note that a space
+also counts as possible hyphenation point. See page 4 of the manual.
+I'm leaving a black square so that you can see where I am right now.
+
+[0]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.418 
+       [1]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 467.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 467.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
-[2] [3]
-<1-AvgMonthlyRainfall.png, id=184, 505.89pt x 361.35pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 467.
+<1-AvgMonthlyRainfall.png, id=190, 505.89pt x 361.35pt>
 File: 1-AvgMonthlyRainfall.png Graphic file (type png)
 <use 1-AvgMonthlyRainfall.png>
-Package pdftex.def Info: 1-AvgMonthlyRainfall.png  used on input line 459.
+Package pdftex.def Info: 1-AvgMonthlyRainfall.png  used on input line 472.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 460.
+(caption)                particular \caption on input line 473.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 459--460
+Overfull \hbox (12.5pt too wide) in paragraph at lines 472--473
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 460--460
+Overfull \hbox (12.5pt too wide) in paragraph at lines 473--473
 [] [] 
  []
 
-<2-AvgMonthlyDTR.png, id=185, 505.89pt x 361.35pt>
+<2-AvgMonthlyDTR.png, id=191, 505.89pt x 361.35pt>
 File: 2-AvgMonthlyDTR.png Graphic file (type png)
 <use 2-AvgMonthlyDTR.png>
-Package pdftex.def Info: 2-AvgMonthlyDTR.png  used on input line 467.
+Package pdftex.def Info: 2-AvgMonthlyDTR.png  used on input line 480.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 468.
+(caption)                particular \caption on input line 481.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 467--468
+Overfull \hbox (12.5pt too wide) in paragraph at lines 480--481
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 468--468
+Overfull \hbox (12.5pt too wide) in paragraph at lines 481--481
 [] [] 
  []
 
-<3-AnuualDengueCases.png, id=190, 505.89pt x 361.35pt>
+[2 <./1-AvgMonthlyRainfall.png>]
+<3-AnuualDengueCases.png, id=207, 505.89pt x 361.35pt>
 File: 3-AnuualDengueCases.png Graphic file (type png)
 <use 3-AnuualDengueCases.png>
-Package pdftex.def Info: 3-AnuualDengueCases.png  used on input line 489.
+Package pdftex.def Info: 3-AnuualDengueCases.png  used on input line 502.
 (pdftex.def)             Requested size: 350.17044pt x 250.12575pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 491.
+(caption)                particular \caption on input line 504.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.67044pt too wide) in paragraph at lines 489--491
+Overfull \hbox (1.67044pt too wide) in paragraph at lines 502--504
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 491--491
+Overfull \hbox (12.5pt too wide) in paragraph at lines 504--504
 [] [] 
  []
 
-<4-MonthlyDengueCases.png, id=193, 505.89pt x 361.35pt>
+<4-MonthlyDengueCases.png, id=210, 505.89pt x 361.35pt>
 File: 4-MonthlyDengueCases.png Graphic file (type png)
 <use 4-MonthlyDengueCases.png>
-Package pdftex.def Info: 4-MonthlyDengueCases.png  used on input line 498.
+Package pdftex.def Info: 4-MonthlyDengueCases.png  used on input line 511.
 (pdftex.def)             Requested size: 361.0pt x 257.86154pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 499.
+(caption)                particular \caption on input line 512.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 498--499
+Overfull \hbox (12.5pt too wide) in paragraph at lines 511--512
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 499--499
+Overfull \hbox (12.5pt too wide) in paragraph at lines 512--512
 [] [] 
  []
 
-[4 <./1-AvgMonthlyRainfall.png>] [5 <./2-AvgMonthlyDTR.png> <./3-AnuualDengueCa
-ses.png>] [6 <./4-MonthlyDengueCases.png>]
-<5-MonthlyDengueAcrossYears.png, id=231, 505.89pt x 361.35pt>
+<5-MonthlyDengueAcrossYears.png, id=215, 505.89pt x 361.35pt>
 File: 5-MonthlyDengueAcrossYears.png Graphic file (type png)
 <use 5-MonthlyDengueAcrossYears.png>
-Package pdftex.def Info: 5-MonthlyDengueAcrossYears.png  used on input line 510
+Package pdftex.def Info: 5-MonthlyDengueAcrossYears.png  used on input line 523
 .
 (pdftex.def)             Requested size: 342.9489pt x 244.96487pt.
 
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 511.
+(caption)                particular \caption on input line 524.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 511--511
+Overfull \hbox (12.5pt too wide) in paragraph at lines 524--524
 [] [] 
  []
 
-[7 <./5-MonthlyDengueAcrossYears.png>]
+[3 <./2-AvgMonthlyDTR.png>] [4 <./3-AnuualDengueCases.png> <./4-MonthlyDengueCa
+ses.png>]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 550.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 563.
 
+ [5 <./5-MonthlyDengueAcrossYears.png>]
+Runaway argument?
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.583 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[6]
+Runaway argument?
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.622 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
- []
-
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
-
- []
-
-[10]
-<6-DM1.png, id=304, 385.44pt x 313.17pt>
+[7]
+<6-DM1.png, id=296, 385.44pt x 313.17pt>
 File: 6-DM1.png Graphic file (type png)
 <use 6-DM1.png>
-Package pdftex.def Info: 6-DM1.png  used on input line 638.
+Package pdftex.def Info: 6-DM1.png  used on input line 651.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 639.
+(caption)                particular \caption on input line 652.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 638--639
+Overfull \hbox (12.5pt too wide) in paragraph at lines 651--652
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 639--639
+Overfull \hbox (12.5pt too wide) in paragraph at lines 652--652
 [] [] 
  []
 
-<8-LongLagContour.png, id=313, 961.34157pt x 659.46375pt>
+[8] [9 <./6-DM1.png>]
+<8-LongLagContour.png, id=331, 961.34157pt x 659.46375pt>
 File: 8-LongLagContour.png Graphic file (type png)
 <use 8-LongLagContour.png>
-Package pdftex.def Info: 8-LongLagContour.png  used on input line 680.
+Package pdftex.def Info: 8-LongLagContour.png  used on input line 693.
 (pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
 
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 680--681
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 693--694
  [][] 
  []
 
-<24-LagResposeLongLagMany.png, id=314, 961.34157pt x 659.46375pt>
+<24-LagResposeLongLagMany.png, id=332, 961.34157pt x 659.46375pt>
 File: 24-LagResposeLongLagMany.png Graphic file (type png)
 <use 24-LagResposeLongLagMany.png>
-Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 687.
+Package pdftex.def Info: 24-LagResposeLongLagMany.png  used on input line 700.
 (pdftex.def)             Requested size: 317.68297pt x 217.92558pt.
 
-Overfull \hbox (28.88187pt too wide) in paragraph at lines 687--688
+Overfull \hbox (28.88187pt too wide) in paragraph at lines 700--701
  [][] 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 691.
+(caption)                particular \caption on input line 704.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 691--691
+Overfull \hbox (12.5pt too wide) in paragraph at lines 704--704
 [] [] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 698.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 711.
 
 
 ("C:\Users\raghvendra\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlptm
@@ -1520,219 +1704,209 @@ LaTeX Font Info:    Try loading font information for OML+ptm on input line 698.
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 698.
- [11] [12 <./6-DM1.png>] [13 <./8-LongLagContour.png> <./24-LagResposeLongLagMa
-ny.png>]
-<Fit-OptimalRepresentation+Garbage.png, id=349, 541.27219pt x 371.88937pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 711.
+<Fit-OptimalRepresentation+Garbage.png, id=339, 541.27219pt x 371.88937pt>
 File: Fit-OptimalRepresentation+Garbage.png Graphic file (type png)
 <use Fit-OptimalRepresentation+Garbage.png>
 Package pdftex.def Info: Fit-OptimalRepresentation+Garbage.png  used on input l
-ine 713.
+ine 726.
 (pdftex.def)             Requested size: 350.17044pt x 240.59598pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 714.
+(caption)                particular \caption on input line 727.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.67044pt too wide) in paragraph at lines 713--714
+Overfull \hbox (1.67044pt too wide) in paragraph at lines 726--727
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 714--714
+Overfull \hbox (12.5pt too wide) in paragraph at lines 727--727
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<19-resid-diagnosis.png, id=350, 385.44pt x 313.17pt>
+<19-resid-diagnosis.png, id=340, 385.44pt x 313.17pt>
 File: 19-resid-diagnosis.png Graphic file (type png)
 <use 19-resid-diagnosis.png>
-Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 723.
+Package pdftex.def Info: 19-resid-diagnosis.png  used on input line 736.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 724.
+(caption)                particular \caption on input line 737.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 723--724
+Overfull \hbox (12.5pt too wide) in paragraph at lines 736--737
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 724--724
+Overfull \hbox (12.5pt too wide) in paragraph at lines 737--737
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pred-SeasonalNaive.png, id=354, 385.44pt x 313.17pt>
+<Pred-SeasonalNaive.png, id=344, 385.44pt x 313.17pt>
 File: Pred-SeasonalNaive.png Graphic file (type png)
 <use Pred-SeasonalNaive.png>
-Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 739.
+Package pdftex.def Info: Pred-SeasonalNaive.png  used on input line 752.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-MetOptimal.png, id=355, 385.44pt x 313.17pt>
+<Pred-MetOptimal.png, id=345, 385.44pt x 313.17pt>
 File: Pred-MetOptimal.png Graphic file (type png)
 <use Pred-MetOptimal.png>
-Package pdftex.def Info: Pred-MetOptimal.png  used on input line 742.
+Package pdftex.def Info: Pred-MetOptimal.png  used on input line 755.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalLag.png, id=356, 385.44pt x 313.17pt>
+<Pred-OptimalLag.png, id=346, 385.44pt x 313.17pt>
 File: Pred-OptimalLag.png Graphic file (type png)
 <use Pred-OptimalLag.png>
-Package pdftex.def Info: Pred-OptimalLag.png  used on input line 745.
+Package pdftex.def Info: Pred-OptimalLag.png  used on input line 758.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-Met-OptimalLag.png, id=357, 385.44pt x 313.17pt>
+<Pred-Met-OptimalLag.png, id=347, 385.44pt x 313.17pt>
 File: Pred-Met-OptimalLag.png Graphic file (type png)
 <use Pred-Met-OptimalLag.png>
-Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 748.
+Package pdftex.def Info: Pred-Met-OptimalLag.png  used on input line 761.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-OptimalRepresentation.png, id=358, 385.44pt x 313.17pt>
+<Pred-OptimalRepresentation.png, id=348, 385.44pt x 313.17pt>
 File: Pred-OptimalRepresentation.png Graphic file (type png)
 <use Pred-OptimalRepresentation.png>
-Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 751
+Package pdftex.def Info: Pred-OptimalRepresentation.png  used on input line 764
 .
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
-<Pred-SocialIncluded.png, id=359, 385.44pt x 313.17pt>
+<Pred-SocialIncluded.png, id=349, 385.44pt x 313.17pt>
 File: Pred-SocialIncluded.png Graphic file (type png)
 <use Pred-SocialIncluded.png>
-Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 754.
+Package pdftex.def Info: Pred-SocialIncluded.png  used on input line 767.
 (pdftex.def)             Requested size: 256.07324pt x 110.96347pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 758.
+(caption)                particular \caption on input line 771.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 736--758
+Overfull \hbox (12.5pt too wide) in paragraph at lines 749--771
  []$[]$ 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 758--758
+Overfull \hbox (12.5pt too wide) in paragraph at lines 771--771
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 50.9808pt on input line 760.
+LaTeX Warning: Float too large for page by 50.9808pt on input line 773.
 
+[10] [11 <./8-LongLagContour.png> <./24-LagResposeLongLagMany.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 770.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 783.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 772.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 785.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 772.
+(Font)              scaled to size 7.19995pt on input line 785.
 
-Overfull \hbox (26.22513pt too wide) in paragraph at lines 770--782
+Overfull \hbox (29.71455pt too wide) in paragraph at lines 783--795
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Final-Prediction.png, id=361, 385.44pt x 313.17pt>
+<Final-Prediction.png, id=370, 385.44pt x 313.17pt>
 File: Final-Prediction.png Graphic file (type png)
 <use Final-Prediction.png>
-Package pdftex.def Info: Final-Prediction.png  used on input line 872.
+Package pdftex.def Info: Final-Prediction.png  used on input line 885.
 (pdftex.def)             Requested size: 361.0pt x 293.30942pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 873.
+(caption)                particular \caption on input line 886.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 872--873
+Overfull \hbox (12.5pt too wide) in paragraph at lines 885--886
  [] 
  []
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 873--873
+Overfull \hbox (12.5pt too wide) in paragraph at lines 886--886
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[12 <./Fit-OptimalRepresentation+Garbage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 901--901
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
+Underfull \hbox (badness 10000) in paragraph at lines 901--901
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
 []|\OT1/phv/b/n/8 Out-Sample
  []
 
-[14]
-Underfull \hbox (badness 2941) in paragraph at lines 906--906
+
+Underfull \hbox (badness 1087) in paragraph at lines 919--919
 []|\OT1/phv/m/n/8 monthly av-er-age cases ($\OT1/ptmcm/m/n/8 2008 \OMS/pzccm/m/
 n/8  
  []
 
 
-Underfull \hbox (badness 954) in paragraph at lines 906--906
-[]|\OT1/phv/m/n/8 (mean of a mov-ing win-dow over
- []
+Underfull \vbox (badness 4242) has occurred while \output is active []
 
-[15 <./Fit-OptimalRepresentation+Garbage.png>]
-Underfull \vbox (badness 2762) has occurred while \output is active []
-
- [16 <./19-resid-diagnosis.png>] [17 <./Pred-SeasonalNaive.png> <./Pred-MetOpti
+ [13 <./19-resid-diagnosis.png>] [14 <./Pred-SeasonalNaive.png> <./Pred-MetOpti
 mal.png> <./Pred-OptimalLag.png> <./Pred-Met-OptimalLag.png> <./Pred-OptimalRep
-resentation.png> <./Pred-SocialIncluded.png>] [18 <./Final-Prediction.png>] [19
+resentation.png> <./Pred-SocialIncluded.png>] [15 <./Final-Prediction.png>] [16
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 963.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 976.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 963.
- [20
+(Font)              scaled to size 6.29996pt on input line 976.
+ [17
 
 ]
+(bmc_article.bbl
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1082.
-
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 155.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 1082.
+(Font)              scaled to size 6.29996pt on input line 155.
+ [18
 
-[21
-
-]
+])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
-<23-Cross-Cor-1.png, id=460, 505.89pt x 361.35pt>
+ [19]
+<23-Cross-Cor-1.png, id=458, 505.89pt x 361.35pt>
 File: 23-Cross-Cor-1.png Graphic file (type png)
 <use 23-Cross-Cor-1.png>
-Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 2054.
+Package pdftex.def Info: 23-Cross-Cor-1.png  used on input line 2067.
 (pdftex.def)             Requested size: 341.43306pt x 243.88419pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2055.
+(caption)                particular \caption on input line 2068.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 2055--2055
+Overfull \hbox (12.5pt too wide) in paragraph at lines 2068--2068
 [] [] 
  []
 
 
 AED: lastpage setting LastPage
-[23 <./23-Cross-Cor-1.png>] [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2109.
+[20 <./23-Cross-Cor-1.png>] [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2122.
  (bmc_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2122.
 
 Package rerunfilecheck Info: File `bmc_article.out' has not changed.
 (rerunfilecheck)             Checksum: 7C8EBC9F8D62201AAEC84C67C8142609;422.
@@ -1740,33 +1914,37 @@ Package rerunfilecheck Info: File `bmc_article.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2109.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2122.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 409 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 23778 strings out of 492970
- 456152 string characters out of 3124373
- 611502 words of memory out of 3000000
- 26970 multiletter control sequences out of 15000+200000
+ 23783 strings out of 492970
+ 456283 string characters out of 3124373
+ 610681 words of memory out of 3000000
+ 26974 multiletter control sequences out of 15000+200000
  76754 words of font info for 148 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,67p,2477b,2005s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
-r.enc}<C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raghvendra/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/raghvendra
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users
-/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.p
-fb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helve
-tic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghvendra/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/raghvendra/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bmc_article.pdf (24 pages, 656119 bytes).
+ 55i,11n,67p,2477b,2278s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/base/8r.enc}<C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/raghvendra/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raghvendra/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a
+.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/hel
+vetic/uhvb8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb><C:/Users/raghvendra/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/raghvendra/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/raghvendra/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raghvendra
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/r
+aghvendra/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bmc_article.pdf (23 pages, 664417 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
