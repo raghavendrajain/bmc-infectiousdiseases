@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{60}
+\begin{thebibliography}{70}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -110,23 +110,24 @@ Accessed 2015-11-20
 
 %%% 6
 \bibitem{wilder2012denguetools}
-\begin{botherref}
-\oauthor{\bsnm{Wilder-Smith}, \binits{A.}},
-\oauthor{\bsnm{Renhorn}, \binits{K.-E.}},
-\oauthor{\bsnm{Tissera}, \binits{H.}},
-\oauthor{\bsnm{Bakar}, \binits{S.A.}},
-\oauthor{\bsnm{Alphey}, \binits{L.}},
-\oauthor{\bsnm{Kittayapong}, \binits{P.}},
-\oauthor{\bsnm{Lindsay}, \binits{S.}},
-\oauthor{\bsnm{Logan}, \binits{J.}},
-\oauthor{\bsnm{Hatz}, \binits{C.}},
-\oauthor{\bsnm{Reiter}, \binits{P.}}, et al.:
-Denguetools: innovative tools and strategies for the surveillance and control
-  of dengue.
-Global health action
-\textbf{5}
-(2012)
-\end{botherref}
+\begin{barticle}
+\bauthor{\bsnm{Wilder-Smith}, \binits{A.}},
+\bauthor{\bsnm{Renhorn}, \binits{K.-E.}},
+\bauthor{\bsnm{Tissera}, \binits{H.}},
+\bauthor{\bsnm{Abu~Bakar}, \binits{S.}},
+\bauthor{\bsnm{Alphey}, \binits{L.}},
+\bauthor{\bsnm{Kittayapong}, \binits{P.}},
+\bauthor{\bsnm{Lindsay}, \binits{S.}},
+\bauthor{\bsnm{Logan}, \binits{J.}},
+\bauthor{\bsnm{Hatz}, \binits{C.}},
+\bauthor{\bsnm{Reiter}, \binits{P.}}, \betal:
+\batitle{Denguetools: innovative tools and strategies for the surveillance and
+  control of dengue}.
+\bjtitle{Global health action}
+\bvolume{5}(\bissue{1}),
+\bfpage{17273}
+(\byear{2012})
+\end{barticle}
 \endbibitem
 
 %%% 7
@@ -725,6 +726,76 @@ The 1996 outbreak of dengue hemorrhagic fever in delhi, india.
 \endbibitem
 
 %%% 45
+\bibitem{racloz2012surveillance}
+\begin{barticle}
+\bauthor{\bsnm{Racloz}, \binits{V.}},
+\bauthor{\bsnm{Ramsey}, \binits{R.}},
+\bauthor{\bsnm{Tong}, \binits{S.}},
+\bauthor{\bsnm{Hu}, \binits{W.}}:
+\batitle{Surveillance of dengue fever virus: a review of epidemiological models
+  and early warning systems}.
+\bjtitle{PLoS neglected tropical diseases}
+\bvolume{6}(\bissue{5}),
+\bfpage{1648}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 46
+\bibitem{degallier2010toward}
+\begin{barticle}
+\bauthor{\bsnm{Degallier}, \binits{N.}},
+\bauthor{\bsnm{Favier}, \binits{C.}},
+\bauthor{\bsnm{Menkes}, \binits{C.}},
+\bauthor{\bsnm{Lengaigne}, \binits{M.}},
+\bauthor{\bsnm{Ramalho}, \binits{W.M.}},
+\bauthor{\bsnm{Souza}, \binits{R.}},
+\bauthor{\bsnm{Servain}, \binits{J.}},
+\bauthor{\bsnm{Boulanger}, \binits{J.-P.}}:
+\batitle{Toward an early warning system for dengue prevention: modeling climate
+  impact on dengue transmission}.
+\bjtitle{Climatic Change}
+\bvolume{98}(\bissue{3-4}),
+\bfpage{581}--\blpage{592}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 47
+\bibitem{naish2014climate}
+\begin{barticle}
+\bauthor{\bsnm{Naish}, \binits{S.}},
+\bauthor{\bsnm{Dale}, \binits{P.}},
+\bauthor{\bsnm{Mackenzie}, \binits{J.S.}},
+\bauthor{\bsnm{McBride}, \binits{J.}},
+\bauthor{\bsnm{Mengersen}, \binits{K.}},
+\bauthor{\bsnm{Tong}, \binits{S.}}:
+\batitle{Climate change and dengue: a critical and systematic review of
+  quantitative modelling approaches}.
+\bjtitle{BMC infectious diseases}
+\bvolume{14}(\bissue{1}),
+\bfpage{167}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 48
+\bibitem{hii2012forecast}
+\begin{barticle}
+\bauthor{\bsnm{Hii}, \binits{Y.L.}},
+\bauthor{\bsnm{Zhu}, \binits{H.}},
+\bauthor{\bsnm{Ng}, \binits{N.}},
+\bauthor{\bsnm{Ng}, \binits{L.C.}},
+\bauthor{\bsnm{Rockl{\"o}v}, \binits{J.}}:
+\batitle{Forecast of dengue incidence using temperature and rainfall}.
+\bjtitle{PLoS neglected tropical diseases}
+\bvolume{6}(\bissue{11}),
+\bfpage{1908}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 49
 \bibitem{lowe2011spatio}
 \begin{barticle}
 \bauthor{\bsnm{Lowe}, \binits{R.}},
@@ -743,23 +814,135 @@ The 1996 outbreak of dengue hemorrhagic fever in delhi, india.
 \end{barticle}
 \endbibitem
 
-%%% 46
-\bibitem{racloz2012surveillance}
+%%% 50
+\bibitem{banu2011dengue}
 \begin{barticle}
-\bauthor{\bsnm{Racloz}, \binits{V.}},
-\bauthor{\bsnm{Ramsey}, \binits{R.}},
-\bauthor{\bsnm{Tong}, \binits{S.}},
-\bauthor{\bsnm{Hu}, \binits{W.}}:
-\batitle{Surveillance of dengue fever virus: a review of epidemiological models
-  and early warning systems}.
-\bjtitle{PLoS neglected tropical diseases}
-\bvolume{6}(\bissue{5}),
-\bfpage{1648}
-(\byear{2012})
+\bauthor{\bsnm{Banu}, \binits{S.}},
+\bauthor{\bsnm{Hu}, \binits{W.}},
+\bauthor{\bsnm{Hurst}, \binits{C.}},
+\bauthor{\bsnm{Tong}, \binits{S.}}:
+\batitle{Dengue transmission in the asia-pacific region: impact of climate
+  change and socio-environmental factors}.
+\bjtitle{Tropical Medicine \& International Health}
+\bvolume{16}(\bissue{5}),
+\bfpage{598}--\blpage{607}
+(\byear{2011})
 \end{barticle}
 \endbibitem
 
-%%% 47
+%%% 51
+\bibitem{toledo2011evidence}
+\begin{barticle}
+\bauthor{\bsnm{Toledo}, \binits{M.E.}},
+\bauthor{\bsnm{Rodriguez}, \binits{A.}},
+\bauthor{\bsnm{Vald{\'e}s}, \binits{L.}},
+\bauthor{\bsnm{Carri{\'o}n}, \binits{R.}},
+\bauthor{\bsnm{Cabrera}, \binits{G.}},
+\bauthor{\bsnm{Banderas}, \binits{D.}},
+\bauthor{\bsnm{Ceballos}, \binits{E.}},
+\bauthor{\bsnm{Domeqc}, \binits{M.}},
+\bauthor{\bsnm{Pe{\~n}a}, \binits{C.}},
+\bauthor{\bsnm{Baly}, \binits{A.}}, \betal:
+\batitle{Evidence on impact of community-based environmental management on
+  dengue transmission in santiago de cuba}.
+\bjtitle{Tropical Medicine \& International Health}
+\bvolume{16}(\bissue{6}),
+\bfpage{744}--\blpage{747}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 52
+\bibitem{tipayamongkholgul2011socio}
+\begin{barticle}
+\bauthor{\bsnm{Tipayamongkholgul}, \binits{M.}},
+\bauthor{\bsnm{Lisakulruk}, \binits{S.}}:
+\batitle{Socio-geographical factors in vulnerability to dengue in thai
+  villages: a spatial regression analysis}.
+\bjtitle{Geospatial health}
+\bvolume{5}(\bissue{2}),
+\bfpage{191}--\blpage{198}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 53
+\bibitem{shang2010role}
+\begin{barticle}
+\bauthor{\bsnm{Shang}, \binits{C.-S.}},
+\bauthor{\bsnm{Fang}, \binits{C.-T.}},
+\bauthor{\bsnm{Liu}, \binits{C.-M.}},
+\bauthor{\bsnm{Wen}, \binits{T.-H.}},
+\bauthor{\bsnm{Tsai}, \binits{K.-H.}},
+\bauthor{\bsnm{King}, \binits{C.-C.}}:
+\batitle{The role of imported cases and favorable meteorological conditions in
+  the onset of dengue epidemics}.
+\bjtitle{PLoS neglected tropical diseases}
+\bvolume{4}(\bissue{8}),
+\bfpage{775}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 54
+\bibitem{sang2015predicting}
+\begin{barticle}
+\bauthor{\bsnm{Sang}, \binits{S.}},
+\bauthor{\bsnm{Gu}, \binits{S.}},
+\bauthor{\bsnm{Bi}, \binits{P.}},
+\bauthor{\bsnm{Yang}, \binits{W.}},
+\bauthor{\bsnm{Yang}, \binits{Z.}},
+\bauthor{\bsnm{Xu}, \binits{L.}},
+\bauthor{\bsnm{Yang}, \binits{J.}},
+\bauthor{\bsnm{Liu}, \binits{X.}},
+\bauthor{\bsnm{Jiang}, \binits{T.}},
+\bauthor{\bsnm{Wu}, \binits{H.}}, \betal:
+\batitle{Predicting unprecedented dengue outbreak using imported cases and
+  climatic factors in guangzhou, 2014}.
+\bjtitle{PLoS neglected tropical diseases}
+\bvolume{9}(\bissue{5}),
+\bfpage{0003808}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 55
+\bibitem{stoddard2013house}
+\begin{barticle}
+\bauthor{\bsnm{Stoddard}, \binits{S.T.}},
+\bauthor{\bsnm{Forshey}, \binits{B.M.}},
+\bauthor{\bsnm{Morrison}, \binits{A.C.}},
+\bauthor{\bsnm{Paz-Soldan}, \binits{V.A.}},
+\bauthor{\bsnm{Vazquez-Prokopec}, \binits{G.M.}},
+\bauthor{\bsnm{Astete}, \binits{H.}},
+\bauthor{\bsnm{Reiner}, \binits{R.C.}},
+\bauthor{\bsnm{Vilcarromero}, \binits{S.}},
+\bauthor{\bsnm{Elder}, \binits{J.P.}},
+\bauthor{\bsnm{Halsey}, \binits{E.S.}}, \betal:
+\batitle{House-to-house human movement drives dengue virus transmission}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{110}(\bissue{3}),
+\bfpage{994}--\blpage{999}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 56
+\bibitem{reiner2014socially}
+\begin{barticle}
+\bauthor{\bsnm{Reiner~Jr}, \binits{R.C.}},
+\bauthor{\bsnm{Stoddard}, \binits{S.T.}},
+\bauthor{\bsnm{Scott}, \binits{T.W.}}:
+\batitle{Socially structured human movement shapes dengue transmission despite
+  the diffusive effect of mosquito dispersal}.
+\bjtitle{Epidemics}
+\bvolume{6},
+\bfpage{30}--\blpage{36}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 57
 \bibitem{wwo2012}
 \begin{botherref}
 \oauthor{\bsnm{{World Weather Online}}}:
@@ -770,7 +953,7 @@ Accessed 2016-01-18
 \end{botherref}
 \endbibitem
 
-%%% 48
+%%% 58
 \bibitem{johansson2009multiyear}
 \begin{barticle}
 \bauthor{\bsnm{Johansson}, \binits{M.A.}},
@@ -786,7 +969,7 @@ Accessed 2016-01-18
 \end{barticle}
 \endbibitem
 
-%%% 49
+%%% 59
 \bibitem{morin2013climate}
 \begin{barticle}
 \bauthor{\bsnm{Morin}, \binits{C.W.}},
@@ -800,7 +983,7 @@ Accessed 2016-01-18
 \end{barticle}
 \endbibitem
 
-%%% 50
+%%% 60
 \bibitem{thai2011role}
 \begin{barticle}
 \bauthor{\bsnm{Thai}, \binits{K.T.}},
@@ -814,7 +997,7 @@ Accessed 2016-01-18
 \end{barticle}
 \endbibitem
 
-%%% 51
+%%% 61
 \bibitem{denguethai2015}
 \begin{botherref}
 \oauthor{\bparticle{of} \bsnm{Vector-Borne Diseases~Thailand}, \binits{B.}}:
@@ -825,7 +1008,7 @@ Accessed 2015-12-1
 \end{botherref}
 \endbibitem
 
-%%% 52
+%%% 62
 \bibitem{Rsoftware}
 \begin{bbook}
 \bauthor{\bsnm{{R Core Team}}}:
@@ -838,7 +1021,7 @@ Accessed 2015-12-1
 \end{bbook}
 \endbibitem
 
-%%% 53
+%%% 63
 \bibitem{mgcv}
 \begin{barticle}
 \bauthor{\bsnm{Wood}, \binits{S.N.}}:
@@ -850,7 +1033,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 54
+%%% 64
 \bibitem{ramadona2016prediction}
 \begin{barticle}
 \bauthor{\bsnm{Ramadona}, \binits{A.L.}},
@@ -868,7 +1051,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 55
+%%% 65
 \bibitem{hii2012optimal}
 \begin{barticle}
 \bauthor{\bsnm{Hii}, \binits{Y.L.}},
@@ -885,7 +1068,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 56
+%%% 66
 \bibitem{reich2013interactions}
 \begin{barticle}
 \bauthor{\bsnm{Reich}, \binits{N.G.}},
@@ -907,7 +1090,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 57
+%%% 67
 \bibitem{gasparrini2010distributed}
 \begin{barticle}
 \bauthor{\bsnm{Gasparrini}, \binits{A.}},
@@ -921,7 +1104,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 58
+%%% 68
 \bibitem{mondini2008spatial}
 \begin{barticle}
 \bauthor{\bsnm{Mondini}, \binits{A.}},
@@ -935,7 +1118,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 59
+%%% 69
 \bibitem{wu2009higher}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{P.-C.}},
@@ -953,7 +1136,7 @@ Accessed 2015-12-1
 \end{barticle}
 \endbibitem
 
-%%% 60
+%%% 70
 \bibitem{gasparrini2011distributed}
 \begin{barticle}
 \bauthor{\bsnm{Gasparrini}, \binits{A.}}:
@@ -1053,7 +1236,7 @@ Accessed 2015-12-1
     <au><snm>Wilder Smith</snm><fnm>A</fnm></au>
     <au><snm>Renhorn</snm><fnm>KE</fnm></au>
     <au><snm>Tissera</snm><fnm>H</fnm></au>
-    <au><snm>Bakar</snm><fnm>SA</fnm></au>
+    <au><snm>Abu Bakar</snm><fnm>S</fnm></au>
     <au><snm>Alphey</snm><fnm>L</fnm></au>
     <au><snm>Kittayapong</snm><fnm>P</fnm></au>
     <au><snm>Lindsay</snm><fnm>S</fnm></au>
@@ -1063,9 +1246,11 @@ Accessed 2015-12-1
     <au><cnm>others</cnm></au>
   </aug>
   <source>Global health action</source>
-  <publisher>Co-Action Publishing</publisher>
+  <publisher>Taylor \& Francis</publisher>
   <pubdate>2012</pubdate>
   <volume>5</volume>
+  <issue>1</issue>
+  <fpage>17273</fpage>
 </bibl>
 
 <bibl id="B7">
@@ -1723,6 +1908,82 @@ Accessed 2015-12-1
 </bibl>
 
 <bibl id="B45">
+  <title><p>Surveillance of dengue fever virus: a review of epidemiological
+  models and early warning systems</p></title>
+  <aug>
+    <au><snm>Racloz</snm><fnm>V</fnm></au>
+    <au><snm>Ramsey</snm><fnm>R</fnm></au>
+    <au><snm>Tong</snm><fnm>S</fnm></au>
+    <au><snm>Hu</snm><fnm>W</fnm></au>
+  </aug>
+  <source>PLoS neglected tropical diseases</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2012</pubdate>
+  <volume>6</volume>
+  <issue>5</issue>
+  <fpage>e1648</fpage>
+</bibl>
+
+<bibl id="B46">
+  <title><p>Toward an early warning system for dengue prevention: modeling
+  climate impact on dengue transmission</p></title>
+  <aug>
+    <au><snm>Degallier</snm><fnm>N</fnm></au>
+    <au><snm>Favier</snm><fnm>C</fnm></au>
+    <au><snm>Menkes</snm><fnm>C</fnm></au>
+    <au><snm>Lengaigne</snm><fnm>M</fnm></au>
+    <au><snm>Ramalho</snm><fnm>WM</fnm></au>
+    <au><snm>Souza</snm><fnm>R</fnm></au>
+    <au><snm>Servain</snm><fnm>J</fnm></au>
+    <au><snm>Boulanger</snm><fnm>JP</fnm></au>
+  </aug>
+  <source>Climatic Change</source>
+  <publisher>Springer</publisher>
+  <pubdate>2010</pubdate>
+  <volume>98</volume>
+  <issue>3-4</issue>
+  <fpage>581</fpage>
+  <lpage>-592</lpage>
+</bibl>
+
+<bibl id="B47">
+  <title><p>Climate change and dengue: a critical and systematic review of
+  quantitative modelling approaches</p></title>
+  <aug>
+    <au><snm>Naish</snm><fnm>S</fnm></au>
+    <au><snm>Dale</snm><fnm>P</fnm></au>
+    <au><snm>Mackenzie</snm><fnm>JS</fnm></au>
+    <au><snm>McBride</snm><fnm>J</fnm></au>
+    <au><snm>Mengersen</snm><fnm>K</fnm></au>
+    <au><snm>Tong</snm><fnm>S</fnm></au>
+  </aug>
+  <source>BMC infectious diseases</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2014</pubdate>
+  <volume>14</volume>
+  <issue>1</issue>
+  <fpage>167</fpage>
+</bibl>
+
+<bibl id="B48">
+  <title><p>Forecast of dengue incidence using temperature and
+  rainfall</p></title>
+  <aug>
+    <au><snm>Hii</snm><fnm>YL</fnm></au>
+    <au><snm>Zhu</snm><fnm>H</fnm></au>
+    <au><snm>Ng</snm><fnm>N</fnm></au>
+    <au><snm>Ng</snm><fnm>LC</fnm></au>
+    <au><snm>Rockl{\"o}v</snm><fnm>J</fnm></au>
+  </aug>
+  <source>PLoS neglected tropical diseases</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2012</pubdate>
+  <volume>6</volume>
+  <issue>11</issue>
+  <fpage>e1908</fpage>
+</bibl>
+
+<bibl id="B49">
   <title><p>Spatio-temporal modelling of climate-sensitive disease risk:
   Towards an early warning system for dengue in Brazil</p></title>
   <aug>
@@ -1743,24 +2004,149 @@ Accessed 2015-12-1
   <lpage>-381</lpage>
 </bibl>
 
-<bibl id="B46">
-  <title><p>Surveillance of dengue fever virus: a review of epidemiological
-  models and early warning systems</p></title>
+<bibl id="B50">
+  <title><p>Dengue transmission in the Asia-Pacific region: impact of climate
+  change and socio-environmental factors</p></title>
   <aug>
-    <au><snm>Racloz</snm><fnm>V</fnm></au>
-    <au><snm>Ramsey</snm><fnm>R</fnm></au>
-    <au><snm>Tong</snm><fnm>S</fnm></au>
+    <au><snm>Banu</snm><fnm>S</fnm></au>
     <au><snm>Hu</snm><fnm>W</fnm></au>
+    <au><snm>Hurst</snm><fnm>C</fnm></au>
+    <au><snm>Tong</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Tropical Medicine \& International Health</source>
+  <publisher>Wiley Online Library</publisher>
+  <pubdate>2011</pubdate>
+  <volume>16</volume>
+  <issue>5</issue>
+  <fpage>598</fpage>
+  <lpage>-607</lpage>
+</bibl>
+
+<bibl id="B51">
+  <title><p>Evidence on impact of community-based environmental management on
+  dengue transmission in Santiago de Cuba</p></title>
+  <aug>
+    <au><snm>Toledo</snm><fnm>ME</fnm></au>
+    <au><snm>Rodriguez</snm><fnm>A</fnm></au>
+    <au><snm>Vald{\'e}s</snm><fnm>L</fnm></au>
+    <au><snm>Carri{\'o}n</snm><fnm>R</fnm></au>
+    <au><snm>Cabrera</snm><fnm>G</fnm></au>
+    <au><snm>Banderas</snm><fnm>D</fnm></au>
+    <au><snm>Ceballos</snm><fnm>E</fnm></au>
+    <au><snm>Domeqc</snm><fnm>M</fnm></au>
+    <au><snm>Pe{\~n}a</snm><fnm>C</fnm></au>
+    <au><snm>Baly</snm><fnm>A</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Tropical Medicine \& International Health</source>
+  <publisher>Wiley Online Library</publisher>
+  <pubdate>2011</pubdate>
+  <volume>16</volume>
+  <issue>6</issue>
+  <fpage>744</fpage>
+  <lpage>-747</lpage>
+</bibl>
+
+<bibl id="B52">
+  <title><p>Socio-geographical factors in vulnerability to dengue in Thai
+  villages: a spatial regression analysis</p></title>
+  <aug>
+    <au><snm>Tipayamongkholgul</snm><fnm>M</fnm></au>
+    <au><snm>Lisakulruk</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Geospatial health</source>
+  <pubdate>2011</pubdate>
+  <volume>5</volume>
+  <issue>2</issue>
+  <fpage>191</fpage>
+  <lpage>-198</lpage>
+</bibl>
+
+<bibl id="B53">
+  <title><p>The role of imported cases and favorable meteorological conditions
+  in the onset of dengue epidemics</p></title>
+  <aug>
+    <au><snm>Shang</snm><fnm>CS</fnm></au>
+    <au><snm>Fang</snm><fnm>CT</fnm></au>
+    <au><snm>Liu</snm><fnm>CM</fnm></au>
+    <au><snm>Wen</snm><fnm>TH</fnm></au>
+    <au><snm>Tsai</snm><fnm>KH</fnm></au>
+    <au><snm>King</snm><fnm>CC</fnm></au>
   </aug>
   <source>PLoS neglected tropical diseases</source>
   <publisher>Public Library of Science</publisher>
-  <pubdate>2012</pubdate>
-  <volume>6</volume>
-  <issue>5</issue>
-  <fpage>e1648</fpage>
+  <pubdate>2010</pubdate>
+  <volume>4</volume>
+  <issue>8</issue>
+  <fpage>e775</fpage>
 </bibl>
 
-<bibl id="B47">
+<bibl id="B54">
+  <title><p>Predicting unprecedented dengue outbreak using imported cases and
+  climatic factors in Guangzhou, 2014</p></title>
+  <aug>
+    <au><snm>Sang</snm><fnm>S</fnm></au>
+    <au><snm>Gu</snm><fnm>S</fnm></au>
+    <au><snm>Bi</snm><fnm>P</fnm></au>
+    <au><snm>Yang</snm><fnm>W</fnm></au>
+    <au><snm>Yang</snm><fnm>Z</fnm></au>
+    <au><snm>Xu</snm><fnm>L</fnm></au>
+    <au><snm>Yang</snm><fnm>J</fnm></au>
+    <au><snm>Liu</snm><fnm>X</fnm></au>
+    <au><snm>Jiang</snm><fnm>T</fnm></au>
+    <au><snm>Wu</snm><fnm>H</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>PLoS neglected tropical diseases</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2015</pubdate>
+  <volume>9</volume>
+  <issue>5</issue>
+  <fpage>e0003808</fpage>
+</bibl>
+
+<bibl id="B55">
+  <title><p>House-to-house human movement drives dengue virus
+  transmission</p></title>
+  <aug>
+    <au><snm>Stoddard</snm><fnm>ST</fnm></au>
+    <au><snm>Forshey</snm><fnm>BM</fnm></au>
+    <au><snm>Morrison</snm><fnm>AC</fnm></au>
+    <au><snm>Paz Soldan</snm><fnm>VA</fnm></au>
+    <au><snm>Vazquez Prokopec</snm><fnm>GM</fnm></au>
+    <au><snm>Astete</snm><fnm>H</fnm></au>
+    <au><snm>Reiner</snm><fnm>RC</fnm></au>
+    <au><snm>Vilcarromero</snm><fnm>S</fnm></au>
+    <au><snm>Elder</snm><fnm>JP</fnm></au>
+    <au><snm>Halsey</snm><fnm>ES</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Proceedings of the National Academy of Sciences</source>
+  <publisher>National Acad Sciences</publisher>
+  <pubdate>2013</pubdate>
+  <volume>110</volume>
+  <issue>3</issue>
+  <fpage>994</fpage>
+  <lpage>-999</lpage>
+</bibl>
+
+<bibl id="B56">
+  <title><p>Socially structured human movement shapes dengue transmission
+  despite the diffusive effect of mosquito dispersal</p></title>
+  <aug>
+    <au><snm>Reiner Jr</snm><fnm>RC</fnm></au>
+    <au><snm>Stoddard</snm><fnm>ST</fnm></au>
+    <au><snm>Scott</snm><fnm>TW</fnm></au>
+  </aug>
+  <source>Epidemics</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2014</pubdate>
+  <volume>6</volume>
+  <fpage>30</fpage>
+  <lpage>-36</lpage>
+</bibl>
+
+<bibl id="B57">
   <title><p>Bangkok average temperature and rain from year 2000 to
   2012.</p></title>
   <aug>
@@ -1771,7 +2157,7 @@ Accessed 2015-12-1
   <note>Accessed 2016-01-18</note>
 </bibl>
 
-<bibl id="B48">
+<bibl id="B58">
   <title><p>Multiyear climate variability and dengue—El Nino southern
   oscillation, weather, and dengue incidence in Puerto Rico, Mexico, and
   Thailand: a longitudinal data analysis</p></title>
@@ -1788,7 +2174,7 @@ Accessed 2015-12-1
   <fpage>e1000168</fpage>
 </bibl>
 
-<bibl id="B49">
+<bibl id="B59">
   <title><p>Climate and dengue transmission: evidence and
   implications</p></title>
   <aug>
@@ -1804,7 +2190,7 @@ Accessed 2015-12-1
   <fpage>1264</fpage>
 </bibl>
 
-<bibl id="B50">
+<bibl id="B60">
   <title><p>The role of climate variability and change in the transmission
   dynamics and geographic distribution of dengue</p></title>
   <aug>
@@ -1820,7 +2206,7 @@ Accessed 2015-12-1
   <lpage>-954</lpage>
 </bibl>
 
-<bibl id="B51">
+<bibl id="B61">
   <title><p>Dengue fever situation in Thailand</p></title>
   <aug>
     <au><snm>Vector Borne Diseases Thailand</snm><fnm>B</fnm></au>
@@ -1830,7 +2216,7 @@ Accessed 2015-12-1
   <note>Accessed 2015-12-1</note>
 </bibl>
 
-<bibl id="B52">
+<bibl id="B62">
   <title><p>R: A Language and Environment for Statistical Computing</p></title>
   <aug>
     <au><cnm>{R Core Team}</cnm></au>
@@ -1840,7 +2226,7 @@ Accessed 2015-12-1
   <url>https://www.R-project.org/</url>
 </bibl>
 
-<bibl id="B53">
+<bibl id="B63">
   <title><p>Thin-plate regression splines</p></title>
   <aug>
     <au><snm>Wood</snm><fnm>S. N.</fnm></au>
@@ -1853,7 +2239,7 @@ Accessed 2015-12-1
   <lpage>114</lpage>
 </bibl>
 
-<bibl id="B54">
+<bibl id="B64">
   <title><p>Prediction of Dengue Outbreaks Based on Disease Surveillance and
   Meteorological Data</p></title>
   <aug>
@@ -1872,7 +2258,7 @@ Accessed 2015-12-1
   <fpage>e0152688</fpage>
 </bibl>
 
-<bibl id="B55">
+<bibl id="B65">
   <title><p>Optimal lead time for dengue forecast</p></title>
   <aug>
     <au><snm>Hii</snm><fnm>YL</fnm></au>
@@ -1890,7 +2276,7 @@ Accessed 2015-12-1
   <fpage>e1848</fpage>
 </bibl>
 
-<bibl id="B56">
+<bibl id="B66">
   <title><p>Interactions between serotypes of dengue highlight epidemiological
   impact of cross-immunity</p></title>
   <aug>
@@ -1913,7 +2299,7 @@ Accessed 2015-12-1
   <fpage>20130414</fpage>
 </bibl>
 
-<bibl id="B57">
+<bibl id="B67">
   <title><p>Distributed lag non-linear models</p></title>
   <aug>
     <au><snm>Gasparrini</snm><fnm>A</fnm></au>
@@ -1929,7 +2315,7 @@ Accessed 2015-12-1
   <lpage>-2234</lpage>
 </bibl>
 
-<bibl id="B58">
+<bibl id="B68">
   <title><p>Spatial correlation of incidence of dengue with socioeconomic,
   demographic and environmental variables in a Brazilian city</p></title>
   <aug>
@@ -1945,7 +2331,7 @@ Accessed 2015-12-1
   <lpage>-248</lpage>
 </bibl>
 
-<bibl id="B59">
+<bibl id="B69">
   <title><p>Higher temperature and urbanization affect the spatial patterns of
   dengue fever transmission in subtropical Taiwan</p></title>
   <aug>
@@ -1965,7 +2351,7 @@ Accessed 2015-12-1
   <lpage>-2233</lpage>
 </bibl>
 
-<bibl id="B60">
+<bibl id="B70">
   <title><p>Distributed lag linear and non-linear models in R: the package
   dlnm</p></title>
   <aug>
