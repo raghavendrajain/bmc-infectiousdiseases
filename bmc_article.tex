@@ -246,7 +246,7 @@ email={helmut@nii.ac.jp}
 
 \parttitle{Methods} We present a machine learning-based methodology capable of providing forecast estimates of dengue prediction in each of the fifty districts of Thailand by leveraging data from multiple data sources. Using a set of prediction variables, we show an increase in prediction accuracy of the model with an optimal combination of predictors which include: meteorological data, clinical data, lag variables of disease surveillance, socioeconomic data and the data encoding spatial dependence on dengue transmission. We use Generalized Additive Models (GAMs) to fit the relationships between the predictors \hl{(with a lag of one month)} and the clinical data of Dengue hemorrhagic fever (DHF) using the data from 2008 to 2012. Using the data from 2013 to 2015 and a comparative set of prediction models, we evaluate the predictive ability of the fitted models according to RMSE and SRMSE \hl{as well as using adjusted R-squared value, deviance explained and change in AIC.} 
 
-\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts and also describe the statistical significance of the variables used to characterize the forecast. \hl{The discriminating ability of the final model was evaluated against Bangkok specific \textit{constant} threshold and WHO \textit{moving} threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).}
+\parttitle{Results} In this paper, we present a model which allows for combining different predictors to make forecasts \hl{with a lead time of one month} and also describe the statistical significance of the variables used to characterize the forecast. \hl{The discriminating ability of the final model was evaluated against Bangkok specific \textit{constant} threshold and WHO \textit{moving} threshold of the epidemic in terms of specificity, sensitivity, positive predictive value (PPV), and negative predictive value (NPV).}
 
 
 \parttitle{Conclusions} Along with the high accuracy of prediction, we also determine that for the prediction of dengue outbreaks within a district, the influence of dengue incidences and socioeconomic data from the surrounding districts is statistically significant. This suggests the influence of movement patterns of people and spatial heterogeneity of human activities on the spread of the epidemic.
@@ -739,7 +739,7 @@ where \textit{C} represents the dengue counts in the target district, \rlap{T}c 
 
 
 
-Our last model (F) included waste disposal data (as a socioeconomic indicator) from each district as a predictor. The association of the smooth terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. After the final model (F) is fit, the residuals are inferred; and their normality and residual autocorrelation are checked. Figure ~\ref{figure:resid-diagnosis} shows that residual histograms (top-left) are symmetric and follow a unimodal distribution. The Q-Q plot of deviance residuals which are conditional on the fitted model coefficients and scale parameter (bottom-left) is close to a straight line. This suggests that the distributional assumptions of the model are satisfied. The plot of reported and predicted cases indicate linear relation (bottom-right). The partial autocorrelation function plot (top-right) does show significant autocorrelation for some long-term lags, but it was found that keeping those lagged terms increases the complexity of the model without any significant increase in prediction performance. Thus, they were chosen to be ignored in the model \footnote{Including those additional terms does not as well provide insights in favor of our hypothesis too}. 
+Our last model (F) included waste disposal data (as a socioeconomic indicator) from each district as a predictor. The association of the smooth terms with dengue transmission is shown in Figure~\ref{figure-mostOptimalFit}. After the final model (F) is fit, the residuals are inferred; and their normality and residual autocorrelation are checked. Figure ~\ref{figure:resid-diagnosis} shows that residual histograms (top-left) are symmetric and follow a unimodal distribution. The Q-Q plot of deviance residuals which are conditional on the fitted model coefficients and scale parameter (bottom-left) is close to a straight line. This suggests that the distributional assumptions of the model are satisfied. The plot of reported and predicted cases indicate linear relation (bottom-right). The partial autocorrelation function plot (top-right) does show significant autocorrelation for some long-term lags, but it was found that keeping those lagged terms increases the complexity of the model without any significant increase in prediction performance. Thus, they were chosen to be ignored in the model \footnote{These include those additional terms that do not as well provide insights in favor of our hypothesis.}. 
 
 
 
@@ -780,9 +780,9 @@ The simplest Seasonal Na\"{i}ve model (A) that used month of the year data for m
 	\centering
 	\begin{tabular}{|lccccc|}
 		\hline
-		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \textbf{$\Delta$ AIC} \\ 
+		\textbf{Model Name} & \textbf{RMSE} & \textbf{SRMSE} & \textbf{R-sq.(adj)} & \textbf{Deviance Explained} & \hl{\textbf{$\Delta$ AIC}} \\ 
 		\hline
-		A: Seasonal Na\"{i}ve  & 10.22 & 0.62 & 0.16 & 0.16 & 0\\ 
+		\hl{A: Seasonal Na\"{i}ve}  & 10.22 & 0.62 & 0.16 & 0.16 & 0\\ 
 		B: Meteorology Optimal & 8.83 & 0.54 & 0.28 & 0.32 & -492.64\\ 
 		C: Optimal Lag Surveillance Model  &  7.32 & 0.45 & 0.49 & 0.49 & -2420.39 \\ 
 		D: Optimal Met and Lag Surveillance Model  & 6.30 & 0.39 & 0.62 & 0.64 &  -2725.62\\ 
@@ -790,7 +790,7 @@ The simplest Seasonal Na\"{i}ve model (A) that used month of the year data for m
 		F: Social-economic data Included & 6.10 & 0.37 & 0.64 & 0.73 & -2713.86 \\ 
 		\hline
 	\end{tabular}
-	\caption{Predictive performance statistics of different models evaluated on the training data for the same time period. The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).), high deviance and low $\Delta$ AIC. The prediction performance is compared over the same time periods (months $23-60$) to reduce the potential bias.}
+	\caption{Predictive performance statistics of different models \hl{evaluated on the training data for the same time period  (months $23-60$) to reduce the potential bias.} The performance is measured on different metrics. The best model should have the lowest errors (RMSE, SRMSE) and have the best fit (measured in R-sq.(adj).), high deviance and low $\Delta$ AIC.}
 	\label{resultsPrediction}
 \end{table}
 
