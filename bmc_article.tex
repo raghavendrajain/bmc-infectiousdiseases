@@ -642,12 +642,33 @@ In this section, we explain about the models (A-F) listed in last section. The p
 
 
 
-As a first step for model fitting, the data for lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall was used to analyze the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. Table~\ref{tab:metValues} shown the approximate statistical significance of the smooth terms for DTR and rainfall. As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). 
+As a first step for model fitting, the data for lags of month 0\textendash3 of Diurnal Temperature Range (DTR) and monthly average rainfall was used to analyze the (1) statistical significance of the model terms (2) association of DTR and rainfall with dengue cases. Table~\ref{tab:metValuess} shown the approximate statistical significance of the smooth terms for DTR and rainfall. 
+
+\begin{table}[htbp]
+	\centering
+	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
+	\label{tab:metValuess}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\multicolumn{5}{ |c| }{\textbf{Results}} \\
+		\hline
+		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{ Lag 2} & \textbf{Lag 3} \\ \hline
+		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
+		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
+		\hline
+		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
+		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
+		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
+		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
+	\end{tabular}
+\end{table}
+
+As shown in Figure~\ref{figure:D-M-1}, the association of temperatures with dengue cases in lag 0,1 decreases when the DTR is less than 8 $^{\circ}$C and then increases. However, for the lag 3, this association shows a slight increase and then decrease. For lag 4, it is observed that the association of DTR with dengue cases increases linearly when the temperature is less than 9 $^{\circ}$C  and then a strong drop is observed. Due to the statistical significance of these terms i.e. lags of month 0\textendash3 for the meteorological data, we call the model comprising of them as `Optimal Met' model (model B). 
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width= 1.0\textwidth]{6-DM1}
-		\caption{\textbf{Association between the meteorological variables and dengue over lags of \\ 0\textendash3 months}. Solid lines represent relative risks (RR) of dengue cases whereas the dotted \\ lines depict the upper and lower limits of 95\%  confidence intervals. P-values and the \\ initial analyses are listed in Table ~\ref{tab:metValues}}
+		\caption{\textbf{Association between the meteorological variables and dengue over lags of \\ 0\textendash3 months}. Solid lines represent relative risks (RR) of dengue cases whereas the dotted \\ lines depict the upper and lower limits of 95\%  confidence intervals. P-values and the \\ initial analyses are listed in Table~\ref{tab:metValuess}.}
 		\label{figure:D-M-1}.
 	\end{center}
 \end{figure}
@@ -663,7 +684,18 @@ As a first step for model fitting, the data for lags of month 0\textendash3 of D
 
 
 
-We calculated the cross-correlation of dengue cases with (a) dengue cases of lag of 0\textendash3 months (b) DTR of lag of 0\textendash3 months (c) rainfall of lag of 0\textendash3 months and (d) the dengue cases of lag of 0\textendash3 months from the surrounding districts. Figure~\ref{figure-Cross-Cor-1} shows the cross-correlation indicate that the highest positive association between dengue incidence and lagged dengue incidences were found at lag 0 (r, 0.667), with rainfall at lag 2 (r, 0.428) and with dengue incidences from surrounding districts at lag 1 (r, 0.514). There was a negative correlation of DTR with dengue incidence at all the lags. For lag 0 (r, -0.261), lag 1 (r, -0.373), lag 2 (r,  -0.309) and lag 3 (r,  -0.154) was observed. 
+Figure~\ref{figure-Cross-Cor-1} shows the cross-correlation cross-correlation of dengue cases with (a) dengue cases of lag of 0\textendash3 months (b) DTR of lag of 0\textendash3 months (c) rainfall of lag of 0\textendash3 months and (d) the dengue cases of lag of 0\textendash3 months from the surrounding districts. It indicates that the highest positive association between dengue incidence and lagged dengue incidences was found at lag 0 (r, 0.667), with rainfall at lag 2 (r, 0.428) and with dengue incidences from surrounding districts at lag 1 (r, 0.514). There was a negative correlation of DTR with dengue incidence at all the lags. For lag 0 (r, -0.261), lag 1 (r, -0.373), lag 2 (r,  -0.309) and lag 3 (r,  -0.154) was observed. 
+ 
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=120mm]{23-Cross-Cor-1}
+		\caption{Cross-correlation between the Outcome and the Predictors.}
+		\label{figure-Cross-Cor-1}
+	\end{center}
+\end{figure} 
+ 
+
+
 
 
 
@@ -1001,6 +1033,15 @@ RJ analyzed and interpreted the data. He also wrote the manuscript. SS collected
       
 \section*{Acknowledgements}
 Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of Disease Control ) enabled surveying in the local communities of Kannayao, Lat Krabang , Thung khru, Saphansung and Jatujak districts of Bangkok.
+
+\section*{Author's information}
+
+The email id of each author is provided against their initials.
+
+RJ: raghavendra.jain@gmail.com;
+SS: arttioz@gmail.com; 
+SI: iamsiri@gmail.com;
+HP: helmut@nii.ac.jp
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
@@ -3191,41 +3232,41 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 
     
     
-\pagebreak    
+%\pagebreak    
 
-\textbf{Appendix}
+%\textbf{Appendix}
 
 %\textbf{Initial Analyses Summary}
 
-\begin{table}[htbp]
-	\centering
-	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
-	\label{tab:metValues}
-	\begin{tabular}{|l|l|l|l|l|}
-		\hline
-		\multicolumn{5}{ |c| }{\textbf{Results}} \\
-		\hline
-		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{Lag 2} & \textbf{Lag 3} \\ \hline
-		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
-		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
-		\hline
-		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
-		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
-		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
-		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
-	\end{tabular}
-\end{table}
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
+%	\label{tab:metValues}
+%	\begin{tabular}{|l|l|l|l|l|}
+%		\hline
+%		\multicolumn{5}{ |c| }{\textbf{Results}} \\
+%		\hline
+%		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{Lag 2} & \textbf{Lag 3} \\ \hline
+%		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
+%		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
+%		\hline
+%		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
+%		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
+%		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
+%		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
+%	\end{tabular}
+%\end{table}
 
 
 %\textbf{Cross-correlation between the Outcome and the Predictors} 
 
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width=120mm]{23-Cross-Cor-1}
-		\caption{Cross-correlation between the Outcome and the Predictors.}
-		\label{figure-Cross-Cor-1}
-	\end{center}
-\end{figure}
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=120mm]{23-Cross-Cor-1}
+%		\caption{Cross-correlation between the Outcome and the Predictors.}
+%		\label{figure-Cross-Cor-1}
+%	\end{center}
+%\end{figure}
 
 
 %
@@ -3245,24 +3286,24 @@ Mrs. Sarinthorn Sontisirikit, Senior Public Health Officer of the Department of 
 %\section{Initial Analyses Summary} \label{app:a}
 
 
-\begin{table}[htbp]
-	\centering
-	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
-	\label{tab:metValues}
-	\begin{tabular}{|l|l|l|l|l|}
-		\hline
-		\multicolumn{5}{ |c| }{\textbf{Results}} \\
-		\hline
-		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{ Lag 2} & \textbf{Lag 3} \\ \hline
-		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
-		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
-		\hline
-		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
-		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
-		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
-		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
-	\end{tabular}
-\end{table}
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Approximate significance of smooth terms depicting lagged meteorological data.}
+%	\label{tab:metValues}
+%	\begin{tabular}{|l|l|l|l|l|}
+%		\hline
+%		\multicolumn{5}{ |c| }{\textbf{Results}} \\
+%		\hline
+%		\textbf{ P-Value}	&  \textbf{Lag 0} & \textbf{Lag 1} &\textbf{ Lag 2} & \textbf{Lag 3} \\ \hline
+%		Mean Monthly DTR	& 5.26e-16 & 0.000261 & 0.000921 & 2e-16  \\ \hline
+%		Cumulative Monthly Rainfall &  8.96e-15  & 2e-16 & 2e-16  & 8.77e-10  \\
+%		\hline
+%		\textbf{R-sq(adj.)} & \multicolumn{4}{l|}{0.283} \\ \hline
+%		\textbf{Deviance Explained} & \multicolumn{4}{l|}{31.9\%} \\ \hline
+%		\textbf{RMSE} & \multicolumn{4}{l|}{8.462} \\ \hline
+%		\textbf{SRMSE} & \multicolumn{4}{l|}{0.52} \\ \hline	 
+%	\end{tabular}
+%\end{table}
 
 
 
